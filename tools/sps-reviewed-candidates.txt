@@ -1,0 +1,146 @@
+# Legacy relative path|Review result
+BackupHandler.java|Android backup behavior is provided by AndroidBackupHandler and the current manifest backup agent.
+CrashHandler.java|Legacy Android-only crash capture is superseded by the current Android and desktop platform handlers.
+ExceptionStrings.java|Legacy crash-record DTO is obsolete with the current platform crash reporting path.
+GiftUnlocks.java|Unreachable unfinished prototype; its shop and every gameplay consumer were disabled in 0.9.8.
+MyApplication.java|Android application startup and exception-handler installation are provided by the current Android launcher.
+Preferences.java|Legacy Android SharedPreferences wrapper is superseded by cross-platform SPDSettings and GameSettings.
+ResultDescriptions.java|Legacy string death keys are superseded by the current typed Dungeon.fail and Dungeon.win sources.
+Skins.java|The same eight skin indices are integrated into Hero, HeroSelectScene, save metadata, and rankings.
+SPSSettings.java|Legacy graphics, audio, language, and challenge settings are provided by the expanded current SPDSettings.
+effects\FloatingText2.java|Behavior and icon coverage are superseded by the current FloatingText implementation.
+effects\Halo.java|The legacy Android-specific halo is replaced by the engine Halo used at the same call sites.
+actors\blobs\CurseWeb.java|Restored as a real save/runtime type with source decay, strongest-seed retention, web particles, ShadowCurse application, localized description, and headless coverage.
+actors\blobs\damageblobs\DarkEffectDamage.java|Restored as a real runtime type with source percentage damage, dark heap interaction, particle effect, old seeding semantics, and live mob integration.
+actors\blobs\damageblobs\EarthEffectDamage.java|Restored as a real runtime type with source percentage damage, earth heap interaction, particle effect, old seeding semantics, and live mob/fruit/trap integration.
+actors\blobs\damageblobs\EnergyEffectDamage.java|Restored as a real runtime type with source percentage energy damage, confusion particles, old seeding semantics, and compatibility coverage.
+actors\blobs\damageblobs\FireEffectDamage.java|Restored as a real runtime type with source percentage damage, fire heap interaction, particles, old seeding semantics, and live mob/fruit/trap integration.
+actors\blobs\damageblobs\IceEffectDamage.java|Restored as a real runtime type with source percentage damage, ice heap interaction, particles, old seeding semantics, and live mob/fruit/trap integration.
+actors\blobs\damageblobs\LightEffectDamage.java|Restored as a real runtime type with source percentage damage, light heap interaction, particles, old seeding semantics, and live fruit/trap integration.
+actors\blobs\damageblobs\ShockEffectDamage.java|Restored as a real runtime type with source percentage damage, shock heap interaction, particles, old seeding semantics, and live fruit/trap integration.
+actors\blobs\NmGas.java|Restored with source diffusion, hero-SPP damage, host immunity, particles, death attribution, and the soldier skin-four producer.
+actors\blobs\Portal.java|Restored as the source single-cell persistent portal visual and save type; reachable fixed-level teleport state and movement remain integrated directly into the Sokoban levels.
+actors\blobs\TorchLight.java|Restored as a permanent ground-light blob and reconnected to the source torch SET action with localized text.
+actors\blobs\Water.java|Restored as the live dew-water type with source diffusion and grass conversion; Waterskin and ScrollOfRegrowth now produce the exact legacy class.
+actors\buffs\actbuff\NmImbue.java|Restored on soldier skin four with source nano-cloud generation, item assimilation, SPP thresholds, fuse state, immunity, persistence, and death attribution.
+actors\buffs\actbuff\Nmstop.java|Restored as the timed neutral fuse state used by NmImbue to drain excessive SPP.
+actors\animate\AppearAction.java|Its only 0.9.8 call block is entirely commented out, so none of the five presentation-only entrance animations is reachable.
+actors\animate\WeaponAnimate.java|Empty actor prototype with no construction or call site in 0.9.8.
+actors\buffs\ExitFind.java|Orphan one-turn visibility refresh buff with no 0.9.8 producer or consumer.
+actors\buffs\Shield.java|Orphan hit-count shell with no 0.9.8 producer or consumer; reachable protection uses GlassShield and ShieldArmor.
+actors\buffs\SkillUse.java|Every attempted wand application is commented out in 0.9.8, leaving no reachable producer.
+actors\buffs\SkillUse2.java|Orphan duplicate marker with no 0.9.8 producer or consumer.
+actors\buffs\SoulBless.java|Unused prototype; the Dried Rose SOULBLESS action directly levels the pet and never applies this buff.
+infos\NewDocument.java|The reachable 13-page SPS mainland guide is integrated into current Document and the journal guide tab with all original translations.
+infos\NewCatalog.java|The seven always-visible legacy groups and all 371 ordered item entries are integrated into SpsCatalog and the current journal catalog tabs with original multilingual titles.
+infos\NewJournal.java|Empty legacy shell with no fields, methods, or call sites; current Journal owns persistence and discovery state.
+infos\NewMobCatalog.java|All seven always-visible legacy groups and 113 de-duplicated ordered creature entries are integrated into SpsMobCatalog and the current journal, including the restored ExBambooMob, Shielded, and FireSuccubus runtime types.
+items\KindOfArmor.java|Behavior is integrated into the current Armor and secondArmor implementation.
+items\misc\Jumpshoes.java|Unreachable prototype; no legacy constructor, drop, shop, quest, recipe, or starting source.
+items\scrolls\ScrollOfMultiUpgrade.java|Unreachable prototype; no legacy acquisition source.
+items\TownReturnBeacon.java|Unreachable prototype; no legacy acquisition source.
+items\weapon\melee\zero\Bamboo.java|Unreachable prototype; absent from every legacy weapon and reward pool.
+items\weapon\melee\zero\EmptyPotion.java|Unreachable prototype; absent from every legacy weapon and reward pool.
+items\weapon\melee\zero\GlassBlade.java|Unreachable prototype; absent from every legacy weapon and reward pool.
+items\weapon\melee\zero\Punch.java|Unreachable prototype; absent from every legacy weapon and reward pool.
+items\weapon\melee\zero\WoodenHammer.java|Unreachable prototype; only a commented catalog reference exists.
+items\weapon\missiles\MiniGun.java|Unreachable prototype; no legacy acquisition source.
+levels\traps\ActivatePortalTrap.java|Behavior is integrated into SPS Sokoban portal-switch handling.
+levels\traps\ChangeSheepTrap.java|Behavior is integrated into SPS Sokoban sheep transformation.
+levels\traps\HeapGenTrap.java|Behavior is integrated into SPS Sokoban prize-switch handling.
+levels\traps\SokobanPortalTrap.java|Behavior is integrated into SPS Sokoban portal handling.
+levels\features\AlchemyPot.java|Terrain interaction is integrated into Hero and the current AlchemyScene.
+levels\features\IronMaker.java|Terrain interaction is integrated into Hero and the restored WndIronMaker.
+levels\features\TentPlace.java|Terrain interaction is integrated into Hero and the restored WndTent.
+levels\Floor.java|The legacy level base contract is provided by current Level, with SPS terrain and route behavior integrated there.
+levels\MazeLayout.java|Unreachable abandoned prototype; the entire implementation and only layout array are commented out in 0.9.8.
+levels\painters\BlacksmithPainter.java|Layout and quest behavior are integrated into CavesLevel and SpsRegularLevel.
+levels\painters\BossExitPainter.java|Unreachable painter; BOSS_EXIT is declared in the legacy room enum but never assigned by any 0.9.8 generator.
+levels\painters\challengeroom\CourageRoomPainter.java|Unreachable painter; it is not registered in the legacy room enum and has no call site.
+levels\painters\challengeroom\PowerRoomPainter.java|Layout and rewards are integrated into TrianglePLevel through SpsTriangleLevel.
+levels\painters\challengeroom\WisdomRoomPainter.java|Layout and rewards are integrated into TriangleWLevel through SpsTriangleLevel.
+levels\painters\CookingPainter.java|Layout and rewards are integrated into SpsCookingRoom.
+levels\painters\CryptPainter.java|Legacy layout and rewards are integrated into the current CryptRoom.
+levels\painters\EntrancePainter.java|Legacy entrance painting and generation are integrated into SpsRegularLevel.
+levels\painters\ExitPainter.java|Legacy exit painting and guards are integrated into SpsRegularLevel.
+levels\painters\GardenPainter.java|Legacy layout and rewards are integrated into the current GardenRoom.
+levels\painters\hidenroom\BarricadedPainter.java|Layout and rewards are integrated into SpsBarricadedRoom.
+levels\painters\hidenroom\GlassRoomPainter.java|Layout and rewards are integrated into SpsGlassRoom.
+levels\painters\hidenroom\HidenShopPainter.java|Layout, inventory, payment, and persistence are integrated into SpsHiddenShopRoom.
+levels\painters\hidenroom\MagicWellPainter.java|Layout, plants, and well selection are integrated into SpsMagicWellRoom.
+levels\painters\hidenroom\MemoryPainter.java|Layout and memory-fire behavior are integrated into SpsMemoryRoom.
+levels\painters\hidenroom\PitPainter.java|Layout and rewards are integrated into SpsPitRoom.
+levels\painters\hidenroom\WishPoolPainter.java|Layout and wish-pool behavior are integrated into SpsWishPoolRoom.
+levels\painters\JunglePainter.java|Layout, plants, and rewards are integrated into SpsJungleRoom.
+levels\painters\LibraryPainter.java|Legacy layout and rewards are integrated into the current LibraryRoom.
+levels\painters\MaterialPainter.java|Layout, iron maker, and rewards are integrated into SpsMaterialRoom.
+levels\painters\PassagePainter.java|Legacy perimeter passage painting is integrated into SpsRegularLevel.
+levels\painters\PoolPainter.java|Legacy water layout, piranhas, and rewards are integrated into the current PoolRoom.
+levels\painters\RatKingPainter.java|Unreachable painter; RAT_KING is declared in the legacy room enum but never assigned by any 0.9.8 generator.
+levels\painters\RuinRoomPainter.java|Layout variants, iron maker, and rewards are integrated into SpsRuinRoom.
+levels\painters\ShopPainter.java|Legacy chapter shop layout and inventory are integrated into SpsBetweenLevel and SpsShopRoom.
+levels\painters\StandardPainter.java|All legacy standard-room variants are integrated into SpsRegularLevel.
+levels\painters\StatuePainter.java|Legacy dual-statue layout and rewards are integrated into the current StatueRoom.
+levels\painters\StoragePainter.java|Legacy layout and rewards are integrated into the current StorageRoom.
+levels\painters\TenguBoxPainter.java|Layout and rewards are integrated into TenguDenLevel.
+levels\painters\TentRoomPainter.java|Layout, residents, and features are integrated into SpsTentRoom.
+levels\painters\TrapsPainter.java|Legacy trap-room layout, trap pool, and rewards are integrated into SpsRegularLevel.
+levels\painters\TunnelPainter.java|Legacy tunnel painting is integrated into SpsRegularLevel.
+levels\painters\VaultPainter.java|Legacy three-chest layout, keys, and rewards are integrated into TreasuryRoom.
+levels\SokobanLayouts2.java|The active spring-festival and dragon-cave arrays are preserved in SpringFestivalLayouts.
+scenes\BadgesScene.java|The legacy badges entry and display are integrated into the badges tab of the current JournalScene.
+scenes\CrashReportScene.java|Legacy Android-only diagnostic UI is superseded by current platform crash reporting and is not dungeon content.
+scenes\GiftshopScene.java|Unreachable unfinished prototype; its title button, unlock consumers, and currency deduction were disabled in 0.9.8.
+scenes\Pudding_CupScene.java|Behavior and item entry are preserved by the current PuddingCupScene implementation.
+scenes\SaveScene.java|Behavior and all reachable item/blob entries are preserved by the safer current MemorySaveScene implementation.
+ui\ChangesButton.java|The title-screen changes entry and update state are integrated into TitleScene.ChangesButton.
+ui\CrashReportButton.java|Legacy Android diagnostic entry is superseded by current platform crash handling.
+ui\CustomTileVisual.java|The serialized visual contract is superseded by CustomTilemap, SpsLegacyLevelVisual, and SpsFeatureVisual.
+ui\GiftButton.java|Unreachable unfinished prototype; its only title-screen construction is commented out.
+ui\GoldIndicator.java|In-run currency display is provided by the current CurrencyIndicator and toolbar.
+ui\HealthIndicator.java|Target health selection and display are provided by TargetHealthIndicator and current attack controls.
+ui\LanguageButton.java|Language selection is integrated into the current title settings window.
+ui\LearnButton.java|Tutorial entry is integrated into the current TitleScene learn button.
+ui\MemoryButton.java|Unreachable prototype; its only construction in WndHero is inside a block comment.
+ui\PrefsButton.java|Preferences entry is integrated into the current TitleScene settings button and WndSettings.
+ui\RenderedTextMultiline.java|Multiline layout and wrapping are provided by the current RenderedTextBlock used at the same UI sites.
+ui\ResumeButton.java|Unreachable orphan with no 0.9.8 construction site; current ResumeIndicator handles queued-action resume.
+ui\SimpleButton.java|Image-only button behavior is provided by the current IconButton.
+ui\SpellButton.java|Unreachable orphan with no 0.9.8 construction site.
+ui\ToolbarOld.java|Unreachable obsolete toolbar; 0.9.8 GameScene constructs Toolbar instead.
+ui\WindowDown.java|Window behavior is provided by the current Window base; the sole legacy subclass is absorbed by current message windows.
+sprites\ButterCat2Sprite.java|Unreachable orphan sprite with no 0.9.8 constructor or call site.
+sprites\ButterCatSprite.java|Unreachable sprite; its only RustybladeCat assignment is commented out and the reachable cat forms use ErrorSprite.
+sprites\ConsideredHamsterSprite.java|Unreachable orphan sprite with no 0.9.8 constructor or call site.
+sprites\DewProtectorSprite.java|Unreachable orphan sprite with no 0.9.8 constructor or call site.
+sprites\DragonkingSprite.java|Unreachable obsolete sprite; Dragonking uses NewDragon02Sprite in 0.9.8.
+sprites\EnemyheadSprite.java|Unreachable standalone preview prototype with no 0.9.8 constructor or call site.
+sprites\EnemyheadSpriteSheet.java|Only supplies constants to the unreachable EnemyheadSprite prototype and has no gameplay consumer.
+sprites\HeroSkinSprite.java|The eight-class skin preview is integrated into HeroSprite.skinPreview and the current hero selection window.
+sprites\HeroSkinSpriteSheet.java|Its eight row constants are integrated into HeroClass skin support and HeroSprite's visual-row mapping.
+sprites\NewImpSprite.java|Unreachable orphan sprite with no 0.9.8 constructor or call site.
+sprites\PlantSprite.java|Plant rendering, SPS image offset, growth animation, visibility, and info-window images are integrated into TerrainFeaturesTilemap.
+sprites\SeekingClusterBombSprite.java|Unreachable orphan sprite with no 0.9.8 constructor or call site.
+sprites\SpiderSprite.java|Unreachable orphan duplicate; the SPS pet uses NewSpinnerSprite and regular spiders use their active engine sprites.
+sprites\TrapSprite.java|Trap colors, shapes, active state, map rendering, and info-window images are integrated into Trap and TerrainFeaturesTilemap.
+sprites\VillagerSprite.java|Unreachable orphan sprite with no 0.9.8 constructor or call site.
+utils\BArray.java|Every legacy boolean-array operation is provided by com.watabou.utils.BArray at the corresponding current call sites.
+utils\Utils.java|Unreachable helper with no 0.9.8 import, construction, or method call outside its own declaration.
+windows\WndAlchemy.java|Its reachable input, recipe, output, and toolkit flow is integrated into AlchemyScene, Recipe, and SpsAlchemyRecipes.
+windows\WndCatalogus.java|Known and unknown consumable catalog behavior is integrated into the current journal catalog and SpsCatalog.
+windows\WndChallengeBook.java|Challenge selection, teleport, return position, unlocks, and rewards are integrated into ChallengeBook and ChallengeJournal.
+windows\WndChooseWay.java|The two-subclass TomeOfMastery choice is provided by TengusMask and WndChooseSubclass, with the SPS reading-time behavior retained by TomeOfMastery.
+windows\WndClass.java|Class description, perks, subclasses, and eight SPS skin previews are integrated into HeroSelectScene, WndHeroInfo, and HeroSprite.skinPreview.
+windows\WndDewDrawInfo.java|All four legacy dew-mode explanations are consolidated in WndTinkerer.details and remain reachable through its information option.
+windows\WndGameInProgress2.java|The in-run save-copy selection is provided by MemorySaveScene, while inspection, continuation, challenge display, and deletion use WndGameInProgress.
+windows\WndGameInProgress3.java|The legacy slot-zero recovery copy is superseded by MemorySaveScene's explicit safe slot copies and the current WndGameInProgress continuation flow.
+windows\WndImageOptions.java|Unreachable generic image-option prototype with no 0.9.8 construction site.
+windows\WndImp.java|The legacy token hand-in, identified reward, NPC departure, and quest completion are preserved by WndImpOld.
+windows\WndItem.java|Item information and reachable actions are provided by WndInfoItem, WndUseItem, and the current bag and rankings item windows.
+windows\WndLangs.java|Language selection, translation credits, persistence, and scene refresh are integrated into WndSettings and the current language window.
+windows\WndNewNpcMessage.java|NPC portrait and titled dialog behavior is provided by WndQuest; all gift residents and Leadercn use it at the corresponding interactions.
+windows\WndOtiluke.java|Journal destination selection, unlocks, teleport, return position, and rewards are integrated into DolyaSlate and AdventureJournal.
+windows\WndOtilukeMessage.java|The reachable Palantir introduction is preserved by MinesBossLevel's translated intro WndMessage.
+windows\WndOverload.java|Unreachable 3,000-gold SpKnuckles sale; its only 0.9.8 construction is commented out after auto-slot restoration.
+windows\WndSkinImageOptions.java|Unreachable standalone prototype; eight SPS image choices are integrated into HeroSelectScene's icon options and HeroSprite.skinPreview.
+windows\WndUnderTitledMessage.java|Its titled multiline layout is provided by WndTitledMessage and the NPC-specific WndQuest wrapper.
