@@ -37,8 +37,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\atlas-tool.ps1 pack -C
 # 3.（可选）只比对不写：把 pack 换成 check
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\atlas-tool.ps1 check -Config assets-src\items\_atlas.json
 
-# 4. 像素门禁 + 构建验证
-.\gradlew.bat verifySpsRelease
+# 4. 构建验证 + 游戏内目验（门禁可选：需要抽查时再手动跑 verifySpsRelease）
 .\gradlew.bat desktop:debug
 ```
 
@@ -53,7 +52,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\atlas-tool.ps1 check -
    ```
 2. `unpack` 生成小图 → 画图 → `pack` 回写。
 3. 代码侧：`ItemSpriteSheet` 增加常量 + `assignItemRect(常量, w, h)`（w/h=图形实际尺寸，左上对齐）。
-4. `verifySpsRelease` 门禁 + 游戏内目验。
+4. 游戏内目验（门禁可选：`verifySpsRelease` 已退出必跑流程，需要抽查时手动跑）。
 
 **新变体族**：同一 `file` 的 `frames` 列多个矩形（横向排列）；**同族各帧尺寸必须一致**（工具会校验拒绝）。
 

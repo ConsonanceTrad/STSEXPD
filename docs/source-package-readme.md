@@ -48,16 +48,20 @@ SPS-SPD 以破碎像素地牢 4.0.0 为引擎基础，实现特别惊喜像素�
 在源码根目录打开 PowerShell：
 
 ```powershell
-.\gradlew.bat verifySpsRelease
 .\gradlew.bat desktop:distZip
 .\gradlew.bat android:assembleDebug
 ```
 
-也可以一次执行完整验证和两个发行构建：
+也可以一次执行两个发行构建：
 
 ```powershell
-.\gradlew.bat verifySpsRelease desktop:distZip android:assembleDebug
+.\gradlew.bat desktop:distZip android:assembleDebug
 ```
+
+> **门禁说明（2026-09-30 起）**：`verifySpsRelease` 门禁已退出必跑流程（影响演进
+> 效率），回归保护改由开发流程中的规划、复检与 commit 存档承担。140 项检查代码
+> 与 Gradle 任务全部保留，需要抽查时手动执行，例如：
+> `.\gradlew.bat verifySpsRelease`（全量）或 `.\gradlew.bat :core:verifySpsAlchemy`（单项）。
 
 构建完成后，主要产物位于：
 

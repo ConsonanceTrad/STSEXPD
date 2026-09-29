@@ -6,7 +6,7 @@
     二期美术工作流工具（配套 docs/art-workflow.md）：
       1. 在 assets-src/items/<类别>/ 下用外部软件编辑 16x16 小图（重绘/替换）。
       2. 运行本脚本，小图逐像素回写到 core/src/main/assets/sprites/items/items.png。
-      3. 运行 gradlew verifySpsRelease 做像素门禁验证。
+      3. 游戏内目验（verifySpsRelease 门禁已退出必跑流程，需要抽查时手动跑）。
 
     映射来源：assets-src/items/_index.csv（由 art-index/导出工具生成：
     常量名, 类别, 文件, col, row, sliceW, sliceH）。
