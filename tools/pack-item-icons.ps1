@@ -1,14 +1,14 @@
-﻿<#
+<#
 .SYNOPSIS
-    把 assets-src/items 下的单格小图回写到游戏物品图集 items.png。
+    把工作目录（tools/atlas-meta/items/work）下的单格小图回写到游戏物品图集 items.png（真相源）。
 
 .DESCRIPTION
     二期美术工作流工具（配套 docs/art-workflow.md）：
-      1. 在 assets-src/items/<类别>/ 下用外部软件编辑 16x16 小图（重绘/替换）。
+      1. 先用 atlas-tool unpack 从 items.png 切出单格到 tools/atlas-meta/items/work，再用外部软件编辑 16x16 小图（重绘/替换）。
       2. 运行本脚本，小图逐像素回写到 core/src/main/assets/sprites/items/items.png。
       3. 游戏内目验（verifySpsRelease 门禁已退出必跑流程，需要抽查时手动跑）。
 
-    映射来源：assets-src/items/_index.csv（由 art-index/导出工具生成：
+    映射来源：tools/atlas-meta/items/_index.csv（由 art-index/导出工具生成：
     常量名, 类别, 文件, col, row, sliceW, sliceH）。
 
     安全特性：写前自动备份图集（items.png.pack-backup）；逐像素无重采样；
@@ -20,7 +20,7 @@
     .\tools\pack-item-icons.ps1 -Only BLACKBERRY,MOONBERRY  # 只回写指定图标
 #>
 param(
-    [string]   $SourceDir  = (Join-Path $PSScriptRoot '..\assets-src\items'),
+    [string]   $SourceDir  = (Join-Path $PSScriptRoot '..\tools\atlas-meta\items\work'),
     [string]   $TargetAtlas = (Join-Path $PSScriptRoot '..\core\src\main\assets\sprites\items\items.png'),
     [string[]] $Only = @(),
     [switch]   $CheckOnly

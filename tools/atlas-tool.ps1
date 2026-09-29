@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     通用图集拆装工具：把静态图集拆散为单格/变体多帧小图（unpack），或把小图回写图集（pack/check）。
 
@@ -8,7 +8,7 @@
     以每张图集旁的 `_atlas.json` 为唯一真相：
       {
         "atlas": "core/src/main/assets/sprites/items/items.png",
-        "outDir": "assets-src/items",
+        "outDir": "tools/atlas-meta/items/work",
         "entries": [
           { "file": "artifacts/chalice", "frames": [ {"x":208,"y":240,"w":12,"h":15}, ... ] },
           { "file": "weapons/sword",     "frames": [ {"x":0,"y":112,"w":14,"h":14} ] }
@@ -26,9 +26,9 @@
     check  = 只比对报告（不写）
 
 .EXAMPLE
-    .\tools\atlas-tool.ps1 unpack -Config assets-src\items\_atlas.json
-    .\tools\atlas-tool.ps1 pack   -Config assets-src\items\_atlas.json
-    .\tools\atlas-tool.ps1 check  -Config assets-src\items\_atlas.json
+    .\tools\atlas-tool.ps1 unpack -Config tools\atlas-meta\items\_atlas.json
+    .\tools\atlas-tool.ps1 pack   -Config tools\atlas-meta\items\_atlas.json
+    .\tools\atlas-tool.ps1 check  -Config tools\atlas-meta\items\_atlas.json
 #>
 param(
     [Parameter(Mandatory)][ValidateSet('unpack','pack','check')][string]$Action,
