@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/features/terrain_features.png",
+    "atlas":  "core/src/assets/environment/features/terrain_features.png",
     "outDir":  "tools/atlas-meta/environment/terrain_features/work",
     "entries":  [
                     {

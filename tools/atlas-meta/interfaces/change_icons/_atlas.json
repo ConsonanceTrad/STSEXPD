@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/interfaces/change_icons.png",
+    "atlas":  "core/src/assets/interfaces/change_icons.png",
     "outDir":  "tools/atlas-meta/interfaces/change_icons/work",
     "entries":  [
                     {

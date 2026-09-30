@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/tiles/sps_tiles_halls_legacy.png",
+    "atlas":  "core/src/assets/environment/tiles/sps_tiles_halls_legacy.png",
     "outDir":  "tools/atlas-meta/environment/sps_tiles_halls_legacy/work",
     "entries":  [
                     {

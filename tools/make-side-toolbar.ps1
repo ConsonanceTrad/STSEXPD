@@ -9,8 +9,8 @@
 # 布局语义：格子描边与外框隔断/格间隔线重叠共享（1px 描黑）；格竖向步进 21（22-1 重叠）。
 # 用法：powershell -ExecutionPolicy Bypass -File tools/make-side-toolbar.ps1
 param(
-	[string]$Source = (Join-Path $PSScriptRoot '..\core\src\main\assets\interfaces\toolbar.png'),
-	[string]$Target = (Join-Path $PSScriptRoot '..\core\src\main\assets\interfaces\side_toolbar.png')
+	[string]$Source = (Join-Path $PSScriptRoot '..\core\src\assets\interfaces\toolbar.png'),
+	[string]$Target = (Join-Path $PSScriptRoot '..\core\src\assets\interfaces\side_toolbar.png')
 )
 
 Add-Type -AssemblyName System.Drawing

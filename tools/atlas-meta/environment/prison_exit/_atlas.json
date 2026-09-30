@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/custom_tiles/prison_exit.png",
+    "atlas":  "core/src/assets/environment/custom_tiles/prison_exit.png",
     "outDir":  "tools/atlas-meta/environment/prison_exit/work",
     "entries":  [
                     {

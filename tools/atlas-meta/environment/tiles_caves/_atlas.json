@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/tiles/tiles_caves.png",
+    "atlas":  "core/src/assets/environment/tiles/tiles_caves.png",
     "outDir":  "tools/atlas-meta/environment/tiles_caves/work",
     "entries":  [
                     {

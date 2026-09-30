@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/features/sps_features.png",
+    "atlas":  "core/src/assets/environment/features/sps_features.png",
     "outDir":  "tools/atlas-meta/environment/sps_features/work",
     "entries":  [
                     {

@@ -5,7 +5,7 @@
 .DESCRIPTION
     二期美术工作流工具（配套 docs/art-workflow.md）：
       1. 先用 atlas-tool unpack 从 items.png 切出单格到 tools/atlas-meta/items/work，再用外部软件编辑 16x16 小图（重绘/替换）。
-      2. 运行本脚本，小图逐像素回写到 core/src/main/assets/sprites/items/items.png。
+      2. 运行本脚本，小图逐像素回写到 core/src/assets/sprites/items/items.png。
       3. 游戏内目验（verifySpsRelease 门禁已退出必跑流程，需要抽查时手动跑）。
 
     映射来源：tools/atlas-meta/items/_index.csv（由 art-index/导出工具生成：
@@ -21,7 +21,7 @@
 #>
 param(
     [string]   $SourceDir  = (Join-Path $PSScriptRoot '..\tools\atlas-meta\items\work'),
-    [string]   $TargetAtlas = (Join-Path $PSScriptRoot '..\core\src\main\assets\sprites\items\items.png'),
+    [string]   $TargetAtlas = (Join-Path $PSScriptRoot '..\core\src\assets\sprites\items\items.png'),
     [string[]] $Only = @(),
     [switch]   $CheckOnly
 )

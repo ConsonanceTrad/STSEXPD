@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/custom_tiles/caves_quest.png",
+    "atlas":  "core/src/assets/environment/custom_tiles/caves_quest.png",
     "outDir":  "tools/atlas-meta/environment/caves_quest/work",
     "entries":  [
                     {

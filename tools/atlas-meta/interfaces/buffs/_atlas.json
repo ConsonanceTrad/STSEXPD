@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/interfaces/buffs.png",
+    "atlas":  "core/src/assets/interfaces/buffs.png",
     "outDir":  "tools/atlas-meta/interfaces/buffs/work",
     "entries":  [
                     {

@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/sprites/heroes/avatars.png",
+    "atlas":  "core/src/assets/sprites/heroes/avatars.png",
     "outDir":  "tools/atlas-meta/avatars/work",
     "entries":  [
                     {

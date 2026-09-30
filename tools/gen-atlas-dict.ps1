@@ -3,7 +3,7 @@
 #   One dictionary class per atlas metadata file; the atlas metadata stays the single source of truth.
 #
 # Usage:
-#   .\tools\gen-atlas-dict.ps1                 # write dictionaries into core/src/main/java/pd/atlas
+#   .\tools\gen-atlas-dict.ps1                 # write dictionaries into core/src/java/pd/atlas
 #   .\tools\gen-atlas-dict.ps1 -Check          # regenerate into a temp dir and diff against the committed ones
 #
 # Notes:
@@ -15,8 +15,8 @@
 
 param(
 	[string]$MetaRoot     = 'tools/atlas-meta',
-	[string]$OutRoot      = 'core/src/main/java/pd/atlas',
-	[string]$AssetsPrefix = 'core/src/main/assets/',
+	[string]$OutRoot      = 'core/src/java/pd/atlas',
+	[string]$AssetsPrefix = 'core/src/assets/',
 	[switch]$Check
 )
 

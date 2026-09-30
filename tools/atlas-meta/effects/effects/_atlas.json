@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/effects/effects.png",
+    "atlas":  "core/src/assets/effects/effects.png",
     "outDir":  "tools/atlas-meta/effects/effects/work",
     "entries":  [
                     {

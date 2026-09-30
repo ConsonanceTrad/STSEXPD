@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/legacy-2.5d/visual_grid.png",
+    "atlas":  "core/src/assets/environment/legacy-2.5d/visual_grid.png",
     "outDir":  "tools/atlas-meta/environment/visual_grid/work",
     "entries":  [
                     {

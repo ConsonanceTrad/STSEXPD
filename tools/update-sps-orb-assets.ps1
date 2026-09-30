@@ -1,6 +1,6 @@
 param(
 	[string]$LegacySprite = (Join-Path $PSScriptRoot '..\..\SPS-PD-0.9.8\SPS-PD-0.9.8\assets\orbofzot.png'),
-	[string]$TargetSprite = (Join-Path $PSScriptRoot '..\core\src\main\assets\sprites\sps_orbofzot.png')
+	[string]$TargetSprite = (Join-Path $PSScriptRoot '..\core\src\assets\sprites\sps_orbofzot.png')
 )
 
 $ErrorActionPreference = 'Stop'

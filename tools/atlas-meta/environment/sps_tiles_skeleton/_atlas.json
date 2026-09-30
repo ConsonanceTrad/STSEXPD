@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/tiles/sps_tiles_skeleton.png",
+    "atlas":  "core/src/assets/environment/tiles/sps_tiles_skeleton.png",
     "outDir":  "tools/atlas-meta/environment/sps_tiles_skeleton/work",
     "entries":  [
                     {

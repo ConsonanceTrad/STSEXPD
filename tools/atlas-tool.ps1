@@ -7,7 +7,7 @@
 
     以每张图集旁的 `_atlas.json` 为唯一真相：
       {
-        "atlas": "core/src/main/assets/sprites/items/items.png",
+        "atlas": "core/src/assets/sprites/items/items.png",
         "outDir": "tools/atlas-meta/items/work",
         "entries": [
           { "file": "artifacts/chalice", "frames": [ {"x":208,"y":240,"w":12,"h":15}, ... ] },

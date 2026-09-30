@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/interfaces/talent_icons.png",
+    "atlas":  "core/src/assets/interfaces/talent_icons.png",
     "outDir":  "tools/atlas-meta/interfaces/talent_icons/work",
     "entries":  [
                     {

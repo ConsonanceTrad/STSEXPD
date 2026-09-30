@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/legacy-2.5d/wall_blocking.png",
+    "atlas":  "core/src/assets/environment/legacy-2.5d/wall_blocking.png",
     "outDir":  "tools/atlas-meta/environment/wall_blocking/work",
     "entries":  [
                     {

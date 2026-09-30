@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/legacy-2.5d/raised_terrain.png",
+    "atlas":  "core/src/assets/environment/legacy-2.5d/raised_terrain.png",
     "outDir":  "tools/atlas-meta/environment/raised_terrain/work",
     "entries":  [
                     {

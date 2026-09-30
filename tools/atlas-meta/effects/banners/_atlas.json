@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/effects/banners.png",
+    "atlas":  "core/src/assets/effects/banners.png",
     "outDir":  "tools/atlas-meta/effects/banners/work",
     "entries":  [
 

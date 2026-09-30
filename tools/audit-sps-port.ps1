@@ -7,7 +7,7 @@ param(
 $ErrorActionPreference = 'Stop'
 
 $legacySource = Join-Path $LegacyRoot 'java\com\hmdzl\spspd'
-$portSource = Join-Path $PSScriptRoot '..\core\src\main\java\com\shatteredpixel\shatteredpixeldungeon'
+$portSource = Join-Path $PSScriptRoot '..\core\src\java\com\shatteredpixel\shatteredpixeldungeon'
 
 if (-not (Test-Path -LiteralPath $legacySource -PathType Container)) {
     throw "Legacy SPS source was not found at $legacySource"

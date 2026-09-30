@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/tiles/sps_tiles_spring.png",
+    "atlas":  "core/src/assets/environment/tiles/sps_tiles_spring.png",
     "outDir":  "tools/atlas-meta/environment/sps_tiles_spring/work",
     "entries":  [
                     {

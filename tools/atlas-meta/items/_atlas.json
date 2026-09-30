@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/sprites/items/items.png",
+    "atlas":  "core/src/assets/sprites/items/items.png",
     "outDir":  "tools/atlas-meta/items/work",
     "entries":  [
                     {

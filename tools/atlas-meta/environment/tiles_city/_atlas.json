@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/tiles/tiles_city.png",
+    "atlas":  "core/src/assets/environment/tiles/tiles_city.png",
     "outDir":  "tools/atlas-meta/environment/tiles_city/work",
     "entries":  [
                     {

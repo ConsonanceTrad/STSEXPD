@@ -1,6 +1,6 @@
 param(
 	[string]$LegacyPlants = (Join-Path $PSScriptRoot '..\..\SPS-PD-0.9.8\SPS-PD-0.9.8\assets\plants.png'),
-	[string]$TargetAtlas = (Join-Path $PSScriptRoot '..\core\src\main\assets\environment\terrain_features.png')
+	[string]$TargetAtlas = (Join-Path $PSScriptRoot '..\core\src\assets\environment\terrain_features.png')
 )
 
 $ErrorActionPreference = 'Stop'

@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/tiles/tiles_sewers.png",
+    "atlas":  "core/src/assets/environment/tiles/tiles_sewers.png",
     "outDir":  "tools/atlas-meta/environment/tiles_sewers/work",
     "entries":  [
                     {

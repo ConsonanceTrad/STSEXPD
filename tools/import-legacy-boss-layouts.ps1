@@ -1,6 +1,6 @@
 param(
     [string]$LegacyRoot = (Join-Path $PSScriptRoot '..\..\SPS-PD-0.9.8\SPS-PD-0.9.8'),
-    [string]$Target = (Join-Path $PSScriptRoot '..\core\src\main\java\com\shatteredpixel\shatteredpixeldungeon\levels\SpsBossLayouts.java')
+    [string]$Target = (Join-Path $PSScriptRoot '..\core\src\java\com\shatteredpixel\shatteredpixeldungeon\levels\SpsBossLayouts.java')
 )
 
 $ErrorActionPreference = 'Stop'

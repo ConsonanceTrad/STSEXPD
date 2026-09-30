@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/interfaces/badges.png",
+    "atlas":  "core/src/assets/interfaces/badges.png",
     "outDir":  "tools/atlas-meta/interfaces/badges/work",
     "entries":  [
                     {

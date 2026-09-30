@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/effects/spell_icons.png",
+    "atlas":  "core/src/assets/effects/spell_icons.png",
     "outDir":  "tools/atlas-meta/effects/spell_icons/work",
     "entries":  [
                     {

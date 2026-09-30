@@ -1,5 +1,5 @@
 {
-    "atlas":  "core/src/main/assets/environment/custom_tiles/carpet.png",
+    "atlas":  "core/src/assets/environment/custom_tiles/carpet.png",
     "outDir":  "tools/atlas-meta/environment/carpet/work",
     "entries":  [
                     {

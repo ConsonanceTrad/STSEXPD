@@ -1,7 +1,7 @@
 param(
     [string]$LegacyAtlas = (Join-Path $PSScriptRoot '..\..\SPS-PD-0.9.8\SPS-PD-0.9.8\assets\items.png'),
 	[string]$ShatteredAtlas = (Join-Path $PSScriptRoot '..\..\shattered-pixel-dungeon-4.0.0\core\src\main\assets\sprites\items.png'),
-    [string]$TargetAtlas = (Join-Path $PSScriptRoot '..\core\src\main\assets\sprites\items.png')
+    [string]$TargetAtlas = (Join-Path $PSScriptRoot '..\core\src\assets\sprites\items.png')
 )
 
 $ErrorActionPreference = 'Stop'
