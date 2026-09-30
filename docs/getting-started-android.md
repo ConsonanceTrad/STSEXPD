@@ -43,7 +43,7 @@ This guide includes a [section on physical android devices...](https://developer
 
 ... and [a section on emulated android devices.](https://developer.android.com/studio/run/emulator)
 
-If you frequently wish to run your code for debugging purposes, and the changes you make are to platform-independent modules (core and SPD-classes, which is most of the code), you may find that running the [desktop build](getting-started-desktop.md) is more convenient.
+If you frequently wish to run your code for debugging purposes, and the changes you make are to platform-independent modules (core, which now holds the game code, the render layer, and every platform's sources), you may find that running the [desktop build](getting-started-desktop.md) is more convenient.
 
 ## Generating an installable APK or AAB
 

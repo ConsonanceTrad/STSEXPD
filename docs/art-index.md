@@ -1,6 +1,6 @@
 # 物品图标索引（art-index）
 
-> 供美术重绘/替换定位用。图集：`core/src/main/assets/sprites/items/items.png`（256x992，16 列，格 16x16）。
+> 供美术重绘/替换定位用。图集：`core/src/assets/sprites/items/items.png`（256x992，16 列，格 16x16）。
 > 检索方式：物品中文名/类名 → 格坐标 (col,row) → 像素位置 (x,y)。
 > 新物品：往空格画 16x16 图标 → `ItemSpriteSheet` 加常量 + `assignItemRect`（w,h 为图形实际尺寸，左上对齐）。
 > 颜色数 >20 标 ⚠️（仍发虚、待重绘）；0 = 空白。

@@ -5,7 +5,7 @@
 
 本项目以破碎像素地牢4.0为基底，保留主线26层、装备成长、天赋、炼金、存档和战斗模型；特别惊喜像素地牢的正常可游玩内容则按破碎4.0接口重新实现。两套旧引擎不能直接混装，因此本版保留原内容的用途、路线和主题，不照搬会破坏存档或平衡的旧全局代码。
 
-桌面版使用独立的“融合像素地牢”存档目录；安卓版包名为 `com.shatteredpixel.fusionpixeldungeon`，可以与官方破碎像素地牢并存。官方更新与新闻入口不参与融合版运行。
+桌面版使用独立的“融合像素地牢”存档目录；安卓版 application id 为 `com.hmdzl.spsexpd`，可以与官方破碎像素地牢并存。官方更新与新闻入口不参与本版运行：上游的 `githubUpdates` / `shatteredNews` 联网实现已归档到 `_ref/archive/upstream-network-services/`，仓库内只保留 `pd/services/{news,updates}` 的调试实现。
 
 ## 本版内容总览
 

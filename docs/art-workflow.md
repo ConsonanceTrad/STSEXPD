@@ -1,11 +1,11 @@
 # 美术工作流（art-workflow）
 
 > SPSEXPD 图集工具链与工作约定。工具：`tools/atlas-tool.ps1`（配置驱动，unpack / pack / check）。
-> 更新：2026-09-30（单一真相源改造 + 图集抽取/新建优先原则）。
+> 更新：2026-09-30（源码目录上提为 core/src/assets；门禁入口 verifySpsRelease）。
 
 ## 零、两条核心原则
 
-1. **单一真相源 = `core/src/main/assets` 的图集**。
+1. **单一真相源 = `core/src/assets` 的图集**。
    不再有常驻的"源小图副本目录"（原 `assets-src/` 已归档至 `_ref/assets-src-archive/`，不再维护、不参与构建）。
    一切素材以 **core 图集为唯一事实**，从根上避免"多重事实 / 编译覆盖"（历史上多次发生：源小图与图集不同步、pack 反向覆盖手绘图、游戏实读构建产物等）。
 2. **图集抽取 / 新建优先**。
@@ -15,7 +15,7 @@
 ## 一、目录结构
 
 ```
-core/src/main/assets/**             ★ 真相源：所有图集（png）
+core/src/assets/**             ★ 真相源：所有图集（png）
 tools/atlas-tool.ps1                拆装工具（unpack / pack / check）
 tools/atlas-meta/<图集名>/
   _atlas.json                       图集元数据：atlas(core 路径) + outDir(work) + entries(帧矩形)
@@ -40,7 +40,7 @@ _ref/assets-src-archive/            已归档的旧源小图目录（只作历�
 # 3.（可选）只比对不写：把 pack 换成 check
 .\tools\atlas-tool.ps1 pack  -Config tools\atlas-meta\items\_atlas.json
 
-# 4. 构建 + 游戏内目验（门禁已退出必跑流程，需要抽查时手动跑 verifySpsRelease）
+# 4. 构建 + 游戏内目验（需要时手动跑 verifySpsRelease）
 .\gradlew.bat desktop:debug
 ```
 
@@ -59,7 +59,7 @@ _ref/assets-src-archive/            已归档的旧源小图目录（只作历�
 3. 代码侧：加常量 + 尺寸登记（`ItemSpriteSheet.assignItemRect` / `Icons.uvRectBySize` 等）。
 
 **B. 新建独立图集（推荐路径）**：
-1. 用脚本从既有 core 图集**逐像素抽取**所需帧 → 直接生成新图集 png（放 `core/src/main/assets/**` 合适目录）；
+1. 用脚本从既有 core 图集**逐像素抽取**所需帧 → 直接生成新图集 png（放 `core/src/assets/**` 合适目录）；
 2. 新建 `tools/atlas-meta/<新图集>/_atlas.json`（`atlas` = 新图集 core 路径、`outDir` = `tools/atlas-meta/<新图集>/work`）+ `_index.csv`；
 3. 代码侧：`Assets` 加常量 + 引用侧改造（渲染层 / UI），旧图集对应内容**保留为只读遗留**、不再引用；
 4. 目验。

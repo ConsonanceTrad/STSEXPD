@@ -1,5 +1,10 @@
 # SPS-SPD port status
 
+> **Note on evidence paths:** the `build/reports/sps-*.png` files referenced below were
+> captured into the build output directory, which is not tracked by git. The final
+> acceptance screenshots kept in the repository are under `docs/verification-evidence/`.
+> The current repository structure and build commands are in `docs/source-package-readme.md`.
+
 ## Definition of complete
 
 The port is functionally complete when the player-visible SPS-PD 0.9.8 systems

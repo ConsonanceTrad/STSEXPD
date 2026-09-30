@@ -1,6 +1,10 @@
 # SPS-SPD 功能完成审计
 
-审计日期：2026-09-23
+审计日期：2026-09-23（历史记录）
+
+> **现状说明**：本文是 2026-09-23 的验收快照，验收口径与各 `verifySpsXxx` 门禁仍然有效。
+> 其中的产物名与文件路径已按当前仓库结构更新；当时的大小与哈希仅作历史留档，重新构建
+> 不必与之相同。当前结构与构建方式见 `docs/source-package-readme.md`。
 
 验收口径：以本地 `SPS-PD-0.9.8` 为功能和玩法基准，在破碎像素地牢 4.0
 引擎上保留可达内容；不要求逐像素、逐动画或逐文案完全一致。旧版会导致崩溃、
@@ -28,12 +32,12 @@
 再次成功，共 187 个任务，其中 137 个执行、50 个命中缓存。以下产物大小和哈希在
 联合执行后重新计算，保持一致。
 
-最终桌面 ZIP：`desktop/build/distributions/desktop-4.0.0-sps.1.zip`
+最终桌面 ZIP：`desktop/build/libs/SPSEXPD*.jar`（当时为 `desktop-4.0.0-sps.1.zip`）
 
 - 大小：86,877,816 字节
 - SHA-256：`29F21145FD35D428B92A25129BF56122A3508B8FAF49F9AD5D55CE7119B205A5`
 
-最终 Android APK：`android/build/outputs/apk/debug/android-debug.apk`
+最终 Android APK：`android/build/outputs/apk/debug/SPSEXPD-debug.apk`（当时为 `android-debug.apk`）
 
 - 大小：43,642,441 字节
 - SHA-256：`00EBBDBCD3D5E1D8FF3CADEE9A47DB044597C2037621499F9248332028123FCC`
@@ -44,11 +48,11 @@
 
 最终画面证据：
 
-- `build/reports/sps-final-smoke.png`
-- `build/reports/sps-final-classes.png`
-- `build/reports/sps-final-desktop-title.png`
-- `build/reports/sps-final-desktop-tutorial.png`
-- `build/reports/sps-final-desktop-alchemy.png`
+- `docs/verification-evidence/sps-final-smoke.png`
+- `docs/verification-evidence/sps-final-classes.png`
+- `docs/verification-evidence/sps-final-desktop-title.png`
+- `docs/verification-evidence/sps-final-desktop-tutorial.png`
+- `docs/verification-evidence/sps-final-desktop-alchemy.png`
 
 旧版源码中无获取入口或只有注释调用的原型不属于可达玩法，具体理由记录在
 `tools/sps-reviewed-candidates.txt`。逐像素外观和逐帧表现不属于最终功能验收标准；

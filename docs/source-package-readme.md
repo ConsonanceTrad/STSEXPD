@@ -1,6 +1,6 @@
 # SPS-SPD 源码包说明
 
-打包日期：2026-09-23
+最后更新：2026-09-30
 
 ## 项目定位
 
@@ -12,67 +12,89 @@ SPS-SPD 以破碎像素地牢 4.0.0 为引擎基础，实现特别惊喜像素�
 商店和图鉴流程，方便后续测试与调整。旧版中可能导致崩溃、死档、不可达或存档损坏
 的问题已按需要修正。
 
-## 源码包内容
+## 仓库结构
 
-- `android/`：Android 启动端、资源和构建配置。
-- `core/`：核心玩法、地图、角色、物品、怪物、界面及多语言资源。
-- `desktop/`：桌面端启动器和测试代码。
-- `ios/`：iOS 端工程源码。
-- `services/`：新闻、更新等服务模块。
-- `SPD-classes/`：共享类模块。
+Gradle 模块（见 `settings.gradle`）：
+
+- `core/`：全部游戏源码、渲染层、资源与测试。上游的 `SPD-classes`、`services`
+  以及三个平台模块的**源码**均已并入本模块；平台目录仍保留为独立 Gradle 模块，
+  但只负责打包配置。
+- `android/`：Android 打包模块。保留 `src/main/res`、`src/debug/res`、`libs/`、
+  `proguard-rules.pro`（Android Gradle 插件约定），源码指向 `core/src/android/java`。
+- `desktop/`：桌面打包模块。保留 `macos-entitlements.plist`、`notarize.sh`
+  与 jpackage/runtime 配置，源码指向 `core/src/desktop/java`。
+- `ios/`：iOS 打包模块。保留 `Info.plist`、`robovm.xml`、`robovm.properties`
+  （RoboVM 约定），源码指向 `core/src/ios/java`。
+
+`core/src/` 目录结构（目录即功能地图，不再有 Gradle 默认的 `main` 夹层）：
+
+```
+core/src/
+  java/            游戏本体与渲染层：pd（游戏）、render（渲染库）
+  assets/          图集、字体、音乐音效、messages/<用途>/<语言>/
+  test/java/       无图形校验用例（对应 verifySpsXxx 任务）
+  android/java/    Android 平台：Launcher、BackupHandler、PlatformSupport 等
+  desktop/java/    桌面平台：Launcher、PlatformSupport、WindowListener 等
+  desktop/assets/  桌面专用字体与各平台图标
+  desktop/test/    桌面烟测（DesktopSmokeCapture）
+  ios/java/        iOS 平台：Launcher、PlatformSupport
+  ios/assets/      iOS 打包资源（Assets.xcassets、LaunchScreen、music）
+  services/java/   新闻与更新服务的调用与调试实现
+```
+
+顶层其他目录：
+
 - `metadata/`：发行元数据。
-- `gradle/`、`gradlew`、`gradlew.bat`：Gradle 包装器。
-- `tools/`：移植覆盖审计及辅助工具。
+- `gradle/`、`gradlew`、`gradlew.bat`：Gradle 包装器（9.5.0）。
+- `tools/`：图集工具链（`atlas-tool.ps1`、`gen-atlas-dict.ps1`）与移植覆盖审计脚本。
 - `docs/`：构建说明、迁移清单、完成审计和本说明。
+- `output/`：构建产物汇总目录（由 `collectOutputs` 写入，不入库）。
+- `_ref/`：参照工程与历史归档（含已归档的上游联网服务），不参与构建。
 
-源码包不包含 `.gradle`、各模块 `build`、IDE 缓存、日志和临时文件。APK 与桌面发行包
-也不包含在源码包中，可按下述命令重新构建。压缩包中 `docs/verification-evidence/`
-保留了五张最终验收截图。
+压缩包不包含 `.gradle`、各模块 `build`、`output`、IDE 缓存、日志和临时文件。
+APK 与桌面发行包也不包含在源码包中，可按下述命令重新构建。
+`docs/verification-evidence/` 保留了五张最终验收截图。
 
 ## 本机开发环境
 
-- Android SDK：`G:\Android\Android SDK`
-- Android 编译 SDK：36
-- Android 最低版本：API 21（Android 5.0）
+- JDK：21（Gradle 通过 `java.sourceCompatibility` 编译为 Java 11 兼容字节码）
+- Android SDK：`C:\Users\15698\AppData\Local\Android\Sdk`（由 `local.properties` 记录）
+- Android 编译/目标 SDK：36；最低版本：API 21（Android 5.0）
 - Java 源码兼容级别：Java 11
-- Gradle 包装器：9.5.0
-- 当前项目版本：`4.0.0-sps.1`
-- Android application id：`com.hmdzl.spsspd`
+- Gradle：9.5.0
+- 当前项目版本：`0.1.1-alpha`（`appVersionCode` = 923）
+- 应用包名（桌面/存档/Apple bundle）：`com.shatteredpixel.shatteredpixeldungeon`
+- Android application id：`com.hmdzl.spsexpd`
 
-`local.properties` 已记录本机 Android SDK 路径。换到其他电脑后，应将其中的
-`sdk.dir` 改为实际 SDK 位置。文本、Java 编译和运行时资源统一使用 UTF-8；编辑中文
-资源时不要转换为 ANSI、GBK 或其他本地编码。
+换到其他电脑后，应把 `local.properties` 中的 `sdk.dir` 改为实际 SDK 位置。
+文本、Java 编译和运行时资源统一使用 UTF-8；编辑中文资源时不要转换为 ANSI、GBK
+或其他本地编码。
 
 ## 构建与验收
 
 在源码根目录打开 PowerShell：
 
 ```powershell
-.\gradlew.bat desktop:distZip
+# 全量校验（140 个任务，含编译、无图形校验与资源检查）
+.\gradlew.bat verifySpsRelease
+
+# 运行桌面版
+.\gradlew.bat desktop:debug
+
+# 打包：APK 与桌面 jar/安装包构建完成后会自动汇总到 output/
 .\gradlew.bat android:assembleDebug
 ```
 
-也可以一次执行两个发行构建：
+> **门禁说明**：`verifySpsRelease` 会聚合全部 `verifySpsXxx` 校验任务。全量约
+> 需 2 分钟；只关心某一项时可单独执行，例如 `.\gradlew.bat :core:verifySpsAlchemy`。
+> 注意 `:core:verifySpsRegularLevels` 在并发全量运行下偶发断言失败（测试内部
+> 使用 `buildWithRetries`），单独复跑即可通过。
 
-```powershell
-.\gradlew.bat desktop:distZip android:assembleDebug
-```
+主要产物（均由 `collectOutputs` 平铺复制到 `output/`）：
 
-> **门禁说明（2026-09-30 起）**：`verifySpsRelease` 门禁已退出必跑流程（影响演进
-> 效率），回归保护改由开发流程中的规划、复检与 commit 存档承担。140 项检查代码
-> 与 Gradle 任务全部保留，需要抽查时手动执行，例如：
-> `.\gradlew.bat verifySpsRelease`（全量）或 `.\gradlew.bat :core:verifySpsAlchemy`（单项）。
-
-构建完成后，主要产物位于：
-
-- 桌面发行包：`desktop/build/distributions/desktop-4.0.0-sps.1.zip`
-- Android 调试包：`android/build/outputs/apk/debug/android-debug.apk`
-
-启动桌面调试版：
-
-```powershell
-.\gradlew.bat desktop:debug
-```
+- Android 调试包：`android/build/outputs/apk/debug/SPSEXPD-debug.apk`
+- 桌面可执行 jar：`desktop/build/libs/SPSEXPD*.jar`
+- jpackage 安装包（Windows/macOS/Linux）：`desktop/build/jpackage/**`
 
 重新生成旧版源码覆盖审计：
 
@@ -80,33 +102,25 @@ SPS-SPD 以破碎像素地牢 4.0.0 为引擎基础，实现特别惊喜像素�
 .\tools\audit-sps-port.ps1
 ```
 
-## 最近一次完整验收
+重新校验图集字典与元数据是否一致：
 
-2026-09-23 最终联合命令
-`verifySpsRelease desktop:distZip android:assembleDebug` 执行成功，共 187 个任务：
-137 个实际执行，50 个命中缓存。`verifySpsRelease` 包含 140 项检查。
+```powershell
+.\tools\gen-atlas-dict.ps1 -Check
+```
 
-旧版源码覆盖审计结果：1916 个旧版 Java 文件中，1722 个具有同路径实现，63 个具有
-同名适配，131 个经审查无需独立迁移，缺失候选为 0。全部 207 个运行时 properties
-文件通过严格 UTF-8 解码和乱码检查。
+## 验收记录
 
-详细依据见：
+历史验收结果、产物大小与哈希见：
 
 - `docs/sps-completion-audit.md`：功能、构建、烟测和存档验收结果。
 - `docs/sps-port-status.md`：逐项移植状态。
 - `docs/sps-migration-inventory.md`：旧版内容迁移清单。
 - `docs/fusion-content.md`：融合项目内容说明。
 - `docs/art-sources.md`：素材来源说明。
+- `docs/art-workflow.md`：图集工具链与美术工作流。
 
-最近一次生成产物的校验信息仅供构建后比对：
-
-- 桌面 ZIP：86,877,816 字节，SHA-256
-  `29F21145FD35D428B92A25129BF56122A3508B8FAF49F9AD5D55CE7119B205A5`
-- Android APK：43,642,441 字节，SHA-256
-  `00EBBDBCD3D5E1D8FF3CADEE9A47DB044597C2037621499F9248332028123FCC`
-
-因构建工具、压缩时间戳或环境差异，重新生成的二进制文件不一定具有相同哈希；应以
-完整验收任务是否通过为主要判断依据。
+因构建工具、压缩时间戳或环境差异，重新生成的二进制文件不一定具有相同哈希；
+应以完整验收任务是否通过为主要判断依据。
 
 ## 许可证
 
