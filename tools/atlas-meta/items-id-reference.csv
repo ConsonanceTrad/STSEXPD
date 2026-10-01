@@ -1,0 +1,801 @@
+semantic,hint_en,hint_zh,w,h
+artifacts/horn,,,15,15
+artifacts/chalice,,,12,15
+artifacts/rose,,,14,14
+stones/summon_ele,,,8,16
+materials/dewdrop,dewdrop,露珠,16,16
+materials/upgrade_goo,,,16,16
+weapons/gun,,,16,16
+misc/SOMETHING,,,8,13
+misc/WEAPON_HOLDER,,,14,14
+armor/ARMOR_HOLDER,,,14,12
+weapons/MISSILE_HOLDER,,,15,15
+wands/WAND_HOLDER,,,14,14
+rings/RING_HOLDER,,,8,10
+artifacts/ARTIFACT_HOLDER,,,15,15
+misc/TRINKET_HOLDER,,,16,11
+foods/FOOD_HOLDER,,,15,11
+weapons/BOMB_HOLDER,,,10,13
+potions/POTION_HOLDER,,,12,14
+seeds/SEED_HOLDER,,,10,10
+documents/SCROLL_HOLDER,scroll holder,卷轴筒,15,14
+stones/STONE_HOLDER,,,14,12
+potions/ELIXIR_HOLDER,,,12,14
+misc/SPELL_HOLDER,,,8,16
+misc/MOB_HOLDER,,,15,14
+documents/DOCUMENT_HOLDER,,,10,11
+misc/GOLD,gold,金币,15,13
+misc/ENERGY,,,16,16
+misc/PETAL,,,8,8
+misc/SANDBAG,,,10,10
+weapons/SPIRIT_ARROW,,,11,11
+weapons/TENGU_BOMB,,,10,10
+misc/TENGU_SHOCKER,,,10,10
+misc/GEO_BOULDER,,,16,15
+misc/BONES,,,14,11
+misc/REMAINS,,,14,11
+misc/TOMB,,,14,15
+misc/GRAVE,,,14,15
+misc/CHEST,,,16,14
+misc/LOCKED_CHEST,,,16,14
+stones/CRYSTAL_CHEST,,,16,14
+misc/EBONY_CHEST,,,16,14
+misc/ANKH,ankh,重生十字架,10,16
+misc/STYLUS,arcane stylus,奥术刻笔,12,13
+misc/SEAL,,,13,13
+misc/TORCH,torch,火把,12,15
+misc/BEACON,,,16,15
+foods/HONEYPOT,honeypot,蜂蜜罐,14,12
+misc/SHATTPOT,,,14,12
+keys/IRON_KEY,iron key,铁钥匙,8,14
+keys/GOLDEN_KEY,golden key,金钥匙,8,14
+stones/CRYSTAL_KEY,Crystal key,水晶钥匙,8,14
+keys/WORN_KEY,worn key,磨损钥匙,8,14
+misc/MASK,,,11,9
+misc/CROWN,,,13,7
+misc/AMULET,amulet of yendor,Yendor护符,16,16
+misc/MASTERY,,,13,16
+misc/KIT,,,16,15
+stones/SEAL_SHARD,seal shards,纹章残蜡,12,12
+weapons/BROKEN_STAFF,broken staff,横断魔杖,14,10
+misc/CLOAK_SCRAP,scrap of fabric,残破织物,9,9
+weapons/BOW_FRAGMENT,bow fragment,灵弓残件,12,9
+misc/BROKEN_HILT,broken hilt,断折剑柄,9,9
+documents/TORN_PAGE,torn page,圣典残页,11,13
+misc/TRINKET_CATA,,,12,11
+weapons/BOMB,bomb,炸弹,10,13
+weapons/DBL_BOMB,,,14,13
+weapons/FIRE_BOMB,firebomb,燃烧弹,13,12
+weapons/FROST_BOMB,frost bomb,冰霜炸弹,13,12
+weapons/REGROWTH_BOMB,regrowth bomb,再生炸弹,13,12
+weapons/SMOKE_BOMB,smoke bomb,烟雾弹,13,12
+misc/FLASHBANG,,,10,13
+weapons/HOLY_BOMB,holy bomb,神圣炸弹,10,13
+weapons/WOOLY_BOMB,,,10,13
+misc/NOISEMAKER,noisemaker,噪音地雷,10,13
+weapons/ARCANE_BOMB,arcane bomb,奥术炸弹,10,13
+weapons/SHRAPNEL_BOMB,shrapnel bomb,破片炸弹,10,13
+weapons/WORN_SHORTSWORD,worn shortsword,破旧的短剑,13,13
+foods/CUDGEL,cudgel,权杖,15,15
+weapons/GLOVES,studded gloves,镶钉手套,12,16
+foods/RAPIER,rapier,刺剑,13,14
+weapons/DAGGER,dagger,匕首,12,13
+weapons/MAGES_STAFF,mage's staff,法师魔杖,15,16
+weapons/SHORTSWORD,shortsword,短剑,13,13
+weapons/HAND_AXE,hand axe,手斧,12,14
+weapons/SPEAR,spear,长矛,16,16
+weapons/QUARTERSTAFF,quarterstaff,铁头棍,16,16
+misc/DIRK,dirk,长匕首,13,14
+misc/SICKLE,sickle,短柄镰,15,15
+weapons/SWORD,sword,单手剑,14,14
+weapons/MACE,mace,硬头锤,15,15
+weapons/SCIMITAR,scimitar,弯刀,13,16
+misc/ROUND_SHIELD,round shield,圆盾,16,16
+misc/SAI,sai,双钗,16,16
+weapons/WHIP,whip,长鞭,14,14
+weapons/LONGSWORD,longsword,长剑,15,15
+weapons/BATTLE_AXE,battle axe,战斧,16,16
+weapons/FLAIL,flail,链枷,14,14
+weapons/RUNIC_BLADE,runic blade,符文之刃,14,14
+weapons/ASSASSINS_BLADE,assassin's blade,暗杀之刃,14,15
+weapons/CROSSBOW,crossbow,十字弩,15,15
+misc/KATANA,katana,武士刀,15,16
+weapons/GREATSWORD,greatsword,巨剑,16,16
+weapons/WAR_HAMMER,war hammer,战锤,16,16
+weapons/GLAIVE,glaive,关刀,16,16
+weapons/GREATAXE,greataxe,巨斧,12,16
+misc/GREATSHIELD,greatshield,巨型方盾,12,16
+misc/GAUNTLETS,,,13,15
+weapons/WAR_SCYTHE,war scythe,战镰,14,15
+misc/LEGACY_SHOVEL,,,16,16
+weapons/LEGACY_SOLDIER_GUN,,,16,16
+weapons/LEGACY_SOLDIER_AMMO,,,16,16
+weapons/LEGACY_FIRE_BOMB,,,16,16
+weapons/LEGACY_ICE_BOMB,,,16,16
+weapons/LEGACY_STORM_BOMB,,,16,16
+weapons/SPIRIT_BOW,spirit bow,灵能弓,16,16
+weapons/THROWING_SPIKE,throwing spike,飞刺,11,10
+weapons/THROWING_KNIFE,throwing knife,飞刀,12,13
+stones/THROWING_STONE,throwing stone,投石,12,10
+foods/FISHING_SPEAR,fishing spear,捕鱼矛,11,11
+weapons/SHURIKEN,shuriken,手里剑,12,12
+weapons/THROWING_CLUB,throwing club,飞槌,12,12
+weapons/THROWING_SPEAR,throwing spear,投矛,13,13
+misc/BOLAS,bolas,流星索,15,14
+misc/KUNAI,kunai,苦无,15,15
+misc/JAVELIN,javelin,标枪,16,16
+misc/TOMAHAWK,tomahawk,飞斧,13,13
+misc/BOOMERANG,boomerang,回旋镖,14,14
+misc/TRIDENT,trident,三叉戟,16,16
+weapons/THROWING_HAMMER,throwing hammer,投掷锤,12,12
+misc/FORCE_CUBE,force cube,震爆方石,11,12
+weapons/ROT_DART,rot dart,腐莓飞镖,15,15
+weapons/INCENDIARY_DART,incendiary dart,燃烧飞镖,15,15
+weapons/ADRENALINE_DART,adrenaline dart,激素飞镖,15,15
+weapons/HEALING_DART,healing dart,治疗飞镖,15,15
+weapons/CHILLING_DART,chilling dart,寒霜飞镖,15,15
+weapons/SHOCKING_DART,shocking dart,电击飞镖,15,15
+weapons/POISON_DART,poison dart,毒液飞镖,15,15
+weapons/CLEANSING_DART,cleansing dart,净化飞镖,15,15
+weapons/PARALYTIC_DART,paralytic dart,麻痹飞镖,15,15
+weapons/HOLY_DART,holy dart,神圣飞镖,15,15
+weapons/DISPLACING_DART,displacing dart,传送飞镖,15,15
+weapons/BLINDING_DART,blinding dart,致盲飞镖,15,15
+misc/ITEM_173,,,15,15
+misc/ITEM_174,,,15,15
+misc/ITEM_175,,,15,15
+armor/ARMOR_CLOTH,,,15,12
+armor/ARMOR_LEATHER,,,14,13
+armor/ARMOR_MAIL,,,14,12
+armor/ARMOR_SCALE,,,14,11
+armor/ARMOR_PLATE,,,12,12
+armor/ARMOR_WARRIOR,,,12,12
+armor/ARMOR_MAGE,,,15,15
+armor/ARMOR_ROGUE,,,14,12
+armor/ARMOR_HUNTRESS,,,13,15
+armor/ARMOR_DUELIST,,,12,13
+armor/ARMOR_CLERIC,,,13,14
+misc/LEGACY_BIG_BATTERY,,,16,16
+weapons/LEGACY_WOODEN_STAFF,,,16,16
+misc/LEGACY_TRICK_SAND,,,16,16
+artifacts/LEGACY_ATTACK_SHOES,,,16,16
+misc/LEGACY_ATTACK_SHIELD,,,16,16
+misc/LEGACY_CANNON_OF_MAGE,,,16,16
+weapons/LEGACY_LINK_SWORD,,,16,16
+misc/LEGACY_B_SHOVEL,,,16,16
+misc/LEGACY_MK_BOX,,,16,16
+weapons/LEGACY_DIAMOND_PICKAXE,,,16,16
+weapons/LEGACY_HOLY_MACE,,,16,16
+documents/LEGACY_BRAVE_BOOK,,,16,16
+misc/LEGACY_PIXEL_TORCH,,,16,16
+misc/LEGACY_TIME_OCLOCK,,,16,16
+misc/LEGACY_ALIEN_BAG,,,16,16
+wands/WAND_FIREBOLT,Wand of Firebolt,火球法杖,14,14
+wands/WAND_FROST,wand of frost,冰霜法杖,14,14
+wands/WAND_LIGHTNING,wand of lightning,雷霆法杖,14,14
+wands/WAND_DISINTEGRATION,wand of disintegration,解离法杖,14,14
+wands/WAND_PRISMATIC_LIGHT,wand of prismatic light,棱光法杖,14,14
+wands/WAND_CORROSION,wand of corrosion,酸蚀法杖,14,14
+wands/WAND_LIVING_EARTH,wand of living earth,灵壤法杖,14,14
+wands/WAND_BLAST_WAVE,wand of blast wave,冲击波法杖,14,14
+wands/WAND_CORRUPTION,wand of corruption,腐化法杖,14,14
+wands/WAND_WARDING,wand of warding,哨卫法杖,14,14
+wands/WAND_REGROWTH,wand of regrowth,再生法杖,14,14
+wands/WAND_TRANSFUSION,wand of transfusion,注魂法杖,14,14
+misc/ITEM_221,,,14,14
+misc/ITEM_222,,,14,14
+misc/ITEM_223,,,14,14
+rings/RING_RUBY,,,8,10
+rings/RING_ELEMENTS,ring of elements,元素戒指,8,10
+rings/RING_ENERGY,ring of energy,能量之戒,8,10
+rings/RING_ONYX,,,8,10
+rings/RING_FORCE,ring of force,武力之戒,8,10
+rings/RING_FUROR,ring of furor,狂怒戒指,8,10
+rings/RING_SAPPHIRE,,,8,10
+rings/RING_MIGHT,ring of might,根骨之戒,8,10
+rings/RING_SHARPSHOOT,,,8,10
+rings/RING_TENACITY,ring of tenacity,韧性之戒,8,10
+rings/RING_DIAMOND,,,8,10
+misc/ITEM_236,,,8,10
+misc/ITEM_237,,,8,10
+misc/ITEM_238,,,8,10
+misc/ITEM_239,,,8,10
+artifacts/ARTIFACT_CLOAK,,,9,15
+artifacts/ARTIFACT_ARMBAND,,,16,13
+artifacts/ARTIFACT_CAPE,,,16,14
+artifacts/ARTIFACT_TALISMAN,,,15,13
+artifacts/ARTIFACT_HOURGLASS,,,13,16
+artifacts/ARTIFACT_TOOLKIT,,,15,13
+documents/ARTIFACT_SPELLBOOK,,,13,16
+artifacts/ARTIFACT_BEACON,,,16,16
+artifacts/ARTIFACT_CHAINS,,,16,16
+artifacts/ARTIFACT_SANDALS,,,16,6
+artifacts/ARTIFACT_SHOES,,,16,6
+artifacts/ARTIFACT_BOOTS,,,16,9
+artifacts/ARTIFACT_GREAVES,,,16,14
+documents/ARTIFACT_TOME,,,14,16
+artifacts/ARTIFACT_KEY,,,8,16
+misc/RAT_SKULL,giant rat skull,巨鼠头骨,16,11
+misc/PARCHMENT_SCRAP,parchment scrap,残魔余卷,10,14
+seeds/PETRIFIED_SEED,petrified seed,石化种子,9,9
+stones/EXOTIC_CRYSTALS,exotic crystals,奇异能晶,15,13
+misc/MOSSY_CLUMP,mossy clump,苔藓丛簇,12,11
+misc/SUNDIAL,,,16,12
+misc/CLOVER,,,11,15
+misc/TRAP_MECHANISM,trap mechanism,陷阱元件,13,15
+misc/MIMIC_TOOTH,mimic tooth,拟箱利齿,8,15
+misc/WONDROUS_RESIN,wondrous resin,奇迹树脂,12,11
+misc/EYE_OF_NEWT,eye of newt,蝾螈魔眼,12,12
+misc/SALT_CUBE,salt cube,盐晶立方,12,13
+misc/BLOOD_VIAL,,,6,15
+stones/OBLIVION_SHARD,,,7,14
+misc/CHAOTIC_CENSER,chaotic censer,混沌香炉,13,15
+misc/FERRET_TUFT,ferret tuft,雪貂绒束,16,15
+misc/SPYGLASS,,,15,15
+documents/SCROLL_KAUNAN,,,15,14
+documents/SCROLL_SOWILO,,,15,14
+documents/SCROLL_REMCURSE,,,15,14
+documents/SCROLL_MIRRORIMG,,,15,14
+documents/SCROLL_RECHARGE,,,15,14
+documents/SCROLL_TELEPORT,,,15,14
+documents/SCROLL_LULLABY,scroll of lullaby,催眠卷轴,15,14
+documents/SCROLL_MANNAZ,,,15,14
+documents/SCROLL_NAUDIZ,,,15,14
+documents/SCROLL_BERKANAN,,,15,14
+documents/SCROLL_TERROR,scroll of terror,恐惧卷轴,15,14
+documents/SCROLL_TIWAZ,,,15,14
+documents/SCROLL_NENDIL,,,15,14
+misc/ARCANE_RESIN,arcane resin,奥术树脂,12,11
+documents/SCROLL_LIBRA,,,15,14
+misc/ITEM_319,,,15,14
+documents/SCROLL_ENCHANT,,,15,14
+misc/EXOTIC_SOWILO,,,15,14
+misc/EXOTIC_LAGUZ,,,15,14
+misc/EXOTIC_YNGVI,,,15,14
+documents/SCROLL_MYSTENRG,,,15,14
+misc/EXOTIC_RAIDO,,,15,14
+documents/SCROLL_SIREN,,,15,14
+documents/SCROLL_FORESIGHT,scroll of foresight,先见秘卷,15,14
+documents/SCROLL_CHALLENGE,scroll of challenge,决斗秘卷,15,14
+misc/EXOTIC_BERKANAN,,,15,14
+documents/SCROLL_DREAD,scroll of dread,梦魇秘卷,15,14
+documents/SCROLL_METAMORPH,,,15,14
+misc/ITEM_332,,,15,14
+misc/ITEM_333,,,15,14
+misc/ITEM_334,,,15,14
+misc/ITEM_335,,,15,14
+stones/STONE_AUGMENTATION,stone of augmentation,强化符石,14,12
+stones/STONE_FEAR,stone of fear,恐惧符石,14,12
+stones/STONE_BLAST,stone of blast,震爆符石,14,12
+stones/STONE_BLINK,stone of blink,闪现符石,14,12
+stones/STONE_CLAIRVOYANCE,stone of clairvoyance,明示符石,14,12
+stones/STONE_SLEEP,,,14,12
+stones/STONE_DETECT,,,14,12
+stones/STONE_ENCHANT,,,14,12
+stones/STONE_FLOCK,stone of flock,羊群符石,14,12
+stones/STONE_INTUITION,stone of intuition,感知符石,14,12
+stones/STONE_SHOCK,stone of shock,电击符石,14,12
+misc/ITEM_348,,,14,12
+misc/ITEM_349,,,14,12
+misc/ITEM_350,,,14,12
+misc/ITEM_351,,,14,12
+potions/POTION_CRIMSON,,,12,14
+potions/POTION_HEALING,potion of healing,治疗药剂,12,14
+potions/POTION_MINDVIS,,,12,14
+potions/POTION_JADE,,,12,14
+potions/POTION_TURQUOISE,,,12,14
+potions/POTION_AZURE,,,12,14
+potions/POTION_INDIGO,,,12,14
+potions/POTION_INVIS,,,12,14
+potions/POTION_BISTRE,,,12,14
+potions/POTION_CHARCOAL,,,12,14
+potions/POTION_SILVER,,,12,14
+potions/POTION_EXP,,,12,14
+misc/ITEM_364,,,12,14
+misc/LIQUID_METAL,liquid metal,液金,8,15
+misc/ITEM_366,,,12,14
+misc/ITEM_367,,,12,14
+potions/POTION_MASTERY,potion of mastery,肌肉记忆合剂,12,13
+potions/POTION_SHIELDING,potion of shielding,奥术护盾合剂,12,13
+potions/POTION_MAGISIGHT,,,12,13
+potions/POTION_SNAPFREEZ,,,12,13
+misc/EXOTIC_TURQUOISE,,,12,13
+potions/POTION_CORROGAS,,,12,13
+potions/POTION_STAMINA,potion of stamina,精力回复合剂,12,13
+potions/POTION_SHROUDFOG,,,12,13
+misc/EXOTIC_BISTRE,,,12,13
+potions/POTION_EARTHARMR,,,12,13
+potions/POTION_CLEANSE,,,12,13
+misc/EXOTIC_IVORY,,,12,13
+misc/ITEM_380,,,12,13
+misc/ITEM_381,,,12,13
+misc/ITEM_382,,,12,13
+misc/ITEM_383,,,12,13
+seeds/SEED_FIREBLOOM,,,10,10
+seeds/SEED_SWIFTTHISTLE,,,10,10
+seeds/SEED_SUNGRASS,,,10,10
+seeds/SEED_ICECAP,,,10,10
+seeds/SEED_STORMVINE,,,10,10
+seeds/SEED_SORROWMOSS,,,10,10
+seeds/SEED_MAGEROYAL,,,10,10
+seeds/SEED_EARTHROOT,,,10,10
+seeds/SEED_STARFLOWER,,,10,10
+seeds/SEED_FADELEAF,,,10,10
+seeds/SEED_BLINDWEED,,,10,10
+misc/ITEM_396,,,10,10
+misc/ITEM_397,,,10,10
+misc/ITEM_398,,,10,10
+misc/ITEM_399,,,10,10
+potions/BREW_INFERNAL,,,11,13
+potions/BREW_BLIZZARD,,,11,13
+potions/BREW_SHOCKING,,,12,14
+potions/BREW_CAUSTIC,,,12,14
+potions/BREW_AQUA,,,9,11
+potions/BREW_UNSTABLE,,,11,13
+misc/ITEM_406,,,12,14
+misc/ITEM_407,,,12,14
+potions/ELIXIR_AQUA,,,12,14
+potions/ELIXIR_MIGHT,elixir of might,根骨秘药,12,14
+potions/ELIXIR_DRAGON,,,12,14
+potions/ELIXIR_TOXIC,,,12,14
+potions/ELIXIR_ICY,,,12,14
+potions/ELIXIR_ARCANE,,,12,14
+potions/ELIXIR_FEATHER,,,12,14
+misc/WILD_ENERGY,wild energy,强能结晶,6,15
+misc/PHASE_SHIFT,phase shift,转移结晶,12,10
+misc/TELE_GRAB,,,10,10
+misc/UNSTABLE_SPELL,unstable spell,无序结晶,12,13
+misc/CURSE_INFUSE,,,10,16
+misc/MAGIC_INFUSE,,,10,14
+misc/ALCHEMIZE,alchemize,炼金菱晶,12,12
+misc/RECYCLE,recycle,转换菱晶,12,13
+misc/RECLAIM_TRAP,reclaim trap,陷阱晶柱,14,11
+misc/RETURN_BEACON,,,8,16
+foods/MEAT,raw meat,生肉,15,11
+foods/STEAK,,,15,11
+misc/STEWED,,,15,11
+foods/OVERPRICED,,,14,11
+misc/CARPACCIO,,,15,11
+foods/RATION,,,16,12
+foods/PASTY,pasty,馅饼,16,11
+foods/MEAT_PIE,meat pie,全肉大饼,16,12
+foods/BLANDFRUIT,blandfruit,无味果,9,12
+misc/BLAND_CHUNKS,,,14,6
+foods/BERRY,dungeon berry,地牢浆果,9,11
+foods/PHANTOM_MEAT,phantom meat,幻影鱼肉,15,11
+foods/SUPPLY_RATION,supply ration,备用口粮,16,12
+foods/BLACKBERRY,black berry,粉色浆果,16,16
+foods/CLOUDBERRY,cloud berry,红色浆果,16,16
+foods/BLUEBERRY,blue berry,蓝色浆果,16,16
+foods/STEAMED_FISH,,,16,12
+foods/FISH_LEFTOVER,,,16,12
+misc/CHOC_AMULET,,,16,16
+foods/EASTER_EGG,,,12,14
+potions/RAINBOW_POTION,,,12,14
+misc/SHATTERED_CAKE,,,14,13
+foods/PUMPKIN_PIE,,,16,12
+misc/VANILLA_CAKE,,,14,13
+foods/CANDY_CANE,,,13,16
+potions/SPARKLING_POTION,,,7,16
+foods/MOONBERRY,moon berry,青色浆果,16,16
+foods/FULLMOONBERRY,full moon berry,满月浆果,16,16
+foods/STRAWBERRY,strawberry,草莓,16,16
+misc/CHERRY,cherry,樱桃,16,16
+misc/DURIAN,durian,榴莲,16,16
+misc/STAR_FLOWER,,,16,16
+misc/DREAM_LEAF,dream leaf,好梦叶,16,16
+misc/DUST,,,12,11
+misc/CANDLE,,,12,12
+misc/EMBER,,,12,11
+weapons/PICKAXE,pickaxe,镐子,14,14
+misc/ORE,,,15,15
+misc/TOKEN,,,12,12
+misc/BLOB,,,10,9
+stones/SHARD,,,8,10
+misc/ESCAPE,,,8,16
+misc/STATUE,,,10,16
+misc/HEAL_LEAF,,,16,16
+foods/NUT_VEGETABLE,nut vine,坚果藤,16,16
+misc/TRUFFLES,truffle,松露,16,16
+potions/BREW_LEFT,brewing leftovers,酿造残渣,16,16
+foods/MUSHROOM,dew mushroom,露珠菌孢,16,16
+misc/WATERSKIN,dew vial,露珠瓶,16,14
+misc/BACKPACK,,,16,16
+bags/POUCH,,,14,15
+bags/HOLDER,,,16,16
+bags/BANDOLIER,,,15,16
+bags/HOLSTER,,,15,16
+misc/VIAL,,,12,12
+misc/UPGRADE_EATER,,,16,16
+misc/TRANSMUTATION_BALL,phase pitcher fruit,转换笼果实,16,16
+potions/SPS_POTION_MENDING,,,16,16
+documents/GUIDE_PAGE,torn guidebook page,被撕下的指南书页,10,11
+documents/ALCH_PAGE,,,10,11
+documents/SEWER_PAGE,,,10,11
+documents/PRISON_PAGE,,,10,11
+documents/CAVES_PAGE,,,10,11
+documents/CITY_PAGE,,,10,11
+documents/HALLS_PAGE,,,10,11
+potions/SPS_POTION_MIGHT,,,16,16
+potions/SPS_POTION_SHIELD,,,16,16
+potions/SPS_POTION_OVERHEALING,,,16,16
+potions/SPS_POTION_MIXING,,,16,16
+misc/PUDDING_CUP,chocolate pudding,巧克力布丁,16,16
+misc/ELEVATOR,Ghost elevator,社会升降器,16,16
+misc/FAIRY_CARD,fairy card,仙女卡片,16,16
+misc/MOBILE,control satellite,遥控卫星,16,16
+misc/ACTIVE_MR_DESTRUCTO,Mr Destructo,毁灭无人引擎,16,16
+weapons/BUILD_BOMB,build bomb,土制炸弹,16,16
+weapons/HUGE_BOMB,huge bomb,巨大炸弹,16,16
+weapons/SP_AMMO,,,16,16
+misc/E_DUST,,,16,16
+misc/M_WEB,,,16,16
+misc/TOWEL,towel,湿巾,16,16
+misc/SPECTACLES,spectacles,眼镜,16,16
+potions/AUTO_POTION,auto-potion,自动药剂,16,16
+documents/KNOWLEDGE_BOOK,knowledge book,知识之书,16,16
+foods/SPS_PET_EGG,,,16,16
+misc/PALANTIR,palantir,能源核心,16,16
+misc/DOOR_BLOCK,door block,造门方块,16,16
+misc/PLANT_POT_BLOCK,plant pot,种植盆,16,16
+bags/SHOPPING_CART,shopping cart,购物车,16,16
+misc/ORB_OF_ZOT,orbofzot,储能装置,16,16
+bags/HEART_OF_SCARECROW,portable scarecrow,草靶子,16,16
+misc/FIRE_CRACKER,firecrackers,鞭炮,16,16
+misc/BOSS_RUSH,Boss Rush,BossRush挑战,16,16
+misc/MONEY_PACK,red packet,红包,16,16
+foods/YEAR_PET_EGG,Soul Of Year,年兽之魂,16,16
+misc/CURSE_BLOOD,curse blood,诅咒之液,16,16
+foods/AFLY_FOOD,Fushigi-no rice ball,不思议饭团,16,16
+foods/AFLY_EGG,Abbey whistle,阿比哨子,16,16
+misc/ADAMANT_WEAPON,adamant weapon component,焊接组件-武器,16,16
+armor/ADAMANT_ARMOR,adamant armor component,焊接组件-护甲,16,16
+wands/ADAMANT_WAND,adamant wand component,焊接组件-法杖,16,16
+rings/ADAMANT_RING,adamant ring component,焊接组件-戒指,16,16
+foods/PET_FOOD,pet food,宠物口粮,16,16
+misc/SKILL_ATK,Learn how to attack,力量之书,16,16
+misc/SKILL_DEF,Learn how to dodge,敏捷之书,16,16
+misc/SKILL_MIG,Learn how to use magic,智力之书,16,16
+misc/POCKET_BALL,pocket ball,精灵球,16,16
+misc/NORN_GREEN,,,16,16
+misc/NORN_BLUE,,,16,16
+misc/NORN_ORANGE,,,16,16
+misc/NORN_PURPLE,,,16,16
+misc/NORN_YELLOW,,,16,16
+misc/NEPTUNUS_TRIDENT,water trident,三叉水戟,16,16
+weapons/ARES_SWORD,extract long sword,萃魂长剑,16,16
+misc/JUPITERS_WRAITH,rock chakram,落岩圆刃,16,16
+weapons/CROM_CRUACH_AXE,mince great axe,碎肉巨斧,16,16
+weapons/LOKIS_FLAIL,heavy flail,重型链枷,16,16
+misc/GNOLL_CLOTHES,Gnoll clothes,豺狼风衣,16,16
+misc/SOUL_COLLECT,soul collect stone,灵魂囚禁石,16,16
+misc/PLAYER_ICON,Player icon,玩家图标,16,16
+misc/POWER_HAND,Power Hand,力量之手,16,16
+weapons/TENGU_SWORD,,,16,16
+misc/HAND_CANNON,handcannon,奥能火炮,16,16
+misc/FOUR_CLOVER,Four-leaf Mint Necklace,四叶薄荷项链,16,16
+foods/SPS_EASTER_EGG,,,16,16
+misc/TREASURE_MAP,Treasure Map,密藏宝图,16,16
+misc/SHIT_BALL,Dirt ball,污团,16,16
+misc/SAVE_YOUR_LIFE,Emergency Offline Device,紧急离线装置,16,16
+misc/SJRB_MUSIC,"Song, Jump, Rap. Basketball, and play music",S-J-R-B音乐套装,16,16
+misc/SPORK,Royal spork,皇家叉勺,16,16
+foods/BUG_MEAT,Parasite,稽生虫,16,16
+weapons/LIGHT_BOMB,holy bomb,圣光炸弹,16,16
+foods/FISHING_BOMB,fishing bomb,鱼饵炸弹,16,16
+misc/POCKET_BALL_EMPTY,,,16,16
+misc/WOODEN_SHIELD,,,16,16
+misc/MIX_BOTTLE,,,16,16
+misc/SLIME_BALL,,,16,16
+misc/RUSTY_CAT,,,16,16
+misc/CHAOS_PACK,chaos contract,混沌之契,16,16
+misc/EMPTY_BODY,empty body,虚无之体,16,16
+misc/SHADOW_EATER,Shadow Eater,暗噬,16,16
+keys/POT_KEY,POOOOT KEY,罐罐的挑战函,16,16
+misc/LUCKY_BADGE,lucky badge,幸运胸章,16,16
+misc/LEGACY_BOOMERANG,,,16,16
+misc/LEGACY_BULLET,,,16,16
+misc/SLING,sling,投石索,16,16
+weapons/TOY_GUN,toy gun,玩具枪,16,16
+weapons/LEGACY_ARROW,,,16,16
+weapons/WOODEN_BOW,,,16,16
+stones/STONE_BOW,,,16,16
+weapons/METAL_BOW,,,16,16
+weapons/ALLOY_BOW,,,16,16
+weapons/PVC_BOW,,,16,16
+misc/MANY_KNIVE,Izayoi's thousand knives,十六夜的千支刀,16,16
+weapons/LEGACY_KNIFE,,,16,16
+misc/KING_BONE,,,16,16
+misc/CAVE_SHELL,,,16,16
+misc/ANCIENT_COIN,ancient tribute,上朝贡物,16,16
+documents/SACRIFICE_BOOK,sacrifice book,献祭之书,16,16
+foods/GOLDEN_NUT,developer-blessed golden nut,受hmdzl001祝福的金色坚果,16,16
+misc/CHALLENGE_REWARD_BAG,,,16,16
+stones/CRYSTAL_NUCLEUS,shining crystal nucleus,闪耀晶核,16,16
+keys/GOLDEN_SKELETON_KEY,Crystal key,水晶钥匙,16,16
+documents/CHALLENGE_BOOK,challenge book,挑战日志,16,16
+misc/ICE_CHALLENGE,Ice City,蜜雪冰城,16,16
+misc/SEWER_CHALLENGE,sewer challenge,下水道挑战,16,16
+misc/PRISON_CHALLENGE,prison challenge,监狱挑战,16,16
+misc/CAVE_CHALLENGE,caves challenge,洞窟挑战,16,16
+misc/CITY_CHALLENGE,city challenge,城市挑战,16,16
+misc/COURAGE_CHALLENGE,trial of courage,勇气试炼,16,16
+misc/POWER_CHALLENGE,trial of power,力量试炼,16,16
+misc/WISDOM_CHALLENGE,trial of wisdom,智慧试炼,16,16
+misc/SPS_TRIFORCE,,,16,16
+misc/VIAL_UPDATER,dew vial upgrade pack,露珠强化器,16,16
+wands/WAND_SPS_MAGIC_MISSILE,,,16,16
+wands/WAND_POISON,,,16,16
+wands/WAND_METEORITE,Wand of Meteorite,陨星法杖,16,16
+wands/WAND_FLOW,Wand of Flow,涌流法杖,16,16
+wands/WAND_CHARM,Wand of Charm,魅惑法杖,16,16
+wands/WAND_SPS_DISINTEGRATION,,,16,16
+wands/WAND_SPS_FIREBOLT,,,16,16
+wands/WAND_BLOOD,Wand of Blood,鲜血法杖,16,16
+wands/WAND_FREEZE,Wand of Freeze,霜冻法杖,16,16
+wands/WAND_SPS_LIGHTNING,,,16,16
+wands/WAND_ACID,Wand of Acid,酸蚀法杖,16,16
+wands/WAND_LIGHT,Wand of Light,强光法杖,16,16
+wands/WAND_FLOCK,Wand of Flock,招羊法杖,16,16
+wands/WAND_TCLOUD,Wand of Thundercloud,雷云法杖,16,16
+wands/WAND_ERROR,Wand of Error,错误法杖,16,16
+misc/ITEM_687,,,16,16
+armor/SPS_WOODEN_ARMOR,,,16,16
+armor/SPS_VEST_ARMOR,,,16,16
+armor/SPS_ARMOR_LEATHER,,,16,16
+armor/SPS_CERAMICS_ARMOR,,,16,16
+armor/SPS_RUBBER_ARMOR,,,16,16
+armor/SPS_ARMOR_DISC,,,16,16
+armor/SPS_STONE_ARMOR,,,16,16
+armor/SPS_CD_ARMOR,,,16,16
+armor/SPS_ARMOR_MAIL,,,16,16
+armor/SPS_MULTIPLE_ARMOR,,,16,16
+armor/SPS_STYROFOAM_ARMOR,,,16,16
+armor/SPS_ARMOR_SCALE,,,16,16
+armor/SPS_BULLET_ARMOR,,,16,16
+armor/SPS_PROTECTIVE_ARMOR,,,16,16
+armor/SPS_ARMOR_PLATE,,,16,16
+armor/SPS_MACHINE_ARMOR,,,16,16
+armor/SPS_PHANTOM_ARMOR,,,16,16
+armor/SPS_ARMOR_WARRIOR,,,16,16
+armor/SPS_ARMOR_MAGE,,,16,16
+armor/SPS_ARMOR_ROGUE,,,16,16
+armor/SPS_ARMOR_HUNTRESS,,,16,16
+armor/SPS_ARMOR_PERFORMER,,,16,16
+armor/SPS_ARMOR_SOLDIER,,,16,16
+armor/SPS_ARMOR_FOLLOWER,,,16,16
+armor/SPS_ARMOR_ASCETIC,,,16,16
+weapons/SPS_WEP_DAGGER,,,16,16
+weapons/SPS_WEP_KNUCKLES,,,16,16
+weapons/SPS_WEP_SHORT_SWORD,,,16,16
+documents/SPS_WEP_MAGE_BOOK,,,16,16
+weapons/SPS_WEP_HANDAXE,,,16,16
+weapons/SPS_WEP_SPEAR,,,16,16
+misc/SPS_WEP_DUAL_KNIVE,,,16,16
+weapons/SPS_WEP_FIGHT_GLOVES,,,16,16
+misc/SPS_WEP_NUNCHAKUS,,,16,16
+weapons/SPS_WEP_SCIMITAR,,,16,16
+weapons/SPS_WEP_WHIP,,,16,16
+foods/SPS_WEP_RAPIER,,,16,16
+weapons/SPS_WEP_ASSASSINS_BLADE,,,16,16
+weapons/SPS_WEP_BATTLE_AXE,,,16,16
+weapons/SPS_WEP_GLAIVE,,,16,16
+weapons/SPS_WEP_CLUB,,,16,16
+weapons/SPS_WEP_GSWORD,,,16,16
+misc/SPS_WEP_HALBERD,,,16,16
+weapons/SPS_WEP_WAR_HAMMER,,,16,16
+weapons/SPS_WEP_LANCE,,,16,16
+foods/MEAT_SOUP,,,16,16
+misc/HOTDOG,,,16,16
+misc/KEBAB,large meat kebab,大肉串,16,16
+foods/NUT_COOKIE,nut cookie,坚果饼干,16,16
+misc/MIX_PIZZA,mixed pizza,混合披萨,16,16
+foods/RICE_GRUEL,rice gruel,米粥,16,16
+foods/FRUIT_CANDY,fruit candy,水果硬糖,16,16
+misc/MOON_CAKE,moon cake,月饼,16,16
+foods/LEGACY_BLIND_FRUIT,,,16,16
+misc/LEGACY_EMP_BOLA,,,16,16
+misc/LEGACY_SKULL,,,16,16
+weapons/EARTH_BOMB,acid bomb,酸蚀炸弹,16,16
+weapons/DARK_BOMB,dark bomb,暗黑炸弹,16,16
+misc/CHICKENNUGGET,chicken nugget,椒盐鸡块,16,16
+misc/FOAMED,,,16,16
+foods/FRUIT_SALAD,fruit salad,水果沙拉,16,16
+misc/HAMBURGER,giant hamburger,巨无霸汉堡,16,16
+foods/HERB_MEAT,herb-seasoned meat,药草酱肉,16,16
+foods/HONEY_MEAT,honey-glazed steak,蜜汁肉排,16,16
+foods/HONEY_RICE,honey rice,蜂蜜拌饭,16,16
+misc/ICECREAM,ice feast,冰雪盛宴,16,16
+foods/PERFECT_FOOD,perfect lunch,完美便当,16,16
+foods/RICE_FOOD,refined rice,精制米饭,16,16
+foods/VEGETABLE_SOUP,vegetable soup,菜汤,16,16
+foods/HONEY_GEL,honey pudding,蜂蜜布丁,16,16
+foods/GEL,gel,凝胶,16,16
+foods/HONEY_WATER,honey water,蜂糖水,16,16
+misc/CHOCOLATE,chocolate,巧克力,16,16
+foods/FOOD_FANS,silk noodles,粉丝,16,16
+misc/FRENCH_FRIES,French fries,薯条,16,16
+misc/SPS_STR_BOTTLE,,,16,16
+documents/SPS_DEMON_PAPER,,,16,16
+armor/SPS_BASE_ARMOR,,,16,16
+misc/SPS_GNOLL_MARK,,,16,16
+documents/SPS_UNDEAD_BOOK,,,16,16
+weapons/SPS_TAURCEN_BOW,,,16,16
+misc/SPS_HOLY_WATER,,,16,16
+misc/SPS_MECH_POCKET,,,16,16
+documents/SPS_GRASS_BOOK,,,16,16
+armor/SPS_LIFE_ARMOR,,,16,16
+misc/SPS_RANGE_BAG,,,16,16
+misc/SPS_DANCE_LION,,,16,16
+misc/SPS_WHISK,,,16,16
+misc/SPS_SAVAGE_HELMET,,,16,16
+misc/SPS_HORSE_TOTEM,,,16,16
+misc/SPS_TEST_WEAPON,,,16,16
+armor/SPS_TEST_ARMOR,,,16,16
+wands/SPS_TEST_WAND,,,16,16
+documents/SPS_REWARD_PAPER,,,16,16
+weapons/SPS_ELF_BOW,,,16,16
+weapons/SPS_DEMON_BLADE,,,16,16
+documents/SPS_NEED_PAPER,,,16,16
+misc/SPS_PPC,,,16,16
+weapons/SPS_MIND_ARROW,,,16,16
+misc/SPS_LEADER_FLAG,,,16,16
+misc/SPS_NM_HEAL_BAG,,,16,16
+misc/SPS_DICE_TOWER,,,16,16
+misc/SPS_WATER_BLOCK,,,16,16
+misc/BOTTLE_FIRE,fire in bottle,瓶装火焰,16,16
+foods/HONEY_ARROW,bee arrow,蜜蜂针头,16,16
+misc/LYNN_DOLL,lynn doll,梦瑶娃娃,16,16
+misc/SPS_SERIOUS_PUNCH,,,16,16
+misc/SPS_ANKH_SHIELD,,,16,16
+misc/SPS_PPC2,,,16,16
+misc/SPS_ELE_KATANA,,,16,16
+weapons/SPS_SHOOT_GUN,,,16,16
+stones/SPS_WEIGHTSTONE,,,16,16
+weapons/SPS_SHOOT_AMMO,,,16,16
+weapons/SPS_SHOOT_END_AMMO,,,16,16
+misc/SPS_EQUIP_CHANGE,,,16,16
+foods/FISH_BONE,fish bone totem,鱼骨,16,16
+artifacts/GHOST_GIRL_ROSE,write girl's last soul,幽魂的余香,16,16
+misc/RAIN_SHIELD,Rain's shield,Rain盾,16,16
+misc/CURSE_PHONE,curse phone,被诅咒的电话,16,16
+misc/AFLY_SOCK,single sock,单只的袜子,16,16
+weapons/MELEE_PAN,pan,平底煎锅,16,16
+misc/XIXI_BOX,box for darkest pixel dungeon,牢固的箱子,16,16
+misc/SPS_MEGA_CANNON,,,16,16
+weapons/SPS_MEGA_AMMO_SMALL,,,16,16
+weapons/SPS_MEGA_AMMO_MEDIUM,,,16,16
+weapons/SPS_MEGA_AMMO_LARGE,,,16,16
+misc/SPS_ROCKMAN_JUMP,,,16,16
+armor/SPS_BUNNY_ARMOR,,,16,16
+weapons/SPS_BUNNY_DAGGER,,,16,16
+misc/SPS_NINJA_FAN,,,16,16
+weapons/SPS_MINI_BOMB,,,16,16
+foods/SPS_FISH_PET_FOOD,,,16,16
+foods/SPS_FISH_FOOD,,,16,16
+foods/SPS_HONEY,,,16,16
+foods/SPS_ZONGZI,,,16,16
+foods/SPS_NUT_CAKE,,,16,16
+foods/SPS_YEAR_FOOD,,,16,16
+misc/DOLYA_SLATE,Dolya slate,多利亚石板,16,16
+foods/SPS_PASTY,,,16,16
+rings/SPS_SPRING_ASSORTED,,,16,16
+foods/SPS_KNOWLEDGE_FOOD,,,16,16
+foods/SPS_PASTY_EASTER_EGG,,,16,16
+foods/SPS_PUMPKIN_PIE,,,16,16
+foods/SPS_TURKEY_MEAT,,,16,16
+foods/SPS_CANDY_CANE,,,16,16
+weapons/SPS_JELLY_SWORD,,,16,16
+misc/SPS_GARBAGE,,,16,16
+misc/SIMPLE_360,Code of Easier Sprout Pixel Dungeon,简单发芽修改代码,16,16
+misc/TISSUE,Dining paper towel,用餐纸巾,16,16
+misc/UNCLE_DUMBBELL,Sprout dumbbell,发芽的哑铃,16,16
+misc/APOSTLE_BOX,Chaos Box of apostle,Apostle混沌之盒,16,16
+documents/SPS_JOURNAL_PAGE,,,16,16
+seeds/SPS_SEED_FIREBLOOM,,,16,16
+seeds/SPS_SEED_BLINDWEED,,,16,16
+seeds/SPS_SEED_SUNGRASS,,,16,16
+seeds/SPS_SEED_ICECAP,,,16,16
+seeds/SPS_SEED_STORMVINE,,,16,16
+seeds/SPS_SEED_SORROWMOSS,,,16,16
+seeds/SPS_SEED_DREAMFOIL,,,16,16
+seeds/SPS_SEED_EARTHROOT,,,16,16
+seeds/SPS_SEED_FADELEAF,,,16,16
+seeds/SPS_SEED_BLANDFRUIT,,,16,16
+seeds/SPS_SEED_DUNGEONNUT,,,16,16
+seeds/SPS_SEED_STARFLOWER,,,16,16
+seeds/SPS_SEED_SEEDPOD,,,16,16
+seeds/SPS_SEED_SIOFLOWER,,,16,16
+seeds/SPS_SEED_STAREATER,,,16,16
+seeds/SPS_SEED_DEWCATCHER,,,16,16
+seeds/SPS_SEED_RENEPENTH,,,16,16
+armor/SPS_ERROR_ARMOR,,,16,16
+weapons/SPS_ERROR_AMMO,,,16,16
+misc/SPS_ROBOT_HEART,,,16,16
+misc/TEST_CLOAK,Test cloak,实验斗篷,16,16
+stones/CRYSTAL_VIAL,crystal bottle,水晶瓶,16,16
+misc/BOTTLE_FLOWER,Test tube rose,试管玫瑰,16,16
+weapons/BROKEN_HAMMER,Broken Hammer,损坏的铁锤,16,16
+misc/CROSS_PHOTO,Mix photo,拼凑相片,16,16
+weapons/DWARF_HAMMER,magic breaker,破魔之锤,16,16
+misc/HUMMING_TOOL,humming tool,蜂鸟开锁器,16,16
+misc/MIRROR_2,Mirror twice,镜像碎片,16,16
+misc/NOUTH_SOUTH,NS Controller,南北手柄,16,16
+misc/SELL_PERMIT,sell permit,经营许可证,16,16
+foods/VELOCIROOSTER_EGG,Velocirooster soul,坤哥之魂,16,16
+foods/HARO_EGG,Haro,待机的哈罗,16,16
+foods/PIG_PET_EGG,Pixel pig soul,像素猪之魂,16,16
+foods/RABBIT_PET_EGG,,,16,16
+misc/LING_HEART,Crystal necklace,水晶项链,16,16
+misc/SPS_PUMPKIN,,,16,16
+foods/BUTTERFLY_EGG,,,16,16
+foods/CHOCOBO_EGG,chocobo soul,陆行鸟之魂,16,16
+foods/DATURA_EGG,datura soul,曼陀罗之魂,16,16
+foods/DOG_PET_EGG,faithful dog soul,忠犬之魂,16,16
+foods/DWARF_BOY_EGG,dwarf apprentice soul,矮人学徒,16,16
+foods/FLY_EGG,fly soul,飞蝇之魂,16,16
+foods/FOX_HELPER_EGG,fox maid soul,狐女仆之魂,16,16
+foods/FROG_PET_EGG,frog soul,呆头蛙之魂,16,16
+foods/GENTLE_CRAB_EGG,gentle crab soul,绅士蟹之魂,16,16
+foods/KODORA_EGG,kodora soul,柯多拉之魂,16,16
+foods/LIT_DEMON_EGG,chainsaw demon soul,链锯魔之魂,16,16
+foods/MONKEY_EGG,green monkey soul,绿皮猴之魂,16,16
+foods/RIBBON_RAT_EGG,ribbon rat soul,缎带鼠之魂,16,16
+foods/SNAKE_PET_EGG,,,16,16
+foods/SPIDER_PET_EGG,plant spider soul,植蛛之魂,16,16
+foods/STAR_KID_EGG,star child soul,星芒之魂,16,16
+stones/STONE_PET_EGG,,,16,16
+foods/BLUE_DRAGON_EGG,blue dragon soul,蓝龙之魂,16,16
+foods/BLUE_GIRL_EGG,blue doll soul,蓝色人偶之魂,16,16
+foods/BUG_DRAGON_EGG,BUG dragon soul,BUG龙之魂,16,16
+foods/GOLD_DRAGON_EGG,gold dragon soul,金龙之魂,16,16
+foods/GREEN_DRAGON_EGG,green dragon soul,绿龙之魂,16,16
+foods/LERY_FIRE_EGG,chaos soul,紊乱之魂,16,16
+foods/LIGHT_DRAGON_EGG,white dragon soul,白龙之魂,16,16
+foods/RED_DRAGON_EGG,red dragon soul,红龙之魂,16,16
+foods/SCORPION_EGG,venom sting soul,毒蛰之魂,16,16
+foods/VIOLET_DRAGON_EGG,violet dragon soul,紫龙之魂,16,16
+misc/VIP_CARD,V.I.P. card,VIP卡,16,16
+bags/SPS_KEY_RING,,,16,16
+bags/SPS_ARROW_COLLECTER,,,16,16
+artifacts/SPS_GLASS_TOTEM,,,16,16
+misc/SPS_GOLD_BAG,,,16,16
+misc/SPS_SPECIAL_COIN,,,16,16
+misc/SPS_MIT_BOTTLE,,,16,16
+misc/SPS_UNBLESS_ANKH,,,16,16
+foods/SPS_CALL_COCONUT,,,16,16
+misc/SPS_POCKET_BALL_FULL,,,16,16
+misc/SPS_HOOK_HAM,,,16,16
+misc/SPS_LOLLIPOP,,,16,16
+misc/SPS_EASTER_TREE,,,16,16
+misc/SPS_MINI_MOAI,,,16,16
+misc/SPS_DRAGON_BOAT,,,16,16
+misc/SPS_GOEI,,,16,16
+misc/SPS_TEKKO_KAGI,,,16,16
+misc/SPS_WRAITH_BREATH,,,16,16
+stones/SPS_STONE_CROSS,,,16,16
+misc/SPS_MIRROR_DOLL,,,16,16
+misc/SPS_HAND_LIGHT,,,16,16
+misc/SPS_CURSE_BOX,,,16,16
+weapons/SPS_SMALL_CHAKRAM,,,16,16
+weapons/SPS_HUGE_SHURIKEN,,,16,16
+misc/SPS_TAMAHAWK,,,16,16
+misc/SPS_GOBLIN_SHIELD,,,16,16
+weapons/SPS_SP_KNUCKLES,,,16,16
+misc/SPS_FLAG,,,16,16
+keys/TENGU_KEY,tengu!,匿藏地传送门,16,16
+misc/MAGIC_HAND,Magic hand,魔术手,16,16
+foods/RICE_BALL,rice ball,糯米团,16,16
+potions/SPS_LING_POTION,,,16,16
+artifacts/ARTIFACT_ICE_EYE,,,16,16
+artifacts/NOOMLIN_CROWN,Noomlin Crown,诺姆林王冠,16,16
+foods/MUSHROOM_LANTERN,,,16,16
+foods/MUSHROOM_EARTHSTAR,,,16,16
+foods/MUSHROOM_GREEN_SPORE,,,16,16
+foods/MUSHROOM_DEATHCAP,,,16,16
+foods/MUSHROOM_PIXIEPARASOL,,,16,16
+foods/MUSHROOM_GOLDENJELLY,,,16,16
+foods/MUSHROOM_BLUEMILK,,,16,16
+misc/GREAT_PILL,,,16,16
+misc/WINE,,,16,16
+misc/ACCESSORY_HOLDER,,,16,16
