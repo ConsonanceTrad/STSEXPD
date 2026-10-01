@@ -1,6 +1,9 @@
 ﻿# list-item-atlas-cells.ps1
 #   Emit an editable "claim list" for every icon cell of the split item atlases.
-#   Already-claimed cells are listed too so historical misplacements can be corrected.
+#   Matching is POSITION-INSENSITIVE: each cell's content bounding box is compared
+#   against the original cells' bounding boxes, so an icon merely moved inside its cell
+#   (common when reordering art) still matches. Already-claimed cells are listed too,
+#   so historical misplacements can be corrected.
 # Usage:  .\tools\list-item-atlas-cells.ps1
 # Output: tools/atlas-meta/items-claims.csv   (atlas,col,row,w,h,semantic,status)
 # Keep this file ASCII-only (PowerShell 5.1 reads BOM-less files as ANSI).
@@ -38,13 +41,14 @@ public class PmList {
         return im;
     }
 
-    static bool MatchAt(Img big, Img tpl, int tx, int ty, int x, int y, int w, int h) {
+    // FNV-1a over the pixel bytes of a rect, row by row (stride-aware)
+    static string Hash(Img im, int x, int y, int w, int h) {
+        ulong hash = 14695981039346656037UL;
         for (int yy = 0; yy < h; yy++) {
-            int bi = (y + yy) * big.stride + x * 4;
-            int ti = (ty + yy) * tpl.stride + tx * 4;
-            for (int xx = 0; xx < w * 4; xx++) if (big.px[bi + xx] != tpl.px[ti + xx]) return false;
+            int i = (y + yy) * im.stride + x * 4;
+            for (int xx = 0; xx < w * 4; xx++) { hash ^= im.px[i + xx]; hash *= 1099511628211UL; }
         }
-        return true;
+        return hash.ToString("X16");
     }
 
     static bool Opaque(Img im, int x0, int y0, int x1, int y1) {
@@ -74,14 +78,19 @@ public class PmList {
         Img src;
         using (var b = new Bitmap(sourcePng)) { src = Grab(b); }
 
-        var entries = new List<int[]>();
+        // key = "w x h : contenthash" -> semantic name (position inside the cell is irrelevant)
+        var byContent = new Dictionary<string, string>();
         var names = new List<string>();
+        var boxes = new List<int[]>();
         foreach (var line in File.ReadAllLines(indexCsv)) {
             var s = line.Trim();
             if (s.Length == 0 || s.StartsWith("file")) continue;
             var p = s.Split(',');
-            entries.Add(new int[] { int.Parse(p[2]), int.Parse(p[3]), int.Parse(p[4]), int.Parse(p[5]) });
-            names.Add(p[0] + "#" + p[1]);
+            int x = int.Parse(p[2]), y = int.Parse(p[3]), w = int.Parse(p[4]), h = int.Parse(p[5]);
+            string nm = p[0] + "#" + p[1];
+            names.Add(nm); boxes.Add(new int[] { x, y, w, h });
+            string k = w + "x" + h + ":" + Hash(src, x, y, w, h);
+            if (!byContent.ContainsKey(k)) byContent[k] = nm;
         }
 
         var sb = new StringBuilder();
@@ -99,48 +108,22 @@ public class PmList {
             Img big;
             using (var b = new Bitmap(f)) { big = Grab(b); }
 
-            var claimed = new Dictionary<string, string>();
-            for (int i = 0; i < entries.Count; i++) {
-                var e = entries[i];
-                if (e[2] > big.w || e[3] > big.h) continue;
-                bool done = false;
-                for (int y = 0; y + e[3] <= big.h && !done; y++) {
-                    for (int x = 0; x + e[2] <= big.w; x++) {
-                        if (!MatchAt(big, src, e[0], e[1], x, y, e[2], e[3])) continue;
-                        string k = x + "," + y + "," + e[2] + "," + e[3];
-                        if (!claimed.ContainsKey(k)) claimed[k] = names[i];
-                        done = true;
-                        break;
-                    }
-                }
-            }
-
-            var cellSem = new Dictionary<string, string>();
-            foreach (var kv in claimed) {
-                var p = kv.Key.Split(',');
-                int bx = int.Parse(p[0]), by = int.Parse(p[1]), bw = int.Parse(p[2]), bh = int.Parse(p[3]);
-                int c0 = bx / 16, r0 = by / 16, c1 = (bx + bw - 1) / 16, r1 = (by + bh - 1) / 16;
-                for (int rr = r0; rr <= r1; rr++)
-                    for (int cc = c0; cc <= c1; cc++)
-                        cellSem[cc + "," + rr] = kv.Value + "," + bw + "," + bh;
-            }
-
             int rows = big.h / 16, cols = big.w / 16;
             for (int r = 0; r < rows; r++) {
                 for (int c = 0; c < cols; c++) {
-                    string ck = c + "," + r;
-                    string cs;
-                    if (cellSem.TryGetValue(ck, out cs)) {
-                        var parts = cs.Split(',');
-                        sb.AppendLine(rel + "," + c + "," + r + "," + parts[1] + "," + parts[2] + "," + parts[0] + ",matched");
-                        matched++;
-                        continue;
-                    }
                     int x0 = c * 16, y0 = r * 16;
                     if (!Opaque(big, x0, y0, x0 + 16, y0 + 16)) continue;
                     var bb = BBox(big, x0, y0, x0 + 16, y0 + 16);
-                    sb.AppendLine(rel + "," + c + "," + r + "," + (bb[2] - bb[0] + 1) + "," + (bb[3] - bb[1] + 1) + ",,unclaimed");
-                    unclaimed++;
+                    int w = bb[2] - bb[0] + 1, h = bb[3] - bb[1] + 1;
+                    string k = w + "x" + h + ":" + Hash(big, bb[0], bb[1], w, h);
+                    string sem;
+                    if (byContent.TryGetValue(k, out sem)) {
+                        sb.AppendLine(rel + "," + c + "," + r + "," + w + "," + h + "," + sem + ",matched");
+                        matched++;
+                    } else {
+                        sb.AppendLine(rel + "," + c + "," + r + "," + w + "," + h + ",,unclaimed");
+                        unclaimed++;
+                    }
                 }
             }
         }

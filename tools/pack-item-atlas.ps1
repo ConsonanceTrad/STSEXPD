@@ -142,6 +142,10 @@ public class PmPack {
                 }
             }
             Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(outPng)));
+            // never lose the previous file: keep a backup next to it before overwriting
+            if (File.Exists(outPng)) {
+                File.Copy(outPng, outPng + ".pack-backup.png", true);
+            }
             outp.Save(outPng, ImageFormat.Png);
         }
 
