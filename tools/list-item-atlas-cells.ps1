@@ -12,7 +12,8 @@ param(
 	[string]$IndexCsv = 'tools/atlas-meta/items/_index.csv',
 	[string]$SourcePng = 'core/src/assets/sprites/items/items.png',
 	[string]$SplitRoot = 'core/src/assets/sprites/items',
-	[string]$OutCsv = 'tools/atlas-meta/items-claims.csv'
+	[string]$OutCsv = 'tools/atlas-meta/items-claims.csv',
+	[string]$ExcludeFile = 'tools/atlas-meta/items-exclude.txt'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -73,7 +74,7 @@ public class PmList {
     }
 
     public static string Run(string indexCsv, string sourcePng, string splitRoot, string outCsv,
-                             out int matched, out int unclaimed, out int atlases) {
+                             string[] exclude, out int matched, out int unclaimed, out int atlases) {
         matched = 0; unclaimed = 0; atlases = 0;
         Img src;
         using (var b = new Bitmap(sourcePng)) { src = Grab(b); }
@@ -100,11 +101,13 @@ public class PmList {
         files.Sort(StringComparer.Ordinal);
         string srcFull = Path.GetFullPath(sourcePng);
         string splitFull = Path.GetFullPath(splitRoot);
+        var skip = new HashSet<string>(exclude ?? new string[0]);
 
         foreach (var f in files) {
             if (Path.GetFullPath(f).Equals(srcFull, StringComparison.OrdinalIgnoreCase)) continue;
             atlases++;
             string rel = f.Substring(splitFull.Length + 1).Replace('\\', '/');
+            if (skip.Contains(rel)) { continue; }
             Img big;
             using (var b = new Bitmap(f)) { big = Grab(b); }
 
@@ -134,12 +137,23 @@ public class PmList {
 }
 "@ -ReferencedAssemblies System.Drawing
 
+# 排除清单：这些 png 不在 items 拆分之列，不参与映射
+$exclude = @()
+if (Test-Path $ExcludeFile) {
+	foreach ($l in ([IO.File]::ReadAllLines((Resolve-Path $ExcludeFile).Path, [Text.Encoding]::UTF8))) {
+		$s = $l.Trim()
+		if ($s -ne '' -and -not $s.StartsWith('#')) { $exclude += $s }
+	}
+}
+Write-Host "excluded : $($exclude.Count) [$($exclude -join ', ')]"
+
 $matched = 0; $unclaimed = 0; $atlases = 0
 [PmList]::Run(
 	(Resolve-Path $IndexCsv).Path,
 	(Resolve-Path $SourcePng).Path,
 	(Resolve-Path $SplitRoot).Path,
 	(Join-Path (Get-Location).Path $OutCsv),
+	[string[]]$exclude,
 	[ref]$matched, [ref]$unclaimed, [ref]$atlases) | Out-Null
 
 Write-Host "atlases   : $atlases"

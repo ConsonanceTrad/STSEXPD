@@ -1,8 +1,4 @@
 atlas,col,row,w,h,semantic,status
-amulet.png,0,0,16,16,,unclaimed
-amulet.png,1,0,16,16,,unclaimed
-amulet.png,0,1,16,16,,unclaimed
-amulet.png,1,1,16,16,,unclaimed
 consum/food/food.png,0,0,14,11,,unclaimed
 consum/food/food.png,1,0,16,12,,unclaimed
 consum/food/food.png,2,0,16,11,,unclaimed

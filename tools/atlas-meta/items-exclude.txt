@@ -1,0 +1,5 @@
+﻿# items 图集排除清单
+# 每行一个，相对 core/src/assets/sprites/items/ 的路径（/ 分隔）。
+# 这些 png 不是从原 items.png 拆出来的，不参与拼接与映射。
+# 以 # 开头的行是注释。
+amulet.png
