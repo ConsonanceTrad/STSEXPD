@@ -1,0 +1,11 @@
+atlas,col,row,semantic,action
+specific/key.png,0,0,keys/IRON_KEY,set
+specific/key.png,1,0,keys/GOLDEN_KEY,set
+specific/key.png,2,0,keys/WORN_KEY,set
+specific/key.png,3,0,stones/CRYSTAL_KEY,set
+specific/key.png,0,1,,clear
+specific/key.png,1,1,,clear
+specific/key.png,2,1,,clear
+specific/key.png,3,1,,clear
+specific/currency.png,0,1,,skip
+specific/currency.png,1,1,,skip

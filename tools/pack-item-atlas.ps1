@@ -126,7 +126,7 @@ public class PmPack {
                 using (var src = new Bitmap(path)) {
                     foreach (var p in cells) {
                         if (p[0] != a) continue;
-                        if (p[5].Length == 0) continue;      // unclaimed: leave transparent
+                        if (p[5].Length == 0 || p[5] == "-") continue;   // unclaimed / skipped: leave transparent
                         int col = int.Parse(p[1]), row = int.Parse(p[2]);
                         int finalRow = rowOffset[a] + row;
                         for (int y = 0; y < 16; y++) {

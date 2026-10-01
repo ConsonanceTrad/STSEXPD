@@ -1,19 +1,20 @@
 ﻿# list-item-atlas-cells.ps1
 #   Emit an editable "claim list" for every icon cell of the split item atlases.
-#   Matching is POSITION-INSENSITIVE: each cell's content bounding box is compared
-#   against the original cells' bounding boxes, so an icon merely moved inside its cell
-#   (common when reordering art) still matches. Already-claimed cells are listed too,
-#   so historical misplacements can be corrected.
+#   Matching is POSITION-INSENSITIVE: each cell's content bounding box is compared against
+#   the original cells so an icon merely moved inside its cell still matches.
+#   User decisions recorded in items-overrides.csv take precedence, and cells marked
+#   clear/skip are emitted with semantic "-" so packing leaves them transparent.
 # Usage:  .\tools\list-item-atlas-cells.ps1
 # Output: tools/atlas-meta/items-claims.csv   (atlas,col,row,w,h,semantic,status)
 # Keep this file ASCII-only (PowerShell 5.1 reads BOM-less files as ANSI).
 
 param(
-	[string]$IndexCsv = 'tools/atlas-meta/items/_index.csv',
-	[string]$SourcePng = 'core/src/assets/sprites/items/items.png',
-	[string]$SplitRoot = 'core/src/assets/sprites/items',
-	[string]$OutCsv = 'tools/atlas-meta/items-claims.csv',
-	[string]$ExcludeFile = 'tools/atlas-meta/items-exclude.txt'
+	[string]$IndexCsv     = 'tools/atlas-meta/items/_index.csv',
+	[string]$SourcePng    = 'core/src/assets/sprites/items/items.png',
+	[string]$SplitRoot    = 'core/src/assets/sprites/items',
+	[string]$OutCsv       = 'tools/atlas-meta/items-claims.csv',
+	[string]$ExcludeFile  = 'tools/atlas-meta/items-exclude.txt',
+	[string]$OverrideFile = 'tools/atlas-meta/items-overrides.csv'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -42,7 +43,6 @@ public class PmList {
         return im;
     }
 
-    // FNV-1a over the pixel bytes of a rect, row by row (stride-aware)
     static string Hash(Img im, int x, int y, int w, int h) {
         ulong hash = 14695981039346656037UL;
         for (int yy = 0; yy < h; yy++) {
@@ -73,26 +73,26 @@ public class PmList {
         return new int[] { minX, minY, maxX, maxY };
     }
 
-    public static string Run(string indexCsv, string sourcePng, string splitRoot, string outCsv,
-                             string[] exclude, out int matched, out int unclaimed, out int atlases) {
-        matched = 0; unclaimed = 0; atlases = 0;
+    public static void Run(string indexCsv, string sourcePng, string splitRoot, string outCsv,
+                           string[] exclude, string[] ovKeys, string[] ovVals,
+                           out int matched, out int unclaimed, out int skipped, out int atlases) {
+        matched = 0; unclaimed = 0; skipped = 0; atlases = 0;
         Img src;
         using (var b = new Bitmap(sourcePng)) { src = Grab(b); }
 
-        // key = "w x h : contenthash" -> semantic name (position inside the cell is irrelevant)
         var byContent = new Dictionary<string, string>();
-        var names = new List<string>();
-        var boxes = new List<int[]>();
         foreach (var line in File.ReadAllLines(indexCsv)) {
             var s = line.Trim();
             if (s.Length == 0 || s.StartsWith("file")) continue;
             var p = s.Split(',');
             int x = int.Parse(p[2]), y = int.Parse(p[3]), w = int.Parse(p[4]), h = int.Parse(p[5]);
-            string nm = p[0] + "#" + p[1];
-            names.Add(nm); boxes.Add(new int[] { x, y, w, h });
             string k = w + "x" + h + ":" + Hash(src, x, y, w, h);
-            if (!byContent.ContainsKey(k)) byContent[k] = nm;
+            if (!byContent.ContainsKey(k)) byContent[k] = p[0] + "#" + p[1];
         }
+
+        var skipSet = new HashSet<string>(exclude);
+        var ovr = new Dictionary<string, string>();
+        for (int i = 0; i < ovKeys.Length; i++) ovr[ovKeys[i]] = ovVals[i];
 
         var sb = new StringBuilder();
         sb.AppendLine("atlas,col,row,w,h,semantic,status");
@@ -101,13 +101,13 @@ public class PmList {
         files.Sort(StringComparer.Ordinal);
         string srcFull = Path.GetFullPath(sourcePng);
         string splitFull = Path.GetFullPath(splitRoot);
-        var skip = new HashSet<string>(exclude ?? new string[0]);
 
         foreach (var f in files) {
             if (Path.GetFullPath(f).Equals(srcFull, StringComparison.OrdinalIgnoreCase)) continue;
-            atlases++;
             string rel = f.Substring(splitFull.Length + 1).Replace('\\', '/');
-            if (skip.Contains(rel)) { continue; }
+            if (skipSet.Contains(rel)) continue;
+            atlases++;
+
             Img big;
             using (var b = new Bitmap(f)) { big = Grab(b); }
 
@@ -118,44 +118,70 @@ public class PmList {
                     if (!Opaque(big, x0, y0, x0 + 16, y0 + 16)) continue;
                     var bb = BBox(big, x0, y0, x0 + 16, y0 + 16);
                     int w = bb[2] - bb[0] + 1, h = bb[3] - bb[1] + 1;
-                    string k = w + "x" + h + ":" + Hash(big, bb[0], bb[1], w, h);
-                    string sem;
-                    if (byContent.TryGetValue(k, out sem)) {
-                        sb.AppendLine(rel + "," + c + "," + r + "," + w + "," + h + "," + sem + ",matched");
-                        matched++;
+
+                    string sem = null;
+                    string ov;
+                    if (ovr.TryGetValue(rel + "|" + c + "," + r, out ov)) {
+                        int bar = ov.IndexOf('|');
+                        string act = ov.Substring(bar + 1);
+                        string val = ov.Substring(0, bar);
+                        sem = (act == "set") ? val : "-";
                     } else {
-                        sb.AppendLine(rel + "," + c + "," + r + "," + w + "," + h + ",,unclaimed");
-                        unclaimed++;
+                        string auto;
+                        if (byContent.TryGetValue(w + "x" + h + ":" + Hash(big, bb[0], bb[1], w, h), out auto)) sem = auto;
+                    }
+
+                    string head = rel + "," + c + "," + r + "," + w + "," + h + ",";
+                    if (sem == null) {
+                        sb.AppendLine(head + ",unclaimed"); unclaimed++;
+                    } else if (sem == "-") {
+                        sb.AppendLine(head + "-,skipped"); skipped++;
+                    } else {
+                        sb.AppendLine(head + sem + ",matched"); matched++;
                     }
                 }
             }
         }
 
         File.WriteAllText(outCsv, sb.ToString(), new UTF8Encoding(false));
-        return outCsv;
     }
 }
 "@ -ReferencedAssemblies System.Drawing
 
-# 排除清单：这些 png 不在 items 拆分之列，不参与映射
-$exclude = @()
-if (Test-Path $ExcludeFile) {
-	foreach ($l in ([IO.File]::ReadAllLines((Resolve-Path $ExcludeFile).Path, [Text.Encoding]::UTF8))) {
-		$s = $l.Trim()
-		if ($s -ne '' -and -not $s.StartsWith('#')) { $exclude += $s }
+function Read-List([string]$path, [switch]$SkipComments) {
+	$r = @()
+	if (Test-Path $path) {
+		foreach ($l in ([IO.File]::ReadAllLines((Resolve-Path $path).Path, [Text.Encoding]::UTF8))) {
+			$s = $l.Trim()
+			if ($s -eq '') { continue }
+			if ($SkipComments -and $s.StartsWith('#')) { continue }
+			$r += $s
+		}
 	}
+	return $r
 }
-Write-Host "excluded : $($exclude.Count) [$($exclude -join ', ')]"
 
-$matched = 0; $unclaimed = 0; $atlases = 0
+$exclude = Read-List $ExcludeFile -SkipComments
+$ovKeys = @(); $ovVals = @()
+$ovLines = Read-List $OverrideFile -SkipComments | Select-Object -Skip 1
+foreach ($l in $ovLines) {
+	$q = $l -split ','
+	if ($q.Count -lt 5) { continue }
+	$ovKeys += "$($q[0])|$($q[1]),$($q[2])"
+	$ovVals += "$($q[3])|$($q[4])"
+}
+Write-Host "excluded : $($exclude.Count)   overrides: $($ovKeys.Count)"
+
+$m = 0; $u = 0; $s = 0; $a = 0
 [PmList]::Run(
 	(Resolve-Path $IndexCsv).Path,
 	(Resolve-Path $SourcePng).Path,
 	(Resolve-Path $SplitRoot).Path,
 	(Join-Path (Get-Location).Path $OutCsv),
-	[string[]]$exclude,
-	[ref]$matched, [ref]$unclaimed, [ref]$atlases) | Out-Null
+	[string[]]$exclude, [string[]]$ovKeys, [string[]]$ovVals,
+	[ref]$m, [ref]$u, [ref]$s, [ref]$a)
 
-Write-Host "atlases   : $atlases"
-Write-Host "matched   : $matched"
-Write-Host "unclaimed : $unclaimed"
+Write-Host "atlases   : $a"
+Write-Host "matched   : $m"
+Write-Host "unclaimed : $u"
+Write-Host "skipped   : $s"
