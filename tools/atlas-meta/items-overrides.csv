@@ -56,3 +56,5 @@ specific/place_holder.png,15,3,misc/SPS_PH_BADGE_ALT,set
 specific/place_holder.png,6,0,misc/SPS_PH_FOOD,set
 specific/place_holder.png,7,0,misc/SPS_UI_ICON_CATALOG,set
 specific/place_holder.png,6,2,misc/SPS_PH_ALCHEMY,set
+consum/useful/process_enhance.png,1,1,documents/ARTIFACT_SPELLBOOK,set
+consum/useful/process_enhance.png,2,1,misc/ARMORKIT,set
