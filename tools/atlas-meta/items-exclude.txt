@@ -3,3 +3,4 @@
 # 这些 png 不是从原 items.png 拆出来的，不参与拼接与映射。
 # 以 # 开头的行是注释。
 amulet.png
+specific/place_holde_extrar.png
