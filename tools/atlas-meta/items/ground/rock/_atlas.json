@@ -1,0 +1,7 @@
+{
+    "atlas":  "core/src/assets/sprites/items/ground/rock.png",
+    "outDir":  "tools/atlas-meta/items/ground/rock/work",
+    "entries":  [
+        { "file": "misc/GEO_BOULDER", "frames": [ { "x": 0, "y": 0, "w": 16, "h": 15 } ] }
+    ]
+}

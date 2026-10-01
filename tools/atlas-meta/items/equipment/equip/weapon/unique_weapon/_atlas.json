@@ -1,0 +1,20 @@
+{
+    "atlas":  "core/src/assets/sprites/items/equipment/equip/weapon/unique_weapon.png",
+    "outDir":  "tools/atlas-meta/items/equipment/equip/weapon/unique_weapon/work",
+    "entries":  [
+        { "file": "misc/LEGACY_BOOMERANG", "frames": [ { "x": 0, "y": 80, "w": 16, "h": 16 } ] },
+        { "file": "misc/LEGACY_BULLET", "frames": [ { "x": 112, "y": 80, "w": 16, "h": 16 } ] },
+        { "file": "misc/MANY_KNIVE", "frames": [ { "x": 48, "y": 80, "w": 16, "h": 16 } ] },
+        { "file": "misc/SPS_ELE_KATANA", "frames": [ { "x": 80, "y": 0, "w": 16, "h": 16 } ] },
+        { "file": "wands/WAND_FLOW", "frames": [ { "x": 144, "y": 80, "w": 16, "h": 16 } ] },
+        { "file": "wands/WAND_SPS_MAGIC_MISSILE", "frames": [ { "x": 96, "y": 80, "w": 16, "h": 16 } ] },
+        { "file": "weapons/LEGACY_DIAMOND_PICKAXE", "frames": [ { "x": 32, "y": 16, "w": 16, "h": 16 } ] },
+        { "file": "weapons/LEGACY_HOLY_MACE", "frames": [ { "x": 0, "y": 16, "w": 16, "h": 16 } ] },
+        { "file": "weapons/LEGACY_LINK_SWORD", "frames": [ { "x": 0, "y": 0, "w": 16, "h": 16 } ] },
+        { "file": "weapons/LEGACY_SOLDIER_AMMO", "frames": [ { "x": 128, "y": 80, "w": 16, "h": 16 } ] },
+        { "file": "weapons/SPIRIT_BOW", "frames": [ { "x": 16, "y": 80, "w": 16, "h": 16 } ] },
+        { "file": "weapons/SPS_DEMON_BLADE", "frames": [ { "x": 80, "y": 80, "w": 16, "h": 16 } ] },
+        { "file": "weapons/SPS_ELF_BOW", "frames": [ { "x": 64, "y": 80, "w": 16, "h": 16 } ] },
+        { "file": "weapons/SPS_TAURCEN_BOW", "frames": [ { "x": 32, "y": 80, "w": 16, "h": 16 } ] }
+    ]
+}

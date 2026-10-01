@@ -68,7 +68,11 @@ foreach ($meta in $metas) {
 	if ($atlasRel -eq '') { throw "empty atlas path in $rel" }
 
 	$pkgName   = 'pd.atlas.' + $dirs[0]
-	$classBase = ConvertTo-Camel $dirs[-1]
+	# Nested atlas metadata (e.g. items/consum/food) must yield unique class names:
+	# join from the second path segment on, so `environment/tiles_sewers` stays TilesSewersDict
+	# while `items/consum/food` becomes ConsumFoodDict.
+	$nameParts = if ($dirs.Count -gt 1) { @($dirs[1..($dirs.Count - 1)]) } else { @($dirs[-1]) }
+	$classBase = ($nameParts | ForEach-Object { ConvertTo-Camel $_ }) -join ''
 	$className = $classBase + 'Dict'
 	$pkgDir    = Join-Path $targetOut $dirs[0]
 	if (-not (Test-Path $pkgDir)) { New-Item -ItemType Directory -Force -Path $pkgDir | Out-Null }

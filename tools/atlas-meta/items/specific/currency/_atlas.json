@@ -1,0 +1,8 @@
+{
+    "atlas":  "core/src/assets/sprites/items/specific/currency.png",
+    "outDir":  "tools/atlas-meta/items/specific/currency/work",
+    "entries":  [
+        { "file": "misc/ENERGY", "frames": [ { "x": 16, "y": 0, "w": 16, "h": 16 } ] },
+        { "file": "misc/GOLD", "frames": [ { "x": 0, "y": 0, "w": 15, "h": 13 } ] }
+    ]
+}

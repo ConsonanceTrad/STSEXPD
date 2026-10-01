@@ -1,0 +1,21 @@
+{
+    "atlas":  "core/src/assets/sprites/items/specific/place_holder.png",
+    "outDir":  "tools/atlas-meta/items/specific/place_holder/work",
+    "entries":  [
+        { "file": "artifacts/ARTIFACT_HOLDER", "frames": [ { "x": 64, "y": 0, "w": 15, "h": 15 } ] },
+        { "file": "documents/DOCUMENT_HOLDER", "frames": [ { "x": 3, "y": 50, "w": 10, "h": 11 } ] },
+        { "file": "documents/SCROLL_HOLDER", "frames": [ { "x": 128, "y": 1, "w": 15, "h": 14 } ] },
+        { "file": "foods/FOOD_HOLDER", "frames": [ { "x": 96, "y": 18, "w": 15, "h": 11 } ] },
+        { "file": "misc/ACCESSORY_HOLDER", "frames": [ { "x": 64, "y": 48, "w": 16, "h": 16 } ] },
+        { "file": "misc/MOB_HOLDER", "frames": [ { "x": 208, "y": 1, "w": 15, "h": 14 } ] },
+        { "file": "misc/SOMETHING", "frames": [ { "x": 4, "y": 18, "w": 8, "h": 13 } ] },
+        { "file": "misc/SPELL_HOLDER", "frames": [ { "x": 148, "y": 32, "w": 8, "h": 16 } ] },
+        { "file": "misc/TRINKET_HOLDER", "frames": [ { "x": 80, "y": 2, "w": 16, "h": 11 } ] },
+        { "file": "potions/ELIXIR_HOLDER", "frames": [ { "x": 130, "y": 33, "w": 12, "h": 14 } ] },
+        { "file": "potions/POTION_HOLDER", "frames": [ { "x": 146, "y": 1, "w": 12, "h": 14 } ] },
+        { "file": "rings/RING_HOLDER", "frames": [ { "x": 68, "y": 19, "w": 8, "h": 10 } ] },
+        { "file": "seeds/SEED_HOLDER", "frames": [ { "x": 147, "y": 19, "w": 10, "h": 10 } ] },
+        { "file": "stones/STONE_HOLDER", "frames": [ { "x": 129, "y": 18, "w": 14, "h": 12 } ] },
+        { "file": "wands/WAND_HOLDER", "frames": [ { "x": 49, "y": 1, "w": 14, "h": 14 } ] }
+    ]
+}

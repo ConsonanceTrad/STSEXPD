@@ -1,0 +1,10 @@
+{
+    "atlas":  "core/src/assets/sprites/items/specific/key.png",
+    "outDir":  "tools/atlas-meta/items/specific/key/work",
+    "entries":  [
+        { "file": "keys/GOLDEN_KEY", "frames": [ { "x": 20, "y": 17, "w": 8, "h": 14 } ] },
+        { "file": "keys/IRON_KEY", "frames": [ { "x": 4, "y": 17, "w": 8, "h": 14 } ] },
+        { "file": "keys/WORN_KEY", "frames": [ { "x": 36, "y": 17, "w": 8, "h": 14 } ] },
+        { "file": "stones/CRYSTAL_KEY", "frames": [ { "x": 52, "y": 17, "w": 8, "h": 14 } ] }
+    ]
+}

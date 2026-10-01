@@ -1,0 +1,20 @@
+{
+    "atlas":  "core/src/assets/sprites/items/consum/potion_seed/seed.png",
+    "outDir":  "tools/atlas-meta/items/consum/potion_seed/seed/work",
+    "entries":  [
+        { "file": "foods/NUT_VEGETABLE", "frames": [ { "x": 192, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "misc/STAR_FLOWER", "frames": [ { "x": 176, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "misc/UPGRADE_EATER", "frames": [ { "x": 208, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "seeds/SEED_BLINDWEED", "frames": [ { "x": 144, "y": 16, "w": 10, "h": 10 } ] },
+        { "file": "seeds/SEED_EARTHROOT", "frames": [ { "x": 128, "y": 16, "w": 10, "h": 10 } ] },
+        { "file": "seeds/SEED_FADELEAF", "frames": [ { "x": 160, "y": 16, "w": 10, "h": 10 } ] },
+        { "file": "seeds/SEED_FIREBLOOM", "frames": [ { "x": 16, "y": 16, "w": 10, "h": 10 } ] },
+        { "file": "seeds/SEED_ICECAP", "frames": [ { "x": 64, "y": 16, "w": 10, "h": 10 } ] },
+        { "file": "seeds/SEED_MAGEROYAL", "frames": [ { "x": 112, "y": 16, "w": 10, "h": 10 } ] },
+        { "file": "seeds/SEED_SORROWMOSS", "frames": [ { "x": 96, "y": 16, "w": 10, "h": 10 } ] },
+        { "file": "seeds/SEED_STARFLOWER", "frames": [ { "x": 176, "y": 16, "w": 10, "h": 10 } ] },
+        { "file": "seeds/SEED_STORMVINE", "frames": [ { "x": 80, "y": 16, "w": 10, "h": 10 } ] },
+        { "file": "seeds/SEED_SUNGRASS", "frames": [ { "x": 48, "y": 16, "w": 10, "h": 10 } ] },
+        { "file": "seeds/SEED_SWIFTTHISTLE", "frames": [ { "x": 32, "y": 16, "w": 10, "h": 10 } ] }
+    ]
+}

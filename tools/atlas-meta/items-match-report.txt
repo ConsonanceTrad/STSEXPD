@@ -1,0 +1,583 @@
+# matched cells (exact pixel match)
+
+## consum/food/food.png
+  (48,0) 16x12  foods/PUMPKIN_PIE#0
+  (48,0) 16x16  foods/SPS_PUMPKIN_PIE#0
+  (64,0) 16x16  foods/RICE_FOOD#0
+  (112,0) 16x16  misc/MIX_PIZZA#0
+  (128,0) 16x16  misc/MOON_CAKE#0
+  (144,0) 16x16  misc/HAMBURGER#0
+  (160,0) 16x16  foods/HONEY_RICE#0
+  (176,0) 16x16  rings/SPS_SPRING_ASSORTED#0
+  (224,0) 16x16  foods/SPS_KNOWLEDGE_FOOD#0
+  (256,0) 16x16  foods/MEAT_SOUP#0
+  (272,0) 16x16  foods/VEGETABLE_SOUP#0
+  (157,13) 8x10  misc/ITEM_237#0
+  (251,13) 12x14  misc/ITEM_364#0
+  (251,13) 14x12  misc/ITEM_349#0
+  (251,13) 8x10  misc/ITEM_238#0
+  (251,13) 15x14  misc/ITEM_319#0
+  (251,13) 10x10  misc/ITEM_396#0
+  (251,13) 15x15  misc/ITEM_174#0
+  (251,13) 12x13  misc/ITEM_380#0
+  (251,13) 14x14  misc/ITEM_222#0
+  (251,13) 16x16  keys/GOLDEN_SKELETON_KEY#0
+  (252,13) 15x14  misc/ITEM_333#0
+  (252,13) 10x10  misc/ITEM_397#0
+  (252,13) 14x12  misc/ITEM_350#0
+  (252,13) 14x14  misc/ITEM_223#0
+  (252,13) 8x10  misc/ITEM_239#0
+  (252,13) 15x15  misc/ITEM_175#0
+  (252,13) 12x13  misc/ITEM_382#0
+  (252,13) 12x14  misc/ITEM_366#0
+  (253,13) 15x14  misc/ITEM_334#0
+  (253,13) 14x12  misc/ITEM_351#0
+  (253,13) 12x13  misc/ITEM_383#0
+  (253,13) 10x10  misc/ITEM_398#0
+  (253,13) 12x14  misc/ITEM_367#0
+  (254,13) 12x14  misc/ITEM_406#0
+  (254,13) 15x14  misc/ITEM_335#0
+  (254,13) 10x10  misc/ITEM_399#0
+  (255,13) 12x14  misc/ITEM_407#0
+  (0,16) 16x16  foods/AFLY_FOOD#0
+  (16,16) 16x16  foods/PERFECT_FOOD#0
+  (32,16) 16x16  foods/FOOD_FANS#0
+  (98,17) 12x14  foods/EASTER_EGG#0
+  (64,18) 16x12  foods/STEAMED_FISH#0
+  (80,18) 16x12  foods/FISH_LEFTOVER#0
+  (16,32) 16x16  foods/SPS_TURKEY_MEAT#0
+  (32,32) 16x16  misc/CHICKENNUGGET#0
+  (48,32) 16x16  misc/HOTDOG#0
+  (64,32) 16x16  misc/KEBAB#0
+  (0,48) 16x16  foods/NUT_COOKIE#0
+  (16,48) 16x16  foods/SPS_PASTY_EASTER_EGG#0
+  (32,48) 16x16  foods/SPS_CANDY_CANE#0
+  (34,48) 13x16  foods/CANDY_CANE#0
+  (80,48) 16x16  foods/FRUIT_SALAD#0
+  (116,48) 7x16  potions/SPARKLING_POTION#0
+  (130,49) 12x14  potions/RAINBOW_POTION#0
+  (48,64) 16x16  misc/WINE#0
+  (64,64) 16x16  misc/FOAMED#0
+  (0,80) 16x16  foods/SPS_HONEY#0
+  (16,80) 16x16  foods/HONEY_WATER#0
+  (48,80) 16x16  misc/ICECREAM#0
+  (64,80) 16x16  foods/HONEY_MEAT#0
+  (80,80) 16x16  foods/SPS_NUT_CAKE#0
+  (80,96) 16x16  foods/HERB_MEAT#0
+  (48,99) 15x11  misc/STEWED#0
+  (96,99) 15x11  foods/PHANTOM_MEAT#0
+  (0,128) 9x12  foods/BLANDFRUIT#0
+  (16,128) 14x6  misc/BLAND_CHUNKS#0
+  (16,160) 16x16  foods/SPS_FISH_PET_FOOD#0
+  (32,160) 16x16  foods/SPS_FISH_FOOD#0
+  (256,160) 16x16  foods/BUG_MEAT#0
+
+## consum/functional/useful.png
+  (3,0) 10x16  misc/ANKH#0
+  (32,0) 12x15  misc/TORCH#0
+  (48,0) 16x15  misc/BEACON#0
+  (18,1) 12x13  misc/STYLUS#0
+  (65,2) 14x12  foods/HONEYPOT#0
+  (81,2) 14x12  misc/SHATTPOT#0
+
+## consum/goods_materials/goods.png
+  (16,0) 16x16  misc/BOTTLE_FLOWER#0
+  (32,0) 16x16  misc/AFLY_SOCK#0
+  (144,0) 16x16  misc/SIMPLE_360#0
+  (0,2) 16x11  misc/RAT_SKULL#0
+  (48,16) 16x16  artifacts/GHOST_GIRL_ROSE#0
+  (112,16) 16x16  misc/VIP_CARD#0
+
+## consum/goods_materials/materials.png
+  (48,0) 16x16  stones/CRYSTAL_NUCLEUS#0
+  (0,16) 16x16  misc/ADAMANT_WEAPON#0
+  (16,16) 16x16  armor/ADAMANT_ARMOR#0
+  (32,16) 16x16  wands/ADAMANT_WAND#0
+  (48,16) 16x16  rings/ADAMANT_RING#0
+  (0,48) 16x16  misc/SPS_GARBAGE#0
+  (16,48) 10x9  misc/BLOB#0
+  (32,48) 8x10  stones/SHARD#0
+  (48,48) 8x16  misc/ESCAPE#0
+  (64,48) 10x16  misc/STATUE#0
+
+## consum/potion_seed/basic_potion.png
+  (0,0) 12x14  potions/POTION_CRIMSON#0
+  (16,0) 12x14  potions/POTION_HEALING#0
+  (32,0) 12x14  potions/POTION_MINDVIS#0
+  (48,0) 12x14  potions/POTION_JADE#0
+  (64,0) 12x14  potions/POTION_TURQUOISE#0
+  (80,0) 12x14  potions/POTION_AZURE#0
+  (96,0) 12x14  potions/POTION_INDIGO#0
+  (112,0) 12x14  potions/POTION_INVIS#0
+  (128,0) 12x14  potions/POTION_BISTRE#0
+  (144,0) 12x14  potions/POTION_CHARCOAL#0
+  (160,0) 12x14  potions/POTION_SILVER#0
+  (176,0) 12x14  potions/POTION_EXP#0
+  (192,0) 8x15  misc/LIQUID_METAL#0
+  (0,16) 12x13  potions/POTION_MASTERY#0
+  (16,16) 12x13  potions/POTION_SHIELDING#0
+  (32,16) 12x13  potions/POTION_MAGISIGHT#0
+  (48,16) 12x13  potions/POTION_SNAPFREEZ#0
+  (64,16) 12x13  misc/EXOTIC_TURQUOISE#0
+  (80,16) 12x13  potions/POTION_CORROGAS#0
+  (96,16) 12x13  potions/POTION_STAMINA#0
+  (112,16) 12x13  potions/POTION_SHROUDFOG#0
+  (128,16) 12x13  misc/EXOTIC_BISTRE#0
+  (144,16) 12x13  potions/POTION_EARTHARMR#0
+  (160,16) 12x13  potions/POTION_CLEANSE#0
+  (176,16) 12x13  misc/EXOTIC_IVORY#0
+  (192,16) 11x13  potions/BREW_UNSTABLE#0
+  (0,32) 16x16  foods/MUSHROOM_LANTERN#0
+  (16,32) 16x16  foods/MUSHROOM_EARTHSTAR#0
+  (32,32) 16x16  foods/MUSHROOM_GREEN_SPORE#0
+  (48,32) 16x16  foods/MUSHROOM_DEATHCAP#0
+  (64,32) 16x16  foods/MUSHROOM_PIXIEPARASOL#0
+  (80,32) 16x16  misc/POCKET_BALL_EMPTY#0
+  (96,32) 16x16  misc/POCKET_BALL#0
+  (112,32) 16x16  misc/GREAT_PILL#0
+  (48,48) 11x13  potions/BREW_INFERNAL#0
+  (64,48) 11x13  potions/BREW_BLIZZARD#0
+  (80,48) 12x14  potions/BREW_SHOCKING#0
+  (96,48) 12x14  potions/BREW_CAUSTIC#0
+  (112,48) 9x11  potions/BREW_AQUA#0
+  (144,48) 12x14  potions/ELIXIR_AQUA#0
+  (160,48) 12x14  potions/ELIXIR_MIGHT#0
+  (176,48) 12x14  potions/ELIXIR_DRAGON#0
+  (192,48) 12x14  potions/ELIXIR_TOXIC#0
+  (208,48) 12x14  potions/ELIXIR_ICY#0
+  (224,48) 12x14  potions/ELIXIR_ARCANE#0
+  (240,48) 12x14  potions/ELIXIR_FEATHER#0
+
+## consum/potion_seed/seed.png
+  (16,16) 10x10  seeds/SEED_FIREBLOOM#0
+  (32,16) 10x10  seeds/SEED_SWIFTTHISTLE#0
+  (48,16) 10x10  seeds/SEED_SUNGRASS#0
+  (64,16) 10x10  seeds/SEED_ICECAP#0
+  (80,16) 10x10  seeds/SEED_STORMVINE#0
+  (96,16) 10x10  seeds/SEED_SORROWMOSS#0
+  (112,16) 10x10  seeds/SEED_MAGEROYAL#0
+  (128,16) 10x10  seeds/SEED_EARTHROOT#0
+  (144,16) 10x10  seeds/SEED_BLINDWEED#0
+  (160,16) 10x10  seeds/SEED_FADELEAF#0
+  (176,16) 10x10  seeds/SEED_STARFLOWER#0
+  (176,32) 16x16  misc/STAR_FLOWER#0
+  (192,32) 16x16  foods/NUT_VEGETABLE#0
+  (208,32) 16x16  misc/UPGRADE_EATER#0
+
+## consum/scroll_amulet/amulet.png
+  (16,0) 14x12  stones/STONE_AUGMENTATION#0
+  (32,0) 14x12  stones/STONE_FEAR#0
+  (48,0) 14x12  stones/STONE_BLAST#0
+  (64,0) 14x12  stones/STONE_BLINK#0
+  (80,0) 14x12  stones/STONE_CLAIRVOYANCE#0
+  (96,0) 14x12  stones/STONE_SLEEP#0
+  (112,0) 14x12  stones/STONE_DETECT#0
+  (128,0) 14x12  stones/STONE_ENCHANT#0
+  (144,0) 14x12  stones/STONE_FLOCK#0
+  (160,0) 14x12  stones/STONE_INTUITION#0
+  (176,0) 14x12  stones/STONE_SHOCK#0
+
+## consum/scroll_amulet/crystal.png
+  (0,0) 6x15  misc/WILD_ENERGY#0
+  (16,0) 12x10  misc/PHASE_SHIFT#0
+  (32,0) 10x10  misc/TELE_GRAB#0
+  (48,0) 12x13  misc/UNSTABLE_SPELL#0
+  (64,0) 10x16  misc/CURSE_INFUSE#0
+  (80,0) 10x14  misc/MAGIC_INFUSE#0
+  (96,0) 12x12  misc/ALCHEMIZE#0
+  (112,0) 12x13  misc/RECYCLE#0
+  (128,0) 14x11  misc/RECLAIM_TRAP#0
+  (144,0) 8x16  misc/RETURN_BEACON#0
+  (160,0) 8x16  stones/summon_ele#0
+  (176,0) 8x16  stones/summon_ele#1
+  (192,0) 8x16  stones/summon_ele#2
+  (208,0) 8x16  stones/summon_ele#3
+  (224,0) 8x16  stones/summon_ele#4
+
+## consum/scroll_amulet/scroll.png
+  (0,0) 15x14  documents/SCROLL_KAUNAN#0
+  (0,0) 16x16  misc/PLAYER_ICON#0
+  (16,0) 15x14  documents/SCROLL_SOWILO#0
+  (32,0) 15x14  documents/SCROLL_REMCURSE#0
+  (48,0) 15x14  documents/SCROLL_MIRRORIMG#0
+  (64,0) 15x14  documents/SCROLL_RECHARGE#0
+  (80,0) 15x14  documents/SCROLL_TELEPORT#0
+  (96,0) 15x14  documents/SCROLL_LULLABY#0
+  (112,0) 15x14  documents/SCROLL_MANNAZ#0
+  (0,16) 15x14  documents/SCROLL_ENCHANT#0
+  (16,16) 15x14  misc/EXOTIC_SOWILO#0
+  (32,16) 15x14  misc/EXOTIC_LAGUZ#0
+  (48,16) 15x14  misc/EXOTIC_YNGVI#0
+  (64,16) 15x14  documents/SCROLL_MYSTENRG#0
+  (80,16) 15x14  misc/EXOTIC_RAIDO#0
+  (96,16) 15x14  documents/SCROLL_SIREN#0
+  (112,16) 15x14  documents/SCROLL_FORESIGHT#0
+  (128,16) 15x14  documents/SCROLL_CHALLENGE#0
+  (144,16) 15x14  misc/EXOTIC_BERKANAN#0
+  (160,16) 15x14  documents/SCROLL_DREAD#0
+  (176,16) 15x14  documents/SCROLL_METAMORPH#0
+  (226,51) 12x11  misc/ARCANE_RESIN#0
+
+## consum/summor.png
+  (0,0) 16x16  foods/SPS_PET_EGG#0
+  (0,16) 16x16  foods/SCORPION_EGG#0
+  (16,16) 16x16  foods/BLUE_GIRL_EGG#0
+  (32,16) 16x16  foods/LERY_FIRE_EGG#0
+  (48,16) 16x16  foods/RED_DRAGON_EGG#0
+  (64,16) 16x16  foods/BLUE_DRAGON_EGG#0
+  (80,16) 16x16  foods/VIOLET_DRAGON_EGG#0
+  (96,16) 16x16  foods/GREEN_DRAGON_EGG#0
+  (128,16) 16x16  foods/RABBIT_PET_EGG#0
+  (144,16) 16x16  foods/VELOCIROOSTER_EGG#0
+  (160,16) 16x16  foods/BUG_DRAGON_EGG#0
+  (176,16) 16x16  foods/LIGHT_DRAGON_EGG#0
+  (192,16) 16x16  foods/GOLD_DRAGON_EGG#0
+  (208,16) 16x16  foods/AFLY_EGG#0
+  (224,16) 16x16  foods/STAR_KID_EGG#0
+  (240,16) 16x16  stones/STONE_PET_EGG#0
+  (0,32) 16x16  foods/DATURA_EGG#0
+  (16,32) 16x16  foods/DOG_PET_EGG#0
+  (32,32) 16x16  foods/DWARF_BOY_EGG#0
+  (48,32) 16x16  foods/FLY_EGG#0
+  (64,32) 16x16  foods/FOX_HELPER_EGG#0
+  (80,32) 16x16  foods/FROG_PET_EGG#0
+  (96,32) 16x16  foods/GENTLE_CRAB_EGG#0
+  (112,32) 16x16  foods/KODORA_EGG#0
+  (128,32) 16x16  foods/LIT_DEMON_EGG#0
+  (144,32) 16x16  foods/MONKEY_EGG#0
+  (160,32) 16x16  foods/PIG_PET_EGG#0
+  (176,32) 16x16  foods/RIBBON_RAT_EGG#0
+  (192,32) 16x16  foods/SNAKE_PET_EGG#0
+  (208,32) 16x16  foods/SPIDER_PET_EGG#0
+  (224,32) 16x16  foods/CHOCOBO_EGG#0
+  (16,48) 16x16  misc/LYNN_DOLL#0
+  (32,48) 16x16  misc/FAIRY_CARD#0
+  (64,48) 16x16  misc/ACTIVE_MR_DESTRUCTO#0
+  (80,48) 16x16  misc/RUSTY_CAT#0
+
+## consum/throws.png
+  (128,0) 15x15  misc/KUNAI#0
+  (160,0) 16x16  misc/JAVELIN#0
+  (208,0) 16x16  misc/TRIDENT#0
+  (112,1) 15x14  misc/BOLAS#0
+  (177,1) 13x13  misc/TOMAHAWK#0
+  (193,1) 14x14  misc/BOOMERANG#0
+  (18,2) 12x13  weapons/THROWING_KNIFE#0
+  (66,2) 12x12  weapons/SHURIKEN#0
+  (82,2) 12x12  weapons/THROWING_CLUB#0
+  (98,2) 13x13  weapons/THROWING_SPEAR#0
+  (226,2) 12x12  weapons/THROWING_HAMMER#0
+  (242,2) 11x12  misc/FORCE_CUBE#0
+  (3,3) 11x10  weapons/THROWING_SPIKE#0
+  (34,3) 12x10  stones/THROWING_STONE#0
+  (51,3) 11x11  foods/FISHING_SPEAR#0
+  (32,16) 16x16  misc/MAGIC_HAND#0
+  (144,16) 16x16  misc/SHIT_BALL#0
+  (160,16) 16x16  foods/RICE_BALL#0
+  (162,19) 12x11  misc/DUST#0
+  (0,64) 16x16  misc/DOOR_BLOCK#0
+  (32,64) 16x16  misc/SPS_WATER_BLOCK#0
+  (32,80) 15x15  weapons/ROT_DART#0
+  (48,80) 15x15  weapons/INCENDIARY_DART#0
+  (64,80) 15x15  weapons/ADRENALINE_DART#0
+  (80,80) 15x15  weapons/HEALING_DART#0
+  (96,80) 15x15  weapons/CHILLING_DART#0
+  (112,80) 15x15  weapons/SHOCKING_DART#0
+  (128,80) 15x15  weapons/POISON_DART#0
+  (144,80) 15x15  weapons/CLEANSING_DART#0
+  (160,80) 15x15  weapons/PARALYTIC_DART#0
+  (176,80) 15x15  weapons/HOLY_DART#0
+  (192,80) 15x15  weapons/DISPLACING_DART#0
+  (208,80) 15x15  weapons/BLINDING_DART#0
+
+## consum/useful/corpse_relics.png
+  (0,0) 12x12  stones/SEAL_SHARD#0
+  (16,0) 14x10  weapons/BROKEN_STAFF#0
+  (32,0) 9x9  misc/CLOAK_SCRAP#0
+  (48,0) 12x9  weapons/BOW_FRAGMENT#0
+  (64,0) 9x9  misc/BROKEN_HILT#0
+  (80,0) 11x13  documents/TORN_PAGE#0
+  (96,0) 12x11  misc/TRINKET_CATA#0
+
+## consum/useful/process_enhance.png
+  (0,0) 11x9  misc/MASK#0
+  (17,0) 13x16  misc/MASTERY#0
+  (32,0) 16x15  misc/KIT#0
+  (0,16) 13x7  misc/CROWN#0
+  (16,16) 16x16  documents/LEGACY_BRAVE_BOOK#0
+
+## consum/useful/useful.png
+  (64,16) 16x16  foods/PET_FOOD#0
+
+## equipment/bags.png
+  (64,0) 16x16  bags/SPS_KEY_RING#0
+  (80,0) 16x16  bags/SHOPPING_CART#0
+  (96,0) 16x16  bags/SPS_ARROW_COLLECTER#0
+  (112,0) 16x16  bags/HEART_OF_SCARECROW#0
+  (240,0) 16x16  misc/BACKPACK#0
+
+## equipment/equip/armor/basic_armor.png
+  (178,1) 12x13  armor/ARMOR_DUELIST#0
+  (0,2) 15x12  armor/ARMOR_CLOTH#0
+  (17,2) 14x13  armor/ARMOR_LEATHER#0
+  (33,2) 14x12  armor/ARMOR_MAIL#0
+  (49,2) 14x11  armor/ARMOR_SCALE#0
+  (66,2) 12x12  armor/ARMOR_PLATE#0
+  (0,32) 16x16  armor/SPS_VEST_ARMOR#0
+  (16,32) 16x16  armor/SPS_RUBBER_ARMOR#0
+  (32,32) 16x16  armor/SPS_CD_ARMOR#0
+  (48,32) 16x16  armor/SPS_STYROFOAM_ARMOR#0
+  (64,32) 16x16  armor/SPS_PROTECTIVE_ARMOR#0
+  (80,32) 16x16  armor/SPS_PHANTOM_ARMOR#0
+
+## equipment/equip/armor/unique_armor.png
+  (16,0) 16x16  misc/SPECTACLES#0
+  (64,0) 16x16  armor/SPS_BUNNY_ARMOR#0
+
+## equipment/equip/weapon/basic_weapon.png
+  (0,0) 13x13  weapons/WORN_SHORTSWORD#0
+  (16,0) 13x14  foods/RAPIER#0
+  (32,0) 12x13  weapons/DAGGER#0
+  (48,0) 15x16  weapons/MAGES_STAFF#0
+  (176,0) 16x16  weapons/QUARTERSTAFF#0
+  (192,0) 16x16  weapons/SPS_WEP_CLUB#0
+  (224,0) 16x16  misc/SPS_TEKKO_KAGI#0
+  (0,16) 13x13  weapons/SHORTSWORD#0
+  (16,16) 12x14  weapons/HAND_AXE#0
+  (32,16) 16x16  weapons/SPEAR#0
+  (48,16) 16x16  weapons/SPS_WEP_SPEAR#0
+  (64,16) 13x14  misc/DIRK#0
+  (80,16) 15x15  misc/SICKLE#0
+  (192,16) 16x16  weapons/LEGACY_WOODEN_STAFF#0
+  (304,16) 16x16  misc/SHADOW_EATER#0
+  (320,16) 16x16  misc/SPS_GOBLIN_SHIELD#0
+  (336,16) 16x16  misc/SPS_NINJA_FAN#0
+  (352,16) 16x16  misc/SPS_WHISK#0
+  (0,32) 14x14  weapons/SWORD#0
+  (16,32) 15x15  weapons/MACE#0
+  (48,32) 16x16  misc/ROUND_SHIELD#0
+  (64,32) 16x16  misc/SAI#0
+  (80,32) 14x14  weapons/WHIP#0
+  (113,32) 16x16  misc/SPS_WEP_HALBERD#0
+  (129,32) 16x16  weapons/SPS_WEP_LANCE#0
+  (145,32) 16x16  stones/SPS_STONE_CROSS#0
+  (192,32) 16x16  misc/SPS_LOLLIPOP#0
+  (208,32) 16x16  misc/SJRB_MUSIC#0
+  (256,32) 16x16  misc/SPS_EASTER_TREE#0
+  (272,32) 16x16  weapons/DWARF_HAMMER#0
+  (288,32) 16x16  foods/SPS_CALL_COCONUT#0
+  (320,32) 16x16  weapons/SPS_SP_KNUCKLES#0
+  (336,32) 16x16  misc/SPS_PUMPKIN#0
+  (368,32) 16x16  misc/FIRE_CRACKER#0
+  (0,48) 15x15  weapons/LONGSWORD#0
+  (16,48) 16x16  weapons/BATTLE_AXE#0
+  (32,48) 14x14  weapons/FLAIL#0
+  (64,48) 14x15  weapons/ASSASSINS_BLADE#0
+  (0,64) 16x16  weapons/GREATSWORD#0
+  (16,64) 16x16  weapons/WAR_HAMMER#0
+  (32,64) 16x16  weapons/GLAIVE#0
+  (48,64) 13x15  misc/GAUNTLETS#0
+  (64,64) 12x16  misc/GREATSHIELD#0
+  (128,64) 16x16  misc/SPORK#0
+  (0,80) 14x15  weapons/WAR_SCYTHE#0
+  (16,80) 12x16  weapons/GREATAXE#0
+  (112,80) 16x16  misc/NEPTUNUS_TRIDENT#0
+  (128,80) 16x16  weapons/ARES_SWORD#0
+  (144,80) 16x16  misc/JUPITERS_WRAITH#0
+  (160,80) 16x16  weapons/CROM_CRUACH_AXE#0
+  (176,80) 16x16  weapons/LOKIS_FLAIL#0
+  (0,96) 15x15  weapons/CROSSBOW#0
+  (112,96) 16x16  weapons/WOODEN_BOW#0
+  (128,96) 16x16  stones/STONE_BOW#0
+  (144,96) 16x16  weapons/METAL_BOW#0
+  (160,96) 16x16  weapons/ALLOY_BOW#0
+  (176,96) 16x16  weapons/PVC_BOW#0
+  (112,112) 16x16  weapons/gun#0
+  (128,112) 16x16  weapons/gun#1
+  (144,112) 16x16  weapons/gun#2
+  (160,112) 16x16  weapons/gun#3
+  (176,112) 16x16  weapons/gun#4
+  (192,112) 16x16  misc/HAND_CANNON#0
+  (208,112) 16x16  misc/SLING#0
+
+## equipment/equip/weapon/bomb.png
+  (3,1) 10x13  weapons/BOMB#0
+  (17,1) 14x13  weapons/DBL_BOMB#0
+  (96,15) 16x16  weapons/LIGHT_BOMB#0
+  (3,17) 10x13  misc/FLASHBANG#0
+  (19,17) 10x13  weapons/HOLY_BOMB#0
+  (35,17) 10x13  weapons/WOOLY_BOMB#0
+  (51,17) 10x13  misc/NOISEMAKER#0
+  (67,17) 10x13  weapons/ARCANE_BOMB#0
+  (83,17) 10x13  weapons/SHRAPNEL_BOMB#0
+  (66,34) 13x12  weapons/FIRE_BOMB#0
+  (82,34) 13x12  weapons/FROST_BOMB#0
+  (98,34) 13x12  weapons/REGROWTH_BOMB#0
+  (114,34) 13x12  weapons/SMOKE_BOMB#0
+
+## equipment/equip/weapon/unique_weapon.png
+  (0,0) 16x16  weapons/LEGACY_LINK_SWORD#0
+  (80,0) 16x16  misc/SPS_ELE_KATANA#0
+  (0,16) 16x16  weapons/LEGACY_HOLY_MACE#0
+  (32,16) 16x16  weapons/LEGACY_DIAMOND_PICKAXE#0
+  (0,80) 16x16  misc/LEGACY_BOOMERANG#0
+  (16,80) 16x16  weapons/SPIRIT_BOW#0
+  (32,80) 16x16  weapons/SPS_TAURCEN_BOW#0
+  (48,80) 16x16  misc/MANY_KNIVE#0
+  (64,80) 16x16  weapons/SPS_ELF_BOW#0
+  (80,80) 16x16  weapons/SPS_DEMON_BLADE#0
+  (96,80) 16x16  wands/WAND_SPS_MAGIC_MISSILE#0
+  (112,80) 16x16  misc/LEGACY_BULLET#0
+  (128,80) 16x16  weapons/LEGACY_SOLDIER_AMMO#0
+  (144,80) 16x16  wands/WAND_FLOW#0
+
+## equipment/jewellery/artifact.png
+  (64,0) 16x16  misc/LEGACY_TIME_OCLOCK#0
+  (160,0) 15x15  artifacts/horn#2
+  (308,0) 8x16  artifacts/ARTIFACT_KEY#0
+  (48,16) 16x16  artifacts/ARTIFACT_BEACON#0
+  (80,16) 16x16  misc/SPS_ROBOT_HEART#0
+  (96,16) 16x16  artifacts/ARTIFACT_ICE_EYE#0
+  (112,16) 16x16  artifacts/SPS_GLASS_TOTEM#0
+  (128,16) 16x16  misc/LEGACY_ALIEN_BAG#0
+  (0,48) 16x16  misc/CURSE_PHONE#0
+  (16,48) 16x16  misc/LING_HEART#0
+  (64,48) 16x16  misc/FOUR_CLOVER#0
+  (80,48) 16x16  potions/AUTO_POTION#0
+  (96,48) 16x16  artifacts/NOOMLIN_CROWN#0
+
+## equipment/jewellery/ring.png
+  (20,3) 8x10  rings/RING_RUBY#0
+  (36,3) 8x10  rings/RING_ELEMENTS#0
+  (52,3) 8x10  rings/RING_ENERGY#0
+  (68,3) 8x10  rings/RING_ONYX#0
+  (84,3) 8x10  rings/RING_FORCE#0
+  (100,3) 8x10  rings/RING_FUROR#0
+  (116,3) 8x10  rings/RING_SAPPHIRE#0
+  (132,3) 8x10  rings/RING_MIGHT#0
+  (148,3) 8x10  rings/RING_SHARPSHOOT#0
+  (164,3) 8x10  rings/RING_TENACITY#0
+  (180,3) 8x10  rings/RING_DIAMOND#0
+
+## equipment/non_equip.png
+  (0,0) 16x16  artifacts/LEGACY_ATTACK_SHOES#0
+  (16,0) 16x16  misc/SPS_ANKH_SHIELD#0
+  (32,0) 16x16  foods/MUSHROOM#0
+  (144,0) 16x16  foods/HONEY_GEL#0
+  (176,0) 16x16  foods/GEL#0
+  (224,0) 16x16  misc/SPS_POCKET_BALL_FULL#0
+  (0,16) 16x16  misc/WOODEN_SHIELD#0
+  (16,16) 16x16  misc/MIX_BOTTLE#0
+  (32,16) 16x16  misc/LEGACY_SHOVEL#0
+  (48,16) 16x16  weapons/LEGACY_SOLDIER_GUN#0
+  (80,16) 16x16  misc/LEGACY_ATTACK_SHIELD#0
+  (112,16) 16x16  misc/LEGACY_BIG_BATTERY#0
+  (128,16) 16x16  misc/LEGACY_B_SHOVEL#0
+  (224,16) 16x16  misc/CURSE_BLOOD#0
+  (240,16) 16x16  misc/SPS_GNOLL_MARK#0
+  (16,32) 16x16  misc/SPS_FLAG#0
+  (32,32) 16x16  misc/SPS_DICE_TOWER#0
+  (48,32) 16x16  misc/SPS_MECH_POCKET#0
+  (64,32) 16x16  misc/SPS_PPC#0
+  (128,32) 16x16  misc/SPS_SERIOUS_PUNCH#0
+  (144,32) 16x16  documents/SPS_NEED_PAPER#0
+  (160,32) 16x16  misc/SPS_PPC2#0
+  (48,79) 16x16  documents/SPS_REWARD_PAPER#0
+  (16,80) 16x16  documents/SPS_UNDEAD_BOOK#0
+  (240,80) 16x16  misc/ELEVATOR#0
+  (112,96) 16x16  armor/SPS_LIFE_ARMOR#0
+  (240,96) 15x15  misc/SPYGLASS#0
+  (16,112) 10x14  misc/PARCHMENT_SCRAP#0
+  (32,112) 9x9  seeds/PETRIFIED_SEED#0
+  (48,112) 15x13  stones/EXOTIC_CRYSTALS#0
+  (64,112) 12x11  misc/MOSSY_CLUMP#0
+  (80,112) 16x12  misc/SUNDIAL#0
+  (96,112) 11x15  misc/CLOVER#0
+  (112,112) 13x15  misc/TRAP_MECHANISM#0
+  (128,112) 8x15  misc/MIMIC_TOOTH#0
+  (144,112) 12x11  misc/WONDROUS_RESIN#0
+  (160,112) 12x12  misc/EYE_OF_NEWT#0
+  (176,112) 12x13  misc/SALT_CUBE#0
+  (192,112) 6x15  misc/BLOOD_VIAL#0
+  (208,112) 7x14  stones/OBLIVION_SHARD#0
+  (224,112) 13x15  misc/CHAOTIC_CENSER#0
+  (240,112) 16x15  misc/FERRET_TUFT#0
+
+## equipment/wand/basic_wand.png
+  (16,0) 14x14  wands/WAND_FIREBOLT#0
+  (64,0) 14x14  wands/WAND_DISINTEGRATION#0
+  (80,0) 14x14  wands/WAND_PRISMATIC_LIGHT#0
+  (96,0) 14x14  wands/WAND_WARDING#0
+  (112,0) 14x14  wands/WAND_REGROWTH#0
+  (16,16) 14x14  wands/WAND_TRANSFUSION#0
+  (48,16) 14x14  wands/WAND_LIVING_EARTH#0
+  (64,16) 14x14  wands/WAND_BLAST_WAVE#0
+  (80,16) 14x14  wands/WAND_CORRUPTION#0
+  (192,16) 8x10  misc/ITEM_236#0
+
+## ground/functional_falling.png
+  (19,19) 10x10  misc/SANDBAG#0
+  (35,19) 11x11  weapons/SPIRIT_ARROW#0
+  (51,19) 10x10  weapons/TENGU_BOMB#0
+  (67,19) 10x10  misc/TENGU_SHOCKER#0
+  (4,20) 8x8  misc/PETAL#0
+
+## ground/grounding_items.png
+  (96,1) 16x14  misc/CHEST#0
+  (112,1) 16x14  misc/LOCKED_CHEST#0
+  (128,1) 16x14  stones/CRYSTAL_CHEST#0
+  (144,1) 16x14  misc/EBONY_CHEST#0
+  (0,48) 16x16  misc/E_DUST#0
+
+## ground/rock.png
+  (0,0) 16x15  misc/GEO_BOULDER#0
+
+## specific/currency.png
+  (0,0) 15x13  misc/GOLD#0
+  (16,0) 16x16  misc/ENERGY#0
+
+## specific/key.png
+  (4,17) 8x14  keys/IRON_KEY#0
+  (20,17) 8x14  keys/GOLDEN_KEY#0
+  (36,17) 8x14  keys/WORN_KEY#0
+  (52,17) 8x14  stones/CRYSTAL_KEY#0
+
+## specific/pages.png
+  (0,0) 16x16  misc/ITEM_687#0
+  (3,2) 10x11  documents/GUIDE_PAGE#0
+  (19,2) 10x11  documents/ALCH_PAGE#0
+  (35,2) 10x11  documents/SEWER_PAGE#0
+  (51,2) 10x11  documents/PRISON_PAGE#0
+  (67,2) 10x11  documents/CAVES_PAGE#0
+  (83,2) 10x11  documents/CITY_PAGE#0
+  (99,2) 10x11  documents/HALLS_PAGE#0
+
+## specific/place_holder.png
+  (64,0) 15x15  artifacts/ARTIFACT_HOLDER#0
+  (49,1) 14x14  wands/WAND_HOLDER#0
+  (128,1) 15x14  documents/SCROLL_HOLDER#0
+  (146,1) 12x14  potions/POTION_HOLDER#0
+  (208,1) 15x14  misc/MOB_HOLDER#0
+  (80,2) 16x11  misc/TRINKET_HOLDER#0
+  (4,18) 8x13  misc/SOMETHING#0
+  (96,18) 15x11  foods/FOOD_HOLDER#0
+  (129,18) 14x12  stones/STONE_HOLDER#0
+  (68,19) 8x10  rings/RING_HOLDER#0
+  (147,19) 10x10  seeds/SEED_HOLDER#0
+  (148,32) 8x16  misc/SPELL_HOLDER#0
+  (130,33) 12x14  potions/ELIXIR_HOLDER#0
+  (64,48) 16x16  misc/ACCESSORY_HOLDER#0
+  (3,50) 10x11  documents/DOCUMENT_HOLDER#0
+
+## specific/task.png
+  (208,0) 16x16  misc/PUDDING_CUP#0
+  (34,2) 12x12  misc/CANDLE#0
+  (208,16) 16x16  misc/AMULET#0
+  (1,17) 14x14  weapons/PICKAXE#0
+  (17,17) 15x15  misc/ORE#0
+  (34,18) 12x12  misc/TOKEN#0
+  (50,19) 12x11  misc/EMBER#0
+  (48,32) 16x16  misc/SEWER_CHALLENGE#0
+  (80,32) 16x16  misc/CAVE_CHALLENGE#0
+  (112,32) 16x16  keys/POT_KEY#0
+  (128,32) 16x16  weapons/TENGU_SWORD#0

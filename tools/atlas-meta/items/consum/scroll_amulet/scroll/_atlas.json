@@ -1,0 +1,28 @@
+{
+    "atlas":  "core/src/assets/sprites/items/consum/scroll_amulet/scroll.png",
+    "outDir":  "tools/atlas-meta/items/consum/scroll_amulet/scroll/work",
+    "entries":  [
+        { "file": "documents/SCROLL_CHALLENGE", "frames": [ { "x": 128, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_DREAD", "frames": [ { "x": 160, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_ENCHANT", "frames": [ { "x": 0, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_FORESIGHT", "frames": [ { "x": 112, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_KAUNAN", "frames": [ { "x": 0, "y": 0, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_LULLABY", "frames": [ { "x": 96, "y": 0, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_MANNAZ", "frames": [ { "x": 112, "y": 0, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_METAMORPH", "frames": [ { "x": 176, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_MIRRORIMG", "frames": [ { "x": 48, "y": 0, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_MYSTENRG", "frames": [ { "x": 64, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_RECHARGE", "frames": [ { "x": 64, "y": 0, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_REMCURSE", "frames": [ { "x": 32, "y": 0, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_SIREN", "frames": [ { "x": 96, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_SOWILO", "frames": [ { "x": 16, "y": 0, "w": 15, "h": 14 } ] },
+        { "file": "documents/SCROLL_TELEPORT", "frames": [ { "x": 80, "y": 0, "w": 15, "h": 14 } ] },
+        { "file": "misc/ARCANE_RESIN", "frames": [ { "x": 226, "y": 51, "w": 12, "h": 11 } ] },
+        { "file": "misc/EXOTIC_BERKANAN", "frames": [ { "x": 144, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "misc/EXOTIC_LAGUZ", "frames": [ { "x": 32, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "misc/EXOTIC_RAIDO", "frames": [ { "x": 80, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "misc/EXOTIC_SOWILO", "frames": [ { "x": 16, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "misc/EXOTIC_YNGVI", "frames": [ { "x": 48, "y": 16, "w": 15, "h": 14 } ] },
+        { "file": "misc/PLAYER_ICON", "frames": [ { "x": 0, "y": 0, "w": 16, "h": 16 } ] }
+    ]
+}

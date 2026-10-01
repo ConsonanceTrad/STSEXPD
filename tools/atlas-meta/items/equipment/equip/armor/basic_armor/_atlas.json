@@ -1,0 +1,18 @@
+{
+    "atlas":  "core/src/assets/sprites/items/equipment/equip/armor/basic_armor.png",
+    "outDir":  "tools/atlas-meta/items/equipment/equip/armor/basic_armor/work",
+    "entries":  [
+        { "file": "armor/ARMOR_CLOTH", "frames": [ { "x": 0, "y": 2, "w": 15, "h": 12 } ] },
+        { "file": "armor/ARMOR_DUELIST", "frames": [ { "x": 178, "y": 1, "w": 12, "h": 13 } ] },
+        { "file": "armor/ARMOR_LEATHER", "frames": [ { "x": 17, "y": 2, "w": 14, "h": 13 } ] },
+        { "file": "armor/ARMOR_MAIL", "frames": [ { "x": 33, "y": 2, "w": 14, "h": 12 } ] },
+        { "file": "armor/ARMOR_PLATE", "frames": [ { "x": 66, "y": 2, "w": 12, "h": 12 } ] },
+        { "file": "armor/ARMOR_SCALE", "frames": [ { "x": 49, "y": 2, "w": 14, "h": 11 } ] },
+        { "file": "armor/SPS_CD_ARMOR", "frames": [ { "x": 32, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "armor/SPS_PHANTOM_ARMOR", "frames": [ { "x": 80, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "armor/SPS_PROTECTIVE_ARMOR", "frames": [ { "x": 64, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "armor/SPS_RUBBER_ARMOR", "frames": [ { "x": 16, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "armor/SPS_STYROFOAM_ARMOR", "frames": [ { "x": 48, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "armor/SPS_VEST_ARMOR", "frames": [ { "x": 0, "y": 32, "w": 16, "h": 16 } ] }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "atlas":  "core/src/assets/sprites/items/equipment/equip/weapon/bomb.png",
+    "outDir":  "tools/atlas-meta/items/equipment/equip/weapon/bomb/work",
+    "entries":  [
+        { "file": "misc/FLASHBANG", "frames": [ { "x": 3, "y": 17, "w": 10, "h": 13 } ] },
+        { "file": "misc/NOISEMAKER", "frames": [ { "x": 51, "y": 17, "w": 10, "h": 13 } ] },
+        { "file": "weapons/ARCANE_BOMB", "frames": [ { "x": 67, "y": 17, "w": 10, "h": 13 } ] },
+        { "file": "weapons/BOMB", "frames": [ { "x": 3, "y": 1, "w": 10, "h": 13 } ] },
+        { "file": "weapons/DBL_BOMB", "frames": [ { "x": 17, "y": 1, "w": 14, "h": 13 } ] },
+        { "file": "weapons/FIRE_BOMB", "frames": [ { "x": 66, "y": 34, "w": 13, "h": 12 } ] },
+        { "file": "weapons/FROST_BOMB", "frames": [ { "x": 82, "y": 34, "w": 13, "h": 12 } ] },
+        { "file": "weapons/HOLY_BOMB", "frames": [ { "x": 19, "y": 17, "w": 10, "h": 13 } ] },
+        { "file": "weapons/LIGHT_BOMB", "frames": [ { "x": 96, "y": 15, "w": 16, "h": 16 } ] },
+        { "file": "weapons/REGROWTH_BOMB", "frames": [ { "x": 98, "y": 34, "w": 13, "h": 12 } ] },
+        { "file": "weapons/SHRAPNEL_BOMB", "frames": [ { "x": 83, "y": 17, "w": 10, "h": 13 } ] },
+        { "file": "weapons/SMOKE_BOMB", "frames": [ { "x": 114, "y": 34, "w": 13, "h": 12 } ] },
+        { "file": "weapons/WOOLY_BOMB", "frames": [ { "x": 35, "y": 17, "w": 10, "h": 13 } ] }
+    ]
+}

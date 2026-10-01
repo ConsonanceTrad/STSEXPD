@@ -1,0 +1,16 @@
+{
+    "atlas":  "core/src/assets/sprites/items/equipment/wand/basic_wand.png",
+    "outDir":  "tools/atlas-meta/items/equipment/wand/basic_wand/work",
+    "entries":  [
+        { "file": "misc/ITEM_236", "frames": [ { "x": 192, "y": 16, "w": 8, "h": 10 } ] },
+        { "file": "wands/WAND_BLAST_WAVE", "frames": [ { "x": 64, "y": 16, "w": 14, "h": 14 } ] },
+        { "file": "wands/WAND_CORRUPTION", "frames": [ { "x": 80, "y": 16, "w": 14, "h": 14 } ] },
+        { "file": "wands/WAND_DISINTEGRATION", "frames": [ { "x": 64, "y": 0, "w": 14, "h": 14 } ] },
+        { "file": "wands/WAND_FIREBOLT", "frames": [ { "x": 16, "y": 0, "w": 14, "h": 14 } ] },
+        { "file": "wands/WAND_LIVING_EARTH", "frames": [ { "x": 48, "y": 16, "w": 14, "h": 14 } ] },
+        { "file": "wands/WAND_PRISMATIC_LIGHT", "frames": [ { "x": 80, "y": 0, "w": 14, "h": 14 } ] },
+        { "file": "wands/WAND_REGROWTH", "frames": [ { "x": 112, "y": 0, "w": 14, "h": 14 } ] },
+        { "file": "wands/WAND_TRANSFUSION", "frames": [ { "x": 16, "y": 16, "w": 14, "h": 14 } ] },
+        { "file": "wands/WAND_WARDING", "frames": [ { "x": 96, "y": 0, "w": 14, "h": 14 } ] }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "atlas":  "core/src/assets/sprites/items/specific/task.png",
+    "outDir":  "tools/atlas-meta/items/specific/task/work",
+    "entries":  [
+        { "file": "keys/POT_KEY", "frames": [ { "x": 112, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "misc/AMULET", "frames": [ { "x": 208, "y": 16, "w": 16, "h": 16 } ] },
+        { "file": "misc/CANDLE", "frames": [ { "x": 34, "y": 2, "w": 12, "h": 12 } ] },
+        { "file": "misc/CAVE_CHALLENGE", "frames": [ { "x": 80, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "misc/EMBER", "frames": [ { "x": 50, "y": 19, "w": 12, "h": 11 } ] },
+        { "file": "misc/ORE", "frames": [ { "x": 17, "y": 17, "w": 15, "h": 15 } ] },
+        { "file": "misc/PUDDING_CUP", "frames": [ { "x": 208, "y": 0, "w": 16, "h": 16 } ] },
+        { "file": "misc/SEWER_CHALLENGE", "frames": [ { "x": 48, "y": 32, "w": 16, "h": 16 } ] },
+        { "file": "misc/TOKEN", "frames": [ { "x": 34, "y": 18, "w": 12, "h": 12 } ] },
+        { "file": "weapons/PICKAXE", "frames": [ { "x": 1, "y": 17, "w": 14, "h": 14 } ] },
+        { "file": "weapons/TENGU_SWORD", "frames": [ { "x": 128, "y": 32, "w": 16, "h": 16 } ] }
+    ]
+}

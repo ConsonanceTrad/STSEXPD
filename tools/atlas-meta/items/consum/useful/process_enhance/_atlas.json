@@ -1,0 +1,11 @@
+{
+    "atlas":  "core/src/assets/sprites/items/consum/useful/process_enhance.png",
+    "outDir":  "tools/atlas-meta/items/consum/useful/process_enhance/work",
+    "entries":  [
+        { "file": "documents/LEGACY_BRAVE_BOOK", "frames": [ { "x": 16, "y": 16, "w": 16, "h": 16 } ] },
+        { "file": "misc/CROWN", "frames": [ { "x": 0, "y": 16, "w": 13, "h": 7 } ] },
+        { "file": "misc/KIT", "frames": [ { "x": 32, "y": 0, "w": 16, "h": 15 } ] },
+        { "file": "misc/MASK", "frames": [ { "x": 0, "y": 0, "w": 11, "h": 9 } ] },
+        { "file": "misc/MASTERY", "frames": [ { "x": 17, "y": 0, "w": 13, "h": 16 } ] }
+    ]
+}

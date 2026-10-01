@@ -1,0 +1,8 @@
+{
+    "atlas":  "core/src/assets/sprites/items/equipment/equip/armor/unique_armor.png",
+    "outDir":  "tools/atlas-meta/items/equipment/equip/armor/unique_armor/work",
+    "entries":  [
+        { "file": "armor/SPS_BUNNY_ARMOR", "frames": [ { "x": 64, "y": 0, "w": 16, "h": 16 } ] },
+        { "file": "misc/SPECTACLES", "frames": [ { "x": 16, "y": 0, "w": 16, "h": 16 } ] }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "atlas":  "core/src/assets/sprites/items/specific/pages.png",
+    "outDir":  "tools/atlas-meta/items/specific/pages/work",
+    "entries":  [
+        { "file": "documents/ALCH_PAGE", "frames": [ { "x": 19, "y": 2, "w": 10, "h": 11 } ] },
+        { "file": "documents/CAVES_PAGE", "frames": [ { "x": 67, "y": 2, "w": 10, "h": 11 } ] },
+        { "file": "documents/CITY_PAGE", "frames": [ { "x": 83, "y": 2, "w": 10, "h": 11 } ] },
+        { "file": "documents/GUIDE_PAGE", "frames": [ { "x": 3, "y": 2, "w": 10, "h": 11 } ] },
+        { "file": "documents/HALLS_PAGE", "frames": [ { "x": 99, "y": 2, "w": 10, "h": 11 } ] },
+        { "file": "documents/PRISON_PAGE", "frames": [ { "x": 51, "y": 2, "w": 10, "h": 11 } ] },
+        { "file": "documents/SEWER_PAGE", "frames": [ { "x": 35, "y": 2, "w": 10, "h": 11 } ] },
+        { "file": "misc/ITEM_687", "frames": [ { "x": 0, "y": 0, "w": 16, "h": 16 } ] }
+    ]
+}

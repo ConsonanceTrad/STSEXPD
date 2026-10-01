@@ -1,0 +1,7 @@
+{
+    "atlas":  "core/src/assets/sprites/items/consum/useful/useful.png",
+    "outDir":  "tools/atlas-meta/items/consum/useful/useful/work",
+    "entries":  [
+        { "file": "foods/PET_FOOD", "frames": [ { "x": 64, "y": 16, "w": 16, "h": 16 } ] }
+    ]
+}

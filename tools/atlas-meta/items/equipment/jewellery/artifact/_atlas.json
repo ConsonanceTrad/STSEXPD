@@ -1,0 +1,19 @@
+{
+    "atlas":  "core/src/assets/sprites/items/equipment/jewellery/artifact.png",
+    "outDir":  "tools/atlas-meta/items/equipment/jewellery/artifact/work",
+    "entries":  [
+        { "file": "artifacts/ARTIFACT_BEACON", "frames": [ { "x": 48, "y": 16, "w": 16, "h": 16 } ] },
+        { "file": "artifacts/ARTIFACT_ICE_EYE", "frames": [ { "x": 96, "y": 16, "w": 16, "h": 16 } ] },
+        { "file": "artifacts/ARTIFACT_KEY", "frames": [ { "x": 308, "y": 0, "w": 8, "h": 16 } ] },
+        { "file": "artifacts/horn", "frames": [ { "x": 160, "y": 0, "w": 15, "h": 15 } ] },
+        { "file": "artifacts/NOOMLIN_CROWN", "frames": [ { "x": 96, "y": 48, "w": 16, "h": 16 } ] },
+        { "file": "artifacts/SPS_GLASS_TOTEM", "frames": [ { "x": 112, "y": 16, "w": 16, "h": 16 } ] },
+        { "file": "misc/CURSE_PHONE", "frames": [ { "x": 0, "y": 48, "w": 16, "h": 16 } ] },
+        { "file": "misc/FOUR_CLOVER", "frames": [ { "x": 64, "y": 48, "w": 16, "h": 16 } ] },
+        { "file": "misc/LEGACY_ALIEN_BAG", "frames": [ { "x": 128, "y": 16, "w": 16, "h": 16 } ] },
+        { "file": "misc/LEGACY_TIME_OCLOCK", "frames": [ { "x": 64, "y": 0, "w": 16, "h": 16 } ] },
+        { "file": "misc/LING_HEART", "frames": [ { "x": 16, "y": 48, "w": 16, "h": 16 } ] },
+        { "file": "misc/SPS_ROBOT_HEART", "frames": [ { "x": 80, "y": 16, "w": 16, "h": 16 } ] },
+        { "file": "potions/AUTO_POTION", "frames": [ { "x": 80, "y": 48, "w": 16, "h": 16 } ] }
+    ]
+}

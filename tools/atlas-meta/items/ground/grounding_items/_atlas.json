@@ -1,0 +1,11 @@
+{
+    "atlas":  "core/src/assets/sprites/items/ground/grounding_items.png",
+    "outDir":  "tools/atlas-meta/items/ground/grounding_items/work",
+    "entries":  [
+        { "file": "misc/CHEST", "frames": [ { "x": 96, "y": 1, "w": 16, "h": 14 } ] },
+        { "file": "misc/E_DUST", "frames": [ { "x": 0, "y": 48, "w": 16, "h": 16 } ] },
+        { "file": "misc/EBONY_CHEST", "frames": [ { "x": 144, "y": 1, "w": 16, "h": 14 } ] },
+        { "file": "misc/LOCKED_CHEST", "frames": [ { "x": 112, "y": 1, "w": 16, "h": 14 } ] },
+        { "file": "stones/CRYSTAL_CHEST", "frames": [ { "x": 128, "y": 1, "w": 16, "h": 14 } ] }
+    ]
+}
