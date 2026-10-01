@@ -4,3 +4,4 @@
 # 以 # 开头的行是注释。
 amulet.png
 specific/place_holde_extrar.png
+item_icons.png
