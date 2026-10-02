@@ -21,7 +21,7 @@ param(
 	[int]$Scale       = 4,
 	[int]$Cols        = 10,
 	[int]$Pad         = 4,
-	[int]$LabelH      = 12
+	[int]$LabelH      = 0
 )
 
 $ErrorActionPreference = 'Stop'
@@ -108,15 +108,17 @@ foreach ($g in $byAtlas) {
 		$gfx.DrawLine($gridPen, 0, $py, [int]($sheetW - 1), $py)
 	}
 
-	# id printed at the TOP OF ITS OWN CELL: horizontally at the entry's left edge,
-	# vertically just above the entry's own row, so each label stays next to its icon
+	# label sits in the TOP-LEFT CORNER INSIDE the entry's own cell, and is clipped to
+	# the cell so it can never spill into a neighbouring one
+	$cellSide = [int]($Scale * 16)
 	foreach ($r in $list) {
-		$lx = [int]([int]$r.x * $Scale)
-		$ly = [int]([int]$r.y * $Scale - 9)
-		if ($ly -lt 0) { $ly = 0 }
-		# light backing so the digits stay readable over whatever artwork is behind them
+		$cellX = [int]([int]$r.x * $Scale)
+		$cellY = [int]([int]$r.y * $Scale)
+		$lx = [int]($cellX + 1)
+		$ly = [int]($cellY + 1)
 		$tw = [int]$gfx.MeasureString("$($r.id)", $font).Width
-		$gfx.FillRectangle($labelBg, $lx, $ly, $tw, 9)
+		if ($tw -gt ($cellSide - 2)) { $tw = [int]($cellSide - 2) }
+		if ($tw -gt 0) { $gfx.FillRectangle($labelBg, $lx, $ly, $tw, 9) }
 		$gfx.DrawString("$($r.id)", $font, $brush, [single]$lx, [single]$ly)
 	}
 	$gfx.Dispose()
