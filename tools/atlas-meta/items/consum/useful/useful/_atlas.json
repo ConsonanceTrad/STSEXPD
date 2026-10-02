@@ -2,6 +2,13 @@
     "atlas":  "core/src/assets/sprites/items/consum/useful/useful.png",
     "outDir":  "tools/atlas-meta/items/consum/useful/useful/work",
     "entries":  [
-        { "file": "foods/PET_FOOD", "frames": [ { "x": 64, "y": 16, "w": 16, "h": 16 } ] }
+        { "file": "STYLUS", "frames": [ { "x": 18, "y": 1, "w": 12, "h": 13 } ] },
+        { "file": "TORCH#0", "frames": [ { "x": 32, "y": 0, "w": 12, "h": 15 } ] },
+        { "file": "BEACON#0", "frames": [ { "x": 48, "y": 0, "w": 16, "h": 15 } ] },
+        { "file": "HONEYPOT#0", "frames": [ { "x": 65, "y": 2, "w": 14, "h": 12 } ] },
+        { "file": "SHATTPOT", "frames": [ { "x": 81, "y": 2, "w": 14, "h": 12 } ] },
+        { "file": "ANKH", "frames": [ { "x": 3, "y": 16, "w": 10, "h": 16 } ] },
+        { "file": "PET_FOOD", "frames": [ { "x": 65, "y": 17, "w": 13, "h": 14 } ] },
+        { "file": "SP_AMMO", "frames": [ { "x": 85, "y": 18, "w": 6, "h": 13 } ] }
     ]
 }

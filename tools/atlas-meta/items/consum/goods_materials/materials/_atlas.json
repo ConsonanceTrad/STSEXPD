@@ -2,15 +2,20 @@
     "atlas":  "core/src/assets/sprites/items/consum/goods_materials/materials.png",
     "outDir":  "tools/atlas-meta/items/consum/goods_materials/materials/work",
     "entries":  [
-        { "file": "armor/ADAMANT_ARMOR", "frames": [ { "x": 16, "y": 16, "w": 16, "h": 16 } ] },
-        { "file": "misc/ADAMANT_WEAPON", "frames": [ { "x": 0, "y": 16, "w": 16, "h": 16 } ] },
-        { "file": "misc/BLOB", "frames": [ { "x": 16, "y": 48, "w": 10, "h": 9 } ] },
-        { "file": "misc/ESCAPE", "frames": [ { "x": 48, "y": 48, "w": 8, "h": 16 } ] },
-        { "file": "misc/SPS_GARBAGE", "frames": [ { "x": 0, "y": 48, "w": 16, "h": 16 } ] },
-        { "file": "misc/STATUE", "frames": [ { "x": 64, "y": 48, "w": 10, "h": 16 } ] },
-        { "file": "rings/ADAMANT_RING", "frames": [ { "x": 48, "y": 16, "w": 16, "h": 16 } ] },
-        { "file": "stones/CRYSTAL_NUCLEUS", "frames": [ { "x": 48, "y": 0, "w": 16, "h": 16 } ] },
-        { "file": "stones/SHARD", "frames": [ { "x": 32, "y": 48, "w": 8, "h": 10 } ] },
-        { "file": "wands/ADAMANT_WAND", "frames": [ { "x": 32, "y": 16, "w": 16, "h": 16 } ] }
+        { "file": "COLORLESS_ORE", "frames": [ { "x": 4, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "GREEN_NORN_ORE", "frames": [ { "x": 19, "y": 3, "w": 10, "h": 10 } ] },
+        { "file": "BLUE_NORN_ORE", "frames": [ { "x": 36, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "ORANGE_NORN_ORE", "frames": [ { "x": 51, "y": 3, "w": 10, "h": 10 } ] },
+        { "file": "PURPLE_NORN_ORE", "frames": [ { "x": 68, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "YELLOW_NORN_ORE", "frames": [ { "x": 82, "y": 4, "w": 11, "h": 9 } ] },
+        { "file": "WEAPON_WELD_PART", "frames": [ { "x": 0, "y": 16, "w": 16, "h": 16 } ] },
+        { "file": "ARMOR_WELD_PART", "frames": [ { "x": 16, "y": 17, "w": 16, "h": 14 } ] },
+        { "file": "WAND_WELD_PART", "frames": [ { "x": 33, "y": 17, "w": 14, "h": 14 } ] },
+        { "file": "RING_WELD_PART", "frames": [ { "x": 52, "y": 19, "w": 8, "h": 10 } ] },
+        { "file": "SCRAP", "frames": [ { "x": 2, "y": 49, "w": 12, "h": 14 } ] },
+        { "file": "BLOB#0", "frames": [ { "x": 16, "y": 48, "w": 10, "h": 9 } ] },
+        { "file": "SHARD#0", "frames": [ { "x": 32, "y": 48, "w": 8, "h": 10 } ] },
+        { "file": "ESCAPE#0", "frames": [ { "x": 48, "y": 48, "w": 8, "h": 16 } ] },
+        { "file": "STATUE#0", "frames": [ { "x": 64, "y": 48, "w": 10, "h": 16 } ] }
     ]
 }

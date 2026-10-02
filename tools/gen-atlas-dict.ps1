@@ -116,6 +116,12 @@ foreach ($meta in $metas) {
 		[void]$sb.AppendLine('	/** ' + $file + ' */')
 		[void]$sb.AppendLine('	public static final IconEntry ' + $ident + ' = new IconEntry(' +
 			'"' + $atlasRel + '", new int[]{' + ($rects -join ', ') + '});')
+		$alias = [string]$e.alias
+		if ($alias -ne '') {
+			$aliasIdent = ConvertTo-Identifier $alias
+			[void]$sb.AppendLine('	/** legacy alias for ' + $ident + ' */')
+			[void]$sb.AppendLine('	public static final IconEntry ' + $aliasIdent + ' = ' + $ident + ';')
+		}
 		$count++
 	}
 

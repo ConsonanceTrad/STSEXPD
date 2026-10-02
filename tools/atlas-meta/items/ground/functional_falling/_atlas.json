@@ -2,10 +2,15 @@
     "atlas":  "core/src/assets/sprites/items/ground/functional_falling.png",
     "outDir":  "tools/atlas-meta/items/ground/functional_falling/work",
     "entries":  [
-        { "file": "misc/PETAL", "frames": [ { "x": 4, "y": 20, "w": 8, "h": 8 } ] },
-        { "file": "misc/SANDBAG", "frames": [ { "x": 19, "y": 19, "w": 10, "h": 10 } ] },
-        { "file": "misc/TENGU_SHOCKER", "frames": [ { "x": 67, "y": 19, "w": 10, "h": 10 } ] },
-        { "file": "weapons/SPIRIT_ARROW", "frames": [ { "x": 35, "y": 19, "w": 11, "h": 11 } ] },
-        { "file": "weapons/TENGU_BOMB", "frames": [ { "x": 51, "y": 19, "w": 10, "h": 10 } ] }
+        { "file": "dewdrop#0", "frames": [ { "x": 3, "y": 3, "w": 10, "h": 10 } ] },
+        { "file": "dewdrop#1", "frames": [ { "x": 19, "y": 3, "w": 10, "h": 10 } ] },
+        { "file": "dewdrop#2", "frames": [ { "x": 35, "y": 3, "w": 10, "h": 13 } ] },
+        { "file": "dewdrop#3", "frames": [ { "x": 51, "y": 3, "w": 10, "h": 10 } ] },
+        { "file": "dewdrop#4", "frames": [ { "x": 67, "y": 3, "w": 10, "h": 10 } ] },
+        { "file": "PETAL#0", "frames": [ { "x": 4, "y": 20, "w": 8, "h": 8 } ] },
+        { "file": "SANDBAG#0", "frames": [ { "x": 19, "y": 19, "w": 10, "h": 10 } ] },
+        { "file": "SPIRIT_ARROW#0", "frames": [ { "x": 35, "y": 19, "w": 11, "h": 11 } ] },
+        { "file": "TENGU_BOMB#0", "frames": [ { "x": 51, "y": 19, "w": 10, "h": 10 } ] },
+        { "file": "TENGU_SHOCKER#0", "frames": [ { "x": 67, "y": 19, "w": 10, "h": 10 } ] }
     ]
 }

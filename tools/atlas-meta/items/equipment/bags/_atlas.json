@@ -2,10 +2,14 @@
     "atlas":  "core/src/assets/sprites/items/equipment/bags.png",
     "outDir":  "tools/atlas-meta/items/equipment/bags/work",
     "entries":  [
-        { "file": "bags/HEART_OF_SCARECROW", "frames": [ { "x": 112, "y": 0, "w": 16, "h": 16 } ] },
-        { "file": "bags/SHOPPING_CART", "frames": [ { "x": 80, "y": 0, "w": 16, "h": 16 } ] },
-        { "file": "bags/SPS_ARROW_COLLECTER", "frames": [ { "x": 96, "y": 0, "w": 16, "h": 16 } ] },
-        { "file": "bags/SPS_KEY_RING", "frames": [ { "x": 64, "y": 0, "w": 16, "h": 16 } ] },
-        { "file": "misc/BACKPACK", "frames": [ { "x": 240, "y": 0, "w": 16, "h": 16 } ] }
+        { "file": "POUCH", "frames": [ { "x": 1, "y": 0, "w": 14, "h": 15 } ] },
+        { "file": "HOLDER", "frames": [ { "x": 16, "y": 0, "w": 16, "h": 16 } ] },
+        { "file": "BANDOLIER", "frames": [ { "x": 32, "y": 0, "w": 15, "h": 16 } ] },
+        { "file": "HOLSTER", "frames": [ { "x": 48, "y": 0, "w": 15, "h": 16 } ] },
+        { "file": "SPS_KEY_RING", "frames": [ { "x": 67, "y": 1, "w": 11, "h": 14 } ] },
+        { "file": "SHOPPING_CART#0", "frames": [ { "x": 80, "y": 0, "w": 16, "h": 16 } ] },
+        { "file": "SPS_ARROW_COLLECTER", "frames": [ { "x": 97, "y": 1, "w": 14, "h": 14 } ] },
+        { "file": "HEART_OF_SCARECROW#0", "frames": [ { "x": 112, "y": 0, "w": 16, "h": 16 } ] },
+        { "file": "BACKPACK#0", "frames": [ { "x": 240, "y": 0, "w": 16, "h": 16 } ] }
     ]
 }

@@ -2,12 +2,12 @@
     "atlas":  "core/src/assets/sprites/items/consum/useful/corpse_relics.png",
     "outDir":  "tools/atlas-meta/items/consum/useful/corpse_relics/work",
     "entries":  [
-        { "file": "documents/TORN_PAGE", "frames": [ { "x": 80, "y": 0, "w": 11, "h": 13 } ] },
-        { "file": "misc/BROKEN_HILT", "frames": [ { "x": 64, "y": 0, "w": 9, "h": 9 } ] },
-        { "file": "misc/CLOAK_SCRAP", "frames": [ { "x": 32, "y": 0, "w": 9, "h": 9 } ] },
-        { "file": "misc/TRINKET_CATA", "frames": [ { "x": 96, "y": 0, "w": 12, "h": 11 } ] },
-        { "file": "stones/SEAL_SHARD", "frames": [ { "x": 0, "y": 0, "w": 12, "h": 12 } ] },
-        { "file": "weapons/BOW_FRAGMENT", "frames": [ { "x": 48, "y": 0, "w": 12, "h": 9 } ] },
-        { "file": "weapons/BROKEN_STAFF", "frames": [ { "x": 16, "y": 0, "w": 14, "h": 10 } ] }
+        { "file": "SEAL_SHARD#0", "frames": [ { "x": 0, "y": 0, "w": 12, "h": 12 } ] },
+        { "file": "BROKEN_STAFF#0", "frames": [ { "x": 16, "y": 0, "w": 14, "h": 10 } ] },
+        { "file": "CLOAK_SCRAP#0", "frames": [ { "x": 32, "y": 0, "w": 9, "h": 9 } ] },
+        { "file": "BOW_FRAGMENT#0", "frames": [ { "x": 48, "y": 0, "w": 12, "h": 9 } ] },
+        { "file": "BROKEN_HILT#0", "frames": [ { "x": 64, "y": 0, "w": 9, "h": 9 } ] },
+        { "file": "TORN_PAGE#0", "frames": [ { "x": 80, "y": 0, "w": 11, "h": 13 } ] },
+        { "file": "TRINKET_CATA#0", "frames": [ { "x": 96, "y": 0, "w": 12, "h": 11 } ] }
     ]
 }

@@ -2,16 +2,20 @@
     "atlas":  "core/src/assets/sprites/items/consum/scroll_amulet/crystal.png",
     "outDir":  "tools/atlas-meta/items/consum/scroll_amulet/crystal/work",
     "entries":  [
-        { "file": "misc/ALCHEMIZE", "frames": [ { "x": 96, "y": 0, "w": 12, "h": 12 } ] },
-        { "file": "misc/CURSE_INFUSE", "frames": [ { "x": 64, "y": 0, "w": 10, "h": 16 } ] },
-        { "file": "misc/MAGIC_INFUSE", "frames": [ { "x": 80, "y": 0, "w": 10, "h": 14 } ] },
-        { "file": "misc/PHASE_SHIFT", "frames": [ { "x": 16, "y": 0, "w": 12, "h": 10 } ] },
-        { "file": "misc/RECLAIM_TRAP", "frames": [ { "x": 128, "y": 0, "w": 14, "h": 11 } ] },
-        { "file": "misc/RECYCLE", "frames": [ { "x": 112, "y": 0, "w": 12, "h": 13 } ] },
-        { "file": "misc/RETURN_BEACON", "frames": [ { "x": 144, "y": 0, "w": 8, "h": 16 } ] },
-        { "file": "misc/TELE_GRAB", "frames": [ { "x": 32, "y": 0, "w": 10, "h": 10 } ] },
-        { "file": "misc/UNSTABLE_SPELL", "frames": [ { "x": 48, "y": 0, "w": 12, "h": 13 } ] },
-        { "file": "misc/WILD_ENERGY", "frames": [ { "x": 0, "y": 0, "w": 6, "h": 15 } ] },
-        { "file": "stones/summon_ele", "frames": [ { "x": 160, "y": 0, "w": 8, "h": 16 }, { "x": 176, "y": 0, "w": 8, "h": 16 }, { "x": 192, "y": 0, "w": 8, "h": 16 }, { "x": 208, "y": 0, "w": 8, "h": 16 }, { "x": 224, "y": 0, "w": 8, "h": 16 } ] }
+        { "file": "WILD_ENERGY#0", "frames": [ { "x": 0, "y": 0, "w": 6, "h": 15 } ] },
+        { "file": "PHASE_SHIFT#0", "frames": [ { "x": 16, "y": 0, "w": 12, "h": 10 } ] },
+        { "file": "TELE_GRAB#0", "frames": [ { "x": 32, "y": 0, "w": 10, "h": 10 } ] },
+        { "file": "UNSTABLE_SPELL#0", "frames": [ { "x": 48, "y": 0, "w": 12, "h": 13 } ] },
+        { "file": "CURSE_INFUSE#0", "frames": [ { "x": 64, "y": 0, "w": 10, "h": 16 } ] },
+        { "file": "MAGIC_INFUSE#0", "frames": [ { "x": 80, "y": 0, "w": 10, "h": 14 } ] },
+        { "file": "ALCHEMIZE#0", "frames": [ { "x": 96, "y": 0, "w": 12, "h": 12 } ] },
+        { "file": "RECYCLE#0", "frames": [ { "x": 112, "y": 0, "w": 12, "h": 13 } ] },
+        { "file": "RECLAIM_TRAP#0", "frames": [ { "x": 128, "y": 0, "w": 14, "h": 11 } ] },
+        { "file": "RETURN_BEACON#0", "frames": [ { "x": 144, "y": 0, "w": 8, "h": 16 } ] },
+        { "file": "summon_ele#0", "alias": "SUMMON_ELE", "frames": [ { "x": 160, "y": 0, "w": 8, "h": 16 } ] },
+        { "file": "summon_ele#1", "alias": "SUMMON_ELE_FIRE", "frames": [ { "x": 176, "y": 0, "w": 8, "h": 16 } ] },
+        { "file": "summon_ele#2", "alias": "SUMMON_ELE_FROST", "frames": [ { "x": 192, "y": 0, "w": 8, "h": 16 } ] },
+        { "file": "summon_ele#3", "alias": "SUMMON_ELE_SHOCK", "frames": [ { "x": 208, "y": 0, "w": 8, "h": 16 } ] },
+        { "file": "summon_ele#4", "alias": "SUMMON_ELE_CHAOS", "frames": [ { "x": 224, "y": 0, "w": 8, "h": 16 } ] }
     ]
 }

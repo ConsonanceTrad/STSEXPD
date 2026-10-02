@@ -2,7 +2,10 @@
     "atlas":  "core/src/assets/sprites/items/equipment/equip/armor/unique_armor.png",
     "outDir":  "tools/atlas-meta/items/equipment/equip/armor/unique_armor/work",
     "entries":  [
-        { "file": "armor/SPS_BUNNY_ARMOR", "frames": [ { "x": 64, "y": 0, "w": 16, "h": 16 } ] },
-        { "file": "misc/SPECTACLES", "frames": [ { "x": 16, "y": 0, "w": 16, "h": 16 } ] }
+        { "file": "TOWEL", "frames": [ { "x": 1, "y": 0, "w": 14, "h": 16 } ] },
+        { "file": "SPECTACLES", "frames": [ { "x": 16, "y": 4, "w": 15, "h": 8 } ] },
+        { "file": "SHARK_PAJAMAS", "frames": [ { "x": 34, "y": 1, "w": 10, "h": 14 } ] },
+        { "file": "LIVING_ARMOR", "frames": [ { "x": 49, "y": 2, "w": 14, "h": 13 } ] },
+        { "file": "SPS_BUNNY_ARMOR#0", "frames": [ { "x": 64, "y": 0, "w": 16, "h": 16 } ] }
     ]
 }

@@ -2,16 +2,18 @@
     "atlas":  "core/src/assets/sprites/items/equipment/jewellery/ring.png",
     "outDir":  "tools/atlas-meta/items/equipment/jewellery/ring/work",
     "entries":  [
-        { "file": "rings/RING_DIAMOND", "frames": [ { "x": 180, "y": 3, "w": 8, "h": 10 } ] },
-        { "file": "rings/RING_ELEMENTS", "frames": [ { "x": 36, "y": 3, "w": 8, "h": 10 } ] },
-        { "file": "rings/RING_ENERGY", "frames": [ { "x": 52, "y": 3, "w": 8, "h": 10 } ] },
-        { "file": "rings/RING_FORCE", "frames": [ { "x": 84, "y": 3, "w": 8, "h": 10 } ] },
-        { "file": "rings/RING_FUROR", "frames": [ { "x": 100, "y": 3, "w": 8, "h": 10 } ] },
-        { "file": "rings/RING_MIGHT", "frames": [ { "x": 132, "y": 3, "w": 8, "h": 10 } ] },
-        { "file": "rings/RING_ONYX", "frames": [ { "x": 68, "y": 3, "w": 8, "h": 10 } ] },
-        { "file": "rings/RING_RUBY", "frames": [ { "x": 20, "y": 3, "w": 8, "h": 10 } ] },
-        { "file": "rings/RING_SAPPHIRE", "frames": [ { "x": 116, "y": 3, "w": 8, "h": 10 } ] },
-        { "file": "rings/RING_SHARPSHOOT", "frames": [ { "x": 148, "y": 3, "w": 8, "h": 10 } ] },
-        { "file": "rings/RING_TENACITY", "frames": [ { "x": 164, "y": 3, "w": 8, "h": 10 } ] }
+        { "file": "RING_HOLDER", "frames": [ { "x": 4, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_RUBY#0", "frames": [ { "x": 20, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_ELEMENTS#0", "frames": [ { "x": 36, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_ENERGY#0", "frames": [ { "x": 52, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_ONYX#0", "frames": [ { "x": 68, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_FORCE#0", "frames": [ { "x": 84, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_FUROR#0", "frames": [ { "x": 100, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_SAPPHIRE#0", "frames": [ { "x": 116, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_MIGHT#0", "frames": [ { "x": 132, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_SHARPSHOOT#0", "frames": [ { "x": 148, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_TENACITY#0", "frames": [ { "x": 164, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "RING_DIAMOND#0", "frames": [ { "x": 180, "y": 3, "w": 8, "h": 10 } ] },
+        { "file": "SPS_WING_RING", "frames": [ { "x": 1, "y": 35, "w": 14, "h": 10 } ] }
     ]
 }

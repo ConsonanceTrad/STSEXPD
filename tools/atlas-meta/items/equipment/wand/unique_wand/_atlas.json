@@ -1,0 +1,7 @@
+{
+    "atlas":  "core/src/assets/sprites/items/equipment/wand/unique_wand.png",
+    "outDir":  "tools/atlas-meta/items/equipment/wand/unique_wand/work",
+    "entries":  [
+        { "file": "LEGACY_CANNON_OF_MAGE", "frames": [ { "x": 0, "y": 1, "w": 15, "h": 15 } ] }
+    ]
+}

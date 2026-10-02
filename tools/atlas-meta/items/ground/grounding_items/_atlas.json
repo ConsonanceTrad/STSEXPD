@@ -2,10 +2,18 @@
     "atlas":  "core/src/assets/sprites/items/ground/grounding_items.png",
     "outDir":  "tools/atlas-meta/items/ground/grounding_items/work",
     "entries":  [
-        { "file": "misc/CHEST", "frames": [ { "x": 96, "y": 1, "w": 16, "h": 14 } ] },
-        { "file": "misc/E_DUST", "frames": [ { "x": 0, "y": 48, "w": 16, "h": 16 } ] },
-        { "file": "misc/EBONY_CHEST", "frames": [ { "x": 144, "y": 1, "w": 16, "h": 14 } ] },
-        { "file": "misc/LOCKED_CHEST", "frames": [ { "x": 112, "y": 1, "w": 16, "h": 14 } ] },
-        { "file": "stones/CRYSTAL_CHEST", "frames": [ { "x": 128, "y": 1, "w": 16, "h": 14 } ] }
+        { "file": "NORMAL_REMAINS", "frames": [ { "x": 0, "y": 1, "w": 15, "h": 14 } ] },
+        { "file": "HERO_BONES", "frames": [ { "x": 16, "y": 1, "w": 15, "h": 14 } ] },
+        { "file": "CHEST#0", "frames": [ { "x": 48, "y": 1, "w": 16, "h": 15 } ] },
+        { "file": "LOCKED_CHEST#0", "frames": [ { "x": 64, "y": 1, "w": 16, "h": 15 } ] },
+        { "file": "CRYSTAL_CHEST#0", "frames": [ { "x": 80, "y": 1, "w": 16, "h": 15 } ] },
+        { "file": "EBONY_CHEST#0", "frames": [ { "x": 144, "y": 1, "w": 16, "h": 14 } ] },
+        { "file": "NORMAL_GRAVESTONE", "frames": [ { "x": 1, "y": 16, "w": 14, "h": 15 } ] },
+        { "file": "MARBLE_GRAVESTONE", "frames": [ { "x": 17, "y": 16, "w": 14, "h": 15 } ] },
+        { "file": "TREASURE_SPOT", "frames": [ { "x": 1, "y": 33, "w": 14, "h": 15 } ] },
+        { "file": "TREASURE_SPOT_2", "frames": [ { "x": 17, "y": 33, "w": 14, "h": 15 } ] },
+        { "file": "FLOWER_POT", "frames": [ { "x": 33, "y": 48, "w": 14, "h": 15 } ] },
+        { "file": "ALCHEMY_CAULDRON", "frames": [ { "x": 48, "y": 48, "w": 16, "h": 15 } ] },
+        { "file": "ANVIL", "frames": [ { "x": 64, "y": 49, "w": 16, "h": 14 } ] }
     ]
 }

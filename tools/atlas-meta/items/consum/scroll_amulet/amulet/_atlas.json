@@ -2,16 +2,17 @@
     "atlas":  "core/src/assets/sprites/items/consum/scroll_amulet/amulet.png",
     "outDir":  "tools/atlas-meta/items/consum/scroll_amulet/amulet/work",
     "entries":  [
-        { "file": "stones/STONE_AUGMENTATION", "frames": [ { "x": 16, "y": 0, "w": 14, "h": 12 } ] },
-        { "file": "stones/STONE_BLAST", "frames": [ { "x": 48, "y": 0, "w": 14, "h": 12 } ] },
-        { "file": "stones/STONE_BLINK", "frames": [ { "x": 64, "y": 0, "w": 14, "h": 12 } ] },
-        { "file": "stones/STONE_CLAIRVOYANCE", "frames": [ { "x": 80, "y": 0, "w": 14, "h": 12 } ] },
-        { "file": "stones/STONE_DETECT", "frames": [ { "x": 112, "y": 0, "w": 14, "h": 12 } ] },
-        { "file": "stones/STONE_ENCHANT", "frames": [ { "x": 128, "y": 0, "w": 14, "h": 12 } ] },
-        { "file": "stones/STONE_FEAR", "frames": [ { "x": 32, "y": 0, "w": 14, "h": 12 } ] },
-        { "file": "stones/STONE_FLOCK", "frames": [ { "x": 144, "y": 0, "w": 14, "h": 12 } ] },
-        { "file": "stones/STONE_INTUITION", "frames": [ { "x": 160, "y": 0, "w": 14, "h": 12 } ] },
-        { "file": "stones/STONE_SHOCK", "frames": [ { "x": 176, "y": 0, "w": 14, "h": 12 } ] },
-        { "file": "stones/STONE_SLEEP", "frames": [ { "x": 96, "y": 0, "w": 14, "h": 12 } ] }
+        { "file": "STONE_AGGRESSION", "frames": [ { "x": 0, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_AUGMENTATION#0", "frames": [ { "x": 16, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_FEAR#0", "frames": [ { "x": 32, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_BLAST#0", "frames": [ { "x": 48, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_BLINK#0", "frames": [ { "x": 64, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_CLAIRVOYANCE#0", "frames": [ { "x": 80, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_SLEEP#0", "frames": [ { "x": 96, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_DETECT#0", "frames": [ { "x": 112, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_ENCHANT#0", "frames": [ { "x": 128, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_FLOCK#0", "frames": [ { "x": 144, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_INTUITION#0", "frames": [ { "x": 160, "y": 0, "w": 14, "h": 12 } ] },
+        { "file": "STONE_SHOCK#0", "frames": [ { "x": 176, "y": 0, "w": 14, "h": 12 } ] }
     ]
 }
