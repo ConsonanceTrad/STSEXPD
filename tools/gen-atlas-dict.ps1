@@ -58,6 +58,7 @@ $metas = @(Get-ChildItem -Recurse -File -Filter '_atlas.json' $metaRootFull | So
 if ($metas.Count -eq 0) { throw "no _atlas.json found under $MetaRoot" }
 
 $written = 0
+$orderBase = 0
 foreach ($meta in $metas) {
 	$rel  = $meta.FullName.Substring($metaRootFull.Length + 1)
 	$dirs = @([regex]::Split($rel, '[\\/]') | Where-Object { $_ -ne '_atlas.json' -and $_ -ne '' })
@@ -113,9 +114,11 @@ foreach ($meta in $metas) {
 		}
 		if ($rects.Count -eq 0) { continue }
 
+		$order = $orderBase
+		$orderBase++
 		[void]$sb.AppendLine('	/** ' + $file + ' */')
 		[void]$sb.AppendLine('	public static final IconEntry ' + $ident + ' = new IconEntry(' +
-			'"' + $atlasRel + '", new int[]{' + ($rects -join ', ') + '});')
+			'"' + $atlasRel + '", new int[]{' + ($rects -join ', ') + '}, ' + $order + ');')
 		$alias = [string]$e.alias
 		if ($alias -ne '') {
 			$aliasIdent = ConvertTo-Identifier $alias
