@@ -21,7 +21,7 @@ param(
 	[int]$Scale       = 4,
 	[int]$Cols        = 10,
 	[int]$Pad         = 4,
-	[int]$LabelH      = 11
+	[int]$LabelH      = 30
 )
 
 $ErrorActionPreference = 'Stop'
@@ -69,12 +69,10 @@ if (-not $Sheets) { return }
 Add-Type -AssemblyName System.Drawing
 if (-not (Test-Path (Join-Path $repoRoot $SheetDir))) { New-Item -ItemType Directory -Force -Path (Join-Path $repoRoot $SheetDir) | Out-Null }
 
-$icon = [int](16 * $Scale)
-$cellW = [int]($icon + $Pad * 2)
-$cellH = [int]($icon + $LabelH + $Pad * 2)
 $font = New-Object Drawing.Font('Consolas', 8, [Drawing.FontStyle]::Regular, [Drawing.GraphicsUnit]::Pixel)
 $brush = [Drawing.Brushes]::Black
-$bg = [Drawing.Brushes]::White
+$gridPen = New-Object Drawing.Pen([Drawing.Color]::FromArgb(80, 170, 170, 170), 1)
+$labelBg = [Drawing.Brushes]::WhiteSmoke
 
 $byAtlas = $sorted | Group-Object atlas | Sort-Object Name
 $made = 0
@@ -84,43 +82,51 @@ foreach ($g in $byAtlas) {
 	if (-not (Test-Path $pngPath)) { "  MISSING atlas: $atlasRel"; continue }
 
 	$src = [Drawing.Image]::FromFile($pngPath)
-	$list = @($g.Group | Sort-Object id)
-	$n = $list.Count
-	$nCols = [Math]::Min($Cols, [Math]::Max(1, $n))
-	$nRows = [int][Math]::Ceiling($n / $nCols)
+	$srcW = [int]$src.Width
+	$srcH = [int]$src.Height
+	$list = @($g.Group | Sort-Object { [int]$_.id })
 
-	$bmpW = [int]($nCols * $cellW)
-	$bmpH = [int]($nRows * $cellH)
-	$bmp = New-Object Drawing.Bitmap($bmpW, $bmpH)
+	# ORIGINAL LAYOUT PRESERVED: the atlas scaled up as-is, with a label strip added on top.
+	$sheetW = [int]($srcW * $Scale)
+	$sheetH = [int]([int]($srcH * $Scale) + $LabelH)
+	$bmp = New-Object Drawing.Bitmap($sheetW, $sheetH)
 	$gfx = [Drawing.Graphics]::FromImage($bmp)
 	$gfx.InterpolationMode = [Drawing.Drawing2D.InterpolationMode]::NearestNeighbor
 	$gfx.PixelOffsetMode = [Drawing.Drawing2D.PixelOffsetMode]::Half
 	$gfx.Clear([Drawing.Color]::White)
+	$gfx.FillRectangle($labelBg, 0, 0, $sheetW, $LabelH)
+	# atlas drawn at its own coordinates, shifted down by the strip height
+	$gfx.DrawImage($src, 0, $LabelH, $sheetW, [int]($srcH * $Scale))
 
-	$i = 0
+	# 16px cell grid over the atlas area, to make rect edges readable
+	for ($gx = 16; $gx -lt $srcW; $gx += 16) {
+		$px = [int]($gx * $Scale)
+		$gfx.DrawLine($gridPen, $px, $LabelH, $px, [int]($sheetH - 1))
+	}
+	for ($gy = 16; $gy -lt $srcH; $gy += 16) {
+		$py = [int]([int]$LabelH + $gy * $Scale)
+		$gfx.DrawLine($gridPen, 0, $py, [int]($sheetW - 1), $py)
+	}
+
+	# id printed in the top strip, aligned above its icon's left edge;
+	# entries sharing a column stack downward so nothing is hidden
+	$perCol = @{}
 	foreach ($r in $list) {
-		$c = [int]($i % $nCols); $row = [int]($i / $nCols); $i++
-		$ox = [int]($c * $cellW + $Pad)
-		$oy = [int]($row * $cellH + $Pad)
-		$dst = New-Object Drawing.Rectangle($ox, $oy, $icon, $icon)
-		$srcRect = New-Object Drawing.Rectangle([int]$r.x, [int]$r.y, [int]$r.w, [int]$r.h)
-		try { $gfx.DrawImage($src, $dst, $srcRect, [Drawing.GraphicsUnit]::Pixel) } catch { }
-		# id label centered under the icon
-		$label = "$($r.id)"
-		$sz = $gfx.MeasureString($label, $font)
-		$cellLeft = [int]($c * $cellW)
-		$lx = [single]($ox + ($icon - $sz.Width) / 2)
-		if ($lx -lt $cellLeft) { $lx = [single]$cellLeft }
-		$gfx.DrawString($label, $font, $brush, $lx, [single]($oy + $icon))
+		$colX = [int]([int]$r.x * $Scale)
+		$line = 0
+		if ($perCol.ContainsKey($colX)) { $line = $perCol[$colX] }
+		$perCol[$colX] = $line + 1
+		$ly = [int]($line * 9)
+		if (($ly + 9) -gt $LabelH) { $ly = [Math]::Max(0, $LabelH - 9) }
+		$gfx.DrawString("$($r.id)", $font, $brush, [single]$colX, [single]$ly)
 	}
 	$gfx.Dispose()
 	$src.Dispose()
 
 	$slug = ($atlasRel -replace '^sprites/items/', '') -replace '\.png$', '' -replace '/', '__'
-	$outPng = Join-Path (Join-Path $repoRoot $SheetDir) "$slug.png"
-	$bmp.Save($outPng, [Drawing.Imaging.ImageFormat]::Png)
+	$bmp.Save((Join-Path (Join-Path $repoRoot $SheetDir) "$slug.png"), [Drawing.Imaging.ImageFormat]::Png)
 	$bmp.Dispose()
 	$made++
-	"  $slug.png   ($n entries)"
+	"  $slug.png   ($($list.Count) entries, ${srcW}x${srcH})"
 }
 "sheets: $made"
