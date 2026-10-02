@@ -239,7 +239,7 @@ consum/scroll_amulet/crystal.png,11,0,8,16,stones/summon_ele#1,matched
 consum/scroll_amulet/crystal.png,12,0,8,16,stones/summon_ele#2,matched
 consum/scroll_amulet/crystal.png,13,0,8,16,stones/summon_ele#3,matched
 consum/scroll_amulet/crystal.png,14,0,8,16,stones/summon_ele#4,matched
-consum/scroll_amulet/crystal.png,15,0,12,2,,unclaimed
+consum/scroll_amulet/crystal.png,15,0,12,2,-,skipped
 consum/scroll_amulet/scroll.png,0,0,15,14,,unclaimed
 consum/scroll_amulet/scroll.png,1,0,15,14,,unclaimed
 consum/scroll_amulet/scroll.png,2,0,15,14,,unclaimed
@@ -565,9 +565,9 @@ equipment/equip/weapon/bomb.png,2,1,10,13,weapons/WOOLY_BOMB#0,matched
 equipment/equip/weapon/bomb.png,3,1,10,13,misc/NOISEMAKER#0,matched
 equipment/equip/weapon/bomb.png,4,1,10,13,weapons/ARCANE_BOMB#0,matched
 equipment/equip/weapon/bomb.png,5,1,10,13,weapons/SHRAPNEL_BOMB#0,matched
-equipment/equip/weapon/bomb.png,6,1,10,13,,unclaimed
-equipment/equip/weapon/bomb.png,7,1,15,13,,unclaimed
-equipment/equip/weapon/bomb.png,0,2,10,9,,unclaimed
+equipment/equip/weapon/bomb.png,6,1,10,13,weapons/SPS_HOLY_BOMB,matched
+equipment/equip/weapon/bomb.png,7,1,15,13,foods/SPS_FISHING_BOMB,matched
+equipment/equip/weapon/bomb.png,0,2,10,9,weapons/SPS_MINI_BOMB,matched
 equipment/equip/weapon/bomb.png,1,2,12,11,,unclaimed
 equipment/equip/weapon/bomb.png,2,2,12,11,,unclaimed
 equipment/equip/weapon/bomb.png,3,2,15,14,,unclaimed
@@ -645,7 +645,7 @@ equipment/jewellery/artifact.png,6,3,16,15,,unclaimed
 equipment/jewellery/artifact.png,17,3,16,14,,unclaimed
 equipment/jewellery/artifact.png,18,3,14,15,,unclaimed
 equipment/jewellery/artifact.png,19,3,14,10,,unclaimed
-equipment/jewellery/ring.png,0,0,8,10,,unclaimed
+equipment/jewellery/ring.png,0,0,8,10,rings/RING_HOLDER,matched
 equipment/jewellery/ring.png,1,0,8,10,rings/RING_RUBY#0,matched
 equipment/jewellery/ring.png,2,0,8,10,rings/RING_ELEMENTS#0,matched
 equipment/jewellery/ring.png,3,0,8,10,rings/RING_ENERGY#0,matched
@@ -657,7 +657,7 @@ equipment/jewellery/ring.png,8,0,8,10,rings/RING_MIGHT#0,matched
 equipment/jewellery/ring.png,9,0,8,10,rings/RING_SHARPSHOOT#0,matched
 equipment/jewellery/ring.png,10,0,8,10,rings/RING_TENACITY#0,matched
 equipment/jewellery/ring.png,11,0,8,10,rings/RING_DIAMOND#0,matched
-equipment/jewellery/ring.png,0,2,14,10,,unclaimed
+equipment/jewellery/ring.png,0,2,14,10,rings/SPS_WING_RING,matched
 equipment/non_equip.png,0,0,16,16,artifacts/LEGACY_ATTACK_SHOES#0,matched
 equipment/non_equip.png,1,0,10,14,,unclaimed
 equipment/non_equip.png,2,0,13,14,,unclaimed

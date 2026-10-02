@@ -75,3 +75,9 @@ equipment/wand/basic_wand.png,15,0,wands/WAND_SPS_LIGHTNING,set
 equipment/wand/basic_wand.png,13,1,wands/WAND_SPS_ACID,set
 equipment/wand/basic_wand.png,14,1,wands/WAND_SPS_LIGHT,set
 equipment/wand/basic_wand.png,15,1,wands/WAND_SPS_DARK,set
+consum/scroll_amulet/crystal.png,15,0,,skip
+equipment/jewellery/ring.png,0,0,rings/RING_HOLDER,set
+equipment/jewellery/ring.png,0,2,rings/SPS_WING_RING,set
+equipment/equip/weapon/bomb.png,6,1,weapons/SPS_HOLY_BOMB,set
+equipment/equip/weapon/bomb.png,7,1,foods/SPS_FISHING_BOMB,set
+equipment/equip/weapon/bomb.png,0,2,weapons/SPS_MINI_BOMB,set
