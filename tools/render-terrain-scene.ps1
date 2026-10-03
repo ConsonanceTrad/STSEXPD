@@ -155,9 +155,9 @@ foreach ($name in $names) {
 			if ($t -eq 0 -and $y -gt 0) {
 				$above = $TerrMap[[string]$rows[$y-1][$x]]
 				if ($above -ne 0) {
-					if ($above -eq 29) { $cf = 31 }
-					elseif ($chasmWall -contains $above) { $cf = 29 }
-					else { $cf = 27 }
+					if ($above -eq 29) { $cf = 47 }
+					elseif ($chasmWall -contains $above) { $cf = 45 }
+					else { $cf = 43 }
 					if ($cf -ge 0 -and $cf -lt 256) {
 						$srcRect3 = New-Object Drawing.Rectangle([int](($cf % 16) * 16), [int]([int]($cf / 16) * 16), 16, 16)
 						$g.DrawImage($chasm, $dst, $srcRect3, [Drawing.GraphicsUnit]::Pixel)
