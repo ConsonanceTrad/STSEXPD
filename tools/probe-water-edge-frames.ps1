@@ -18,7 +18,7 @@ param(
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 
-$path = Join-Path (Get-Location).Path ($Atlas -replace '/', '\')
+$path = if ([IO.Path]::IsPathRooted($Atlas)) { $Atlas } else { Join-Path (Get-Location).Path ($Atlas -replace '/', '\') }
 $src = [Drawing.Bitmap]::FromFile($path)
 $frames = [int]($src.Width / 16)
 "atlas: $Atlas   frames: $frames"

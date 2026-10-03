@@ -135,10 +135,9 @@ foreach ($key in ($maps.Keys | Sort-Object)) {
 				if (($x + 1 -ge $w) -or ($rows[$y][$x+1] -ne 'w')) { $t += 2 }
 				if (($y + 1 -ge $h) -or ($rows[$y+1][$x] -ne 'w')) { $t += 4 }
 				if (($x - 1 -lt 0) -or ($rows[$y][$x-1] -ne 'w')) { $t += 8 }
-				# the atlas frame order is the inverse of the bit weights
-				# (see tools/probe-water-edge-frames.ps1), hence 15 - t
-				$frame = 15 - $t
-				# frame 15 (water centre) is skipped by the layer, leaving the base water
+				# frame index == bit weight t (same order as the original tiles0 row4)
+				$frame = $t
+				# frame 15 is fully transparent; the layer skips it (base water shows)
 				if ($frame -ne 15) {
 					$dst = New-Object Drawing.Rectangle($ox, $oy, $cell, $cell)
 					$srcRect = New-Object Drawing.Rectangle([int]($frame * 16), 0, 16, 16)
