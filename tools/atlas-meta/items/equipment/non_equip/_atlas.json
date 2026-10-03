@@ -64,6 +64,7 @@
         { "file": "HERO_SKILL_PERFORMER", "frames": [ { "x": 64, "y": 96, "w": 16, "h": 16 } ] },
         { "file": "HERO_SKILL_STAR_SOLDIER", "frames": [ { "x": 80, "y": 96, "w": 16, "h": 16 } ] },
         { "file": "HERO_SKILL_CLERIC", "frames": [ { "x": 96, "y": 96, "w": 16, "h": 16 } ] },
+        { "file": "HERO_SKILL_ASCETIC", "frames": [ { "x": 112, "y": 96, "w": 16, "h": 16 } ], "id": 7130 },
         { "file": "SPS_LIFE_ARMOR#0", "frames": [ { "x": 112, "y": 96, "w": 16, "h": 16 } ] },
         { "file": "TASTY_PUDDING", "frames": [ { "x": 225, "y": 98, "w": 14, "h": 13 } ] },
         { "file": "SPYGLASS#0", "frames": [ { "x": 240, "y": 96, "w": 15, "h": 15 } ] },
