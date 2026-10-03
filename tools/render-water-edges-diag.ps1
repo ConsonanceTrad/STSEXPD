@@ -128,15 +128,22 @@ foreach ($key in ($maps.Keys | Sort-Object)) {
 			if ($ch -eq 'w') {
 				# opaque water base so the edge overlay reads correctly
 				$g.FillRectangle($waterBrush, $ox, $oy, $cell, $cell)
-				# stitch bits, same rule as SpsWaterEdgesTilemap
+				# stitch bits, mirroring SpsWaterEdgesTilemap exactly:
+				# a set bit means "that neighbour is unstitchable -> draw an edge there"
 				$t = 0
 				if (($y - 1 -lt 0) -or ($rows[$y-1][$x] -ne 'w')) { $t += 1 }
 				if (($x + 1 -ge $w) -or ($rows[$y][$x+1] -ne 'w')) { $t += 2 }
 				if (($y + 1 -ge $h) -or ($rows[$y+1][$x] -ne 'w')) { $t += 4 }
 				if (($x - 1 -lt 0) -or ($rows[$y][$x-1] -ne 'w')) { $t += 8 }
-				$dst = New-Object Drawing.Rectangle($ox, $oy, $cell, $cell)
-				$srcRect = New-Object Drawing.Rectangle([int]($t * 16), 0, 16, 16)
-				$g.DrawImage($base, $dst, $srcRect, [Drawing.GraphicsUnit]::Pixel)
+				# the atlas frame order is the inverse of the bit weights
+				# (see tools/probe-water-edge-frames.ps1), hence 15 - t
+				$frame = 15 - $t
+				# frame 15 (water centre) is skipped by the layer, leaving the base water
+				if ($frame -ne 15) {
+					$dst = New-Object Drawing.Rectangle($ox, $oy, $cell, $cell)
+					$srcRect = New-Object Drawing.Rectangle([int]($frame * 16), 0, 16, 16)
+					$g.DrawImage($base, $dst, $srcRect, [Drawing.GraphicsUnit]::Pixel)
+				}
 			}
 			# coord label only -- a grid overlay would read as a drawn edge
 			$label = "$x,$y"
