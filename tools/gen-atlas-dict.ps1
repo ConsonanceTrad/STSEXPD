@@ -114,8 +114,14 @@ foreach ($meta in $metas) {
 		}
 		if ($rects.Count -eq 0) { continue }
 
-		$order = $orderBase
-		$orderBase++
+		# Optional explicit id in metadata (for entries discovered after the auto numbering
+		# was frozen, so that adding one must not shift every later dictionary's ids).
+		if ($null -ne $e.id -and ([string]$e.id).Trim() -ne '') {
+			$order = [int]$e.id
+		} else {
+			$order = $orderBase
+			$orderBase++
+		}
 		[void]$sb.AppendLine('	/** ' + $file + ' */')
 		[void]$sb.AppendLine('	public static final IconEntry ' + $ident + ' = new IconEntry(' +
 			'"' + $atlasRel + '", new int[]{' + ($rects -join ', ') + '}, ' + $order + ');')

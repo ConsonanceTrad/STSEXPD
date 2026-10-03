@@ -18,6 +18,7 @@
         { "file": "SEED_STAREATER", "frames": [ { "x": 211, "y": 3, "w": 10, "h": 10 } ] },
         { "file": "SEED_TRANSMUTE_CAGE", "frames": [ { "x": 227, "y": 3, "w": 10, "h": 10 } ] },
         { "file": "SEED_QUARTZFLOWER", "frames": [ { "x": 243, "y": 3, "w": 10, "h": 10 } ] },
+        { "file": "SEED_DEWCATCHER", "frames": [ { "x": 259, "y": 3, "w": 10, "h": 10 } ], "id": 7129 },
         { "file": "SEED_POD", "frames": [ { "x": 275, "y": 3, "w": 10, "h": 10 } ] },
         { "file": "DURIAN", "frames": [ { "x": 2, "y": 35, "w": 12, "h": 9 } ] },
         { "file": "FIRE_PEPPER", "frames": [ { "x": 17, "y": 34, "w": 14, "h": 12 } ] },

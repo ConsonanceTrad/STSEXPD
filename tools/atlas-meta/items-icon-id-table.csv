@@ -822,3 +822,4 @@ id,dict,const,atlas,x,y,w,h
 7126,SpecificTaskDict,MAGIC_SKULL,sprites/items/specific/task.png,66,51,11,11
 7127,SpecificTaskDict,CHARGED_CONCH,sprites/items/specific/task.png,83,49,9,14
 7128,SpecificTaskDict,COURT_MEMORIAL,sprites/items/specific/task.png,98,49,12,15
+7129,ConsumPotionSeedSeedDict,SEED_DEWCATCHER,sprites/items/consum/potion_seed/seed.png,259,3,10,10
