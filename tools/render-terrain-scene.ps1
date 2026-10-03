@@ -13,9 +13,9 @@
 #          .\tools\render-terrain-scene.ps1 -Scene 2 -Scale 6
 
 param(
-	[string]$TilesAtlas  = 'core/src/assets/environment/tiles/sps_tiles_sewers_legacy.png',
-	[string]$ChasmAtlas  = 'core/src/assets/environment/tiles/tiles_sewers.png',
-	[string]$WaterAtlas  = 'core/src/assets/environment/water/sps_water_edges_sewers.png',
+	[string]$TilesAtlas  = 'core/src/assets/environment/tiles/sps_tiles_caves_legacy.png',
+	[string]$ChasmAtlas  = 'core/src/assets/environment/tiles/sps_tiles_caves_legacy.png',
+	[string]$WaterAtlas  = 'core/src/assets/environment/water/sps_water_edges_caves.png',
 	[string]$OutDir      = 'tools/atlas-meta/terrain-diag',
 	[int]$Scene          = -1,
 	[int]$Scale          = 6
@@ -155,9 +155,9 @@ foreach ($name in $names) {
 			if ($t -eq 0 -and $y -gt 0) {
 				$above = $TerrMap[[string]$rows[$y-1][$x]]
 				if ($above -ne 0) {
-					if ($above -eq 29) { $cf = 47 }
-					elseif ($chasmWall -contains $above) { $cf = 45 }
-					else { $cf = 44 }
+					if ($above -eq 29) { $cf = 31 }
+					elseif ($chasmWall -contains $above) { $cf = 29 }
+					else { $cf = 27 }
 					if ($cf -ge 0 -and $cf -lt 256) {
 						$srcRect3 = New-Object Drawing.Rectangle([int](($cf % 16) * 16), [int]([int]($cf / 16) * 16), 16, 16)
 						$g.DrawImage($chasm, $dst, $srcRect3, [Drawing.GraphicsUnit]::Pixel)
