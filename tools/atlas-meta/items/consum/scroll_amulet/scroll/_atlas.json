@@ -29,9 +29,12 @@
         { "file": "EXOTIC_BERKANAN#0", "frames": [ { "x": 144, "y": 16, "w": 15, "h": 14 } ] },
         { "file": "SCROLL_DREAD#0", "frames": [ { "x": 160, "y": 16, "w": 15, "h": 14 } ] },
         { "file": "SCROLL_METAMORPH#0", "frames": [ { "x": 176, "y": 16, "w": 15, "h": 14 } ] },
-        { "file": "SCROLL_OF_PRECISION", "frames": [ { "x": 193, "y": 17, "w": 15, "h": 14 } ] },
-        { "file": "SCROLL_OF_PROTECTION", "frames": [ { "x": 209, "y": 17, "w": 15, "h": 14 } ] },
-        { "file": "SCROLL_OF_MAGIC", "frames": [ { "x": 225, "y": 17, "w": 15, "h": 14 } ] },
+        { "file": "SPS_SCROLL_A#0", "frames": [ { "x": 192, "y": 16, "w": 15, "h": 14 } ], "id": 7131 },
+        { "file": "SPS_SCROLL_B#0", "frames": [ { "x": 208, "y": 16, "w": 15, "h": 14 } ], "id": 7132 },
+        { "file": "SPS_SCROLL_C#0", "frames": [ { "x": 224, "y": 16, "w": 15, "h": 14 } ], "id": 7133 },
+        { "file": "SCROLL_OF_PRECISION", "frames": [ { "x": 193, "y": 33, "w": 15, "h": 14 } ] },
+        { "file": "SCROLL_OF_PROTECTION", "frames": [ { "x": 209, "y": 33, "w": 15, "h": 14 } ] },
+        { "file": "SCROLL_OF_MAGIC", "frames": [ { "x": 225, "y": 33, "w": 15, "h": 14 } ] },
         { "file": "ENCHANT_CUBE", "frames": [ { "x": 210, "y": 50, "w": 12, "h": 13 } ] },
         { "file": "ARCANE_RESIN", "frames": [ { "x": 226, "y": 51, "w": 12, "h": 11 } ] }
     ]
