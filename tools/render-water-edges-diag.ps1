@@ -55,7 +55,8 @@ foreach ($a in $atlases) {
 		$dst = New-Object Drawing.Rectangle($ox, $oy, $cell, $cell)
 		$srcRect = New-Object Drawing.Rectangle([int]($i * 16), 0, 16, 16)
 		$g.DrawImage($src, $dst, $srcRect, [Drawing.GraphicsUnit]::Pixel)
-		$g.DrawRectangle($gridPen, $ox, $oy, [int]($cell - 1), [int]($cell - 1))
+		# NOTE: no grid line drawn over the tile itself -- an overlay rectangle would
+		# look like an edge and make the frame content unreadable.
 		$txt = "f$i"
 		$g.FillRectangle($labelBg, $ox, [int]($oy + $cell), 22, 10)
 		$g.DrawString($txt, $font, $brush, [single]$ox, [single]($oy + $cell))
@@ -137,8 +138,7 @@ foreach ($key in ($maps.Keys | Sort-Object)) {
 				$srcRect = New-Object Drawing.Rectangle([int]($t * 16), 0, 16, 16)
 				$g.DrawImage($base, $dst, $srcRect, [Drawing.GraphicsUnit]::Pixel)
 			}
-			# grid + coord label
-			$g.DrawRectangle($gridPen, $ox, $oy, [int]($cell - 1), [int]($cell - 1))
+			# coord label only -- a grid overlay would read as a drawn edge
 			$label = "$x,$y"
 			$g.FillRectangle($labelBg, $ox, $oy, 24, 10)
 			$g.DrawString($label, $font, $brush, [single]$ox, [single]$oy)
