@@ -1,0 +1,7 @@
+{
+    "atlas":  "core/src/assets/sprites/items/consum/scroll_amulet/scroll_empty.png",
+    "outDir":  "tools/atlas-meta/items/consum/scroll_amulet/scroll_empty/work",
+    "entries":  [
+        { "file": "SCROLL_EMPTY", "frames": [ { "x": 0, "y": 0, "w": 16, "h": 16 } ], "id": 7134 }
+    ]
+}
