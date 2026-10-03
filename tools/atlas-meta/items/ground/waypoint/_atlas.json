@@ -1,0 +1,8 @@
+{
+    "atlas":  "core/src/assets/sprites/items/ground/waypoint.png",
+    "outDir":  "tools/atlas-meta/items/ground/waypoint/work",
+    "entries":  [
+        { "file": "WAYPOINT", "frames": [ { "x": 0, "y": 0, "w": 16, "h": 16 } ], "id": 7135 },
+        { "file": "WAYPOINT_END", "frames": [ { "x": 0, "y": 16, "w": 16, "h": 16 } ], "id": 7136 }
+    ]
+}
